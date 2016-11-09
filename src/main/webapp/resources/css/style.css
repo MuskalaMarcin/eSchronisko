@@ -3,7 +3,7 @@ html, body {
     font-family: "Trebuchet MS";
 }
 
-.logo {
+#logo {
     background: repeat-x top;
     height: 380px;
 }
@@ -14,30 +14,39 @@ html, body {
     float: right;
 }
 
+.divTableRow{
+    display: table-row;
+}
 
-.menuBar {
+#menuBar {
     background-color: #2d2d2d;
     text-align: center;
+    height: 45px;
 }
 
 .wrapper {
     min-width: 750px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     min-height: 100%;
+    display: table;
 }
 
-.content {
+#content {
     overflow: hidden;
+    height: 100%;
 }
 
-.footerBar {
+#footerBar {
     height: 70px;
     background-color: #2d2d2d;
 }
 
 .centerContent {
-    height: inherit;
+    height: 100%;
     width: 66%;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     min-width: 730px;
     margin: auto;
@@ -46,6 +55,7 @@ html, body {
 #centerContentText{
     width: 67%;
     min-width: 750px;
+    min-height: 250px;
     display: flex;
     align-items: stretch;
 }
@@ -82,7 +92,7 @@ html, body {
 }
 
 .menuButton {
-    height: 45px;
+    height: inherit;
     width: 13.8%;
     display: inline-block;
     text-align: center;
