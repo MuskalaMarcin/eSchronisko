@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="eSchronisko:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/eSchronisko_war</output-path>
+    <root id="archive" name="eSchronisko_war.war">
+      <element id="artifact" artifact-name="eSchronisko:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,62 @@
+body{
+    font-family: "Trebuchet MS";
+}
+
+.logo{
+    background-image: url('../images/logoDog.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: top;
+    height: 377px;
+}
+
+.menuBar{
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+.wrapper{
+    min-height: 1024px;
+}
+
+
+.content{
+    height: 100%;
+}
+
+.footerBar{
+    height: 70px;
+    background-color: #2d2d2d;
+}
+
+.centerContent{
+    height: 100%;
+    width: 66%;
+    min-width: 750px;
+    margin: auto;
+}
+
+#footerSpan{
+    margin-top: 8px;
+    float: right;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menuButton{
+    height: 45px;
+    width: 13.8%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menuButton:hover{
+    color: black;
+    background-color: #7e7e7e;
+}
