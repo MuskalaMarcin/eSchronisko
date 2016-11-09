@@ -11,7 +11,11 @@
 </head>
 <body>
 <div class="container-fluid wrapper">
-    <div class="row logo"></div>
+    <div class="row logo">
+        <div class="centerContent">
+            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"/>
+        </div>
+    </div>
     <div class="row menuBar">
         <div class="row centerContent">
             <div class="menuButton">HOME</div>
@@ -30,7 +34,8 @@
     </div>
     <div class="row footerBar">
         <div class="centerContent">
-            <span class="text-right" id="footerSpan">eSchronisko 2016<br>ul. Długa 123<br>31-141 Kraków</span>
+            <span class="glyphicon glyphicon-menu-up" id="footerUp" onclick="scrollPageToTop()"></span>
+            <span class="text-right" id="footerAddressSpan">eSchronisko 2016<br>ul. Długa 123<br>31-141 Kraków</span>
         </div>
     </div>
 </div>

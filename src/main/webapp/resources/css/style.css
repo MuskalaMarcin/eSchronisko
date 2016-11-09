@@ -1,62 +1,75 @@
-body{
+body {
     font-family: "Trebuchet MS";
 }
 
-.logo{
-    background-image: url('../images/logoDog.jpg');
+.logo {
     background-repeat: repeat-x;
-    background-attachment: fixed;
     background-position: top;
-    height: 377px;
+    height: 380px;
 }
 
-.menuBar{
+#logoTextImage {
+    position: relative;
+    top: 100px;
+    float: right;
+}
+
+.menuBar {
     background-color: #2d2d2d;
     text-align: center;
 }
 
-.wrapper{
-    min-height: 1024px;
+.wrapper {
+    min-width: 750px;
 }
 
-
-.content{
-    height: 100%;
+.content {
+    height: 1000px;
 }
 
-.footerBar{
+.footerBar {
     height: 70px;
     background-color: #2d2d2d;
 }
 
-.centerContent{
+.centerContent {
     height: 100%;
     width: 66%;
-    min-width: 750px;
+    min-width: 730px;
     margin: auto;
 }
 
-#footerSpan{
-    margin-top: 8px;
+#footerUp {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+}
+
+#footerAddressSpan {
+    position: relative;
+    top: 8px;
     float: right;
     color: white;
+    display: inline-block;
     font-size: 13px;
     font-weight: bold;
 }
 
-.menuButton{
+.menuButton {
     height: 45px;
     width: 13.8%;
     display: inline-block;
     text-align: center;
-    vertical-align: middle;
     line-height: 45px;
     color: white;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.menuButton:hover{
+.menuButton:hover, #footerUp:hover {
+    cursor: pointer;
     color: black;
     background-color: #7e7e7e;
 }
