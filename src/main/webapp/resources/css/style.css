@@ -1,10 +1,10 @@
-body {
+html, body {
+    height: 100%;
     font-family: "Trebuchet MS";
 }
 
 .logo {
-    background-repeat: repeat-x;
-    background-position: top;
+    background: repeat-x top;
     height: 380px;
 }
 
@@ -14,6 +14,7 @@ body {
     float: right;
 }
 
+
 .menuBar {
     background-color: #2d2d2d;
     text-align: center;
@@ -21,10 +22,11 @@ body {
 
 .wrapper {
     min-width: 750px;
+    min-height: 100%;
 }
 
 .content {
-    height: 1000px;
+    overflow: hidden;
 }
 
 .footerBar {
@@ -33,10 +35,32 @@ body {
 }
 
 .centerContent {
-    height: 100%;
+    height: inherit;
     width: 66%;
+    overflow: hidden;
+    position: relative;
     min-width: 730px;
     margin: auto;
+}
+
+#centerContentText{
+    width: 67%;
+    min-width: 750px;
+    display: flex;
+    align-items: stretch;
+}
+
+.contentLeft {
+    width: 22.5%;
+    margin-right: 5px;
+    text-align: center;
+    background: url("../images/content/shadowLeft.jpg") repeat-y #eeeeee;
+}
+
+.contentText {
+    width: 77.5%;
+    text-align: justify;
+    background: url("../images/content/shadowRight.jpg") repeat-y #eeeeee right;
 }
 
 #footerUp {
