@@ -14,7 +14,7 @@ html, body {
     float: right;
 }
 
-.divTableRow{
+.divTableRow {
     display: table-row;
 }
 
@@ -52,7 +52,7 @@ html, body {
     margin: auto;
 }
 
-#centerContentText{
+#centerContentText {
     width: 67%;
     min-width: 750px;
     min-height: 250px;
@@ -107,38 +107,38 @@ html, body {
     background-color: #7e7e7e;
 }
 
-.mainContentContainer{
+.mainContentContainer {
     margin: 15px 26px 15px 15px;
     text-align: justify;
 }
 
-.leftContentContainer{
+.leftContentContainer {
     margin: 15px 15px 15px 26px;
     text-align: center;
 }
 
-.leftMenuHeader{
+.leftMenuHeader {
     font-weight: bold;
     font-size: 14px;
 }
 
-.leftMenuContent{
+.leftMenuContent {
 }
 
-#advCarouselList{
+#advCarouselList {
     display: none;
 }
 
-#advCarousel{
+#advCarousel {
     border: 1px solid lightgray;
 }
 
-.leftMenuContent, .leftMenuHeader{
+.leftMenuContent, .leftMenuHeader {
     display: block;
     margin-bottom: 15px;
 }
 
-#loginBar{
+#loginBar {
     borde: 1px solid lightgray;
     padding: 5px 10px 5px 10px;
     font-size: 12px;
