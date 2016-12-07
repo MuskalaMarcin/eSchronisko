@@ -1,18 +1,22 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>eSchronisko - strona glowna</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-    <link href="../../resources/css/style.css" rel="stylesheet" media="screen"/>
-    <script src="../../resources/js/jquery-3.1.1.min.js"></script>
-    <script src="../../resources/js/bootstrap.min.js"></script>
-    <script src="../../resources/js/homepage.js"></script>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/style.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/style.css}"/>
+    <script src="../../../resources/js/jquery-3.1.1.min.js" th:src="@{/resources/js/jquery-3.1.1.min.js}"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+    <script src="../../../resources/js/homepage.js" th:src="@{/resources/js/homepage.js}"></script>
 </head>
 <body>
 <div class="container-fluid wrapper">
     <div class="divTableRow" id="logo">
         <div class="centerContent">
-            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"/>
+            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"
+                 th:src="@{/resources/images/logo/logoText.png}"/>
         </div>
     </div>
     <div class="divTableRow" id="menuBar">
@@ -94,23 +98,24 @@
 
                     </span>
                     <span class="leftMenuHeader">REKLAMA</span>
-                    <div id="advCarousel" class="leftMenuContent carousel slide" data-ride="carousel">
-                      <ol id="advCarouselList">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                          <img src="../../resources/images/adv/cat.jpg">
+                    <div id="animalsCarousel" class="leftMenuContent carousel slide" data-ride="carousel">
+                        <ol id="animalsCarouselList">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="../../resources/images/animals/cat.jpg" th:src="@{/resources/images/animals/cat.jpg}">
+                            </div>
+                            <div class="item">
+                                <img src="../../resources/images/animals/dog.jpg" th:src="@{/resources/images/animals/dog.jpg}">
+                            </div>
+                            <div class="item">
+                                <img src="../../resources/images/animals/horse.jpg"
+                                     th:src="@{/resources/images/animals/horse.jpg}">
+                            </div>
                         </div>
-                        <div class="item">
-                          <img src="../../resources/images/adv/dog.jpg">
-                        </div>
-                        <div class="item">
-                          <img src="../../resources/images/adv/horse.jpg">
-                        </div>
-                      </div>
                     </div>
                 </div>
             </div>

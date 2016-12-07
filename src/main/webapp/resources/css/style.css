@@ -125,11 +125,11 @@ html, body {
 .leftMenuContent{
 }
 
-#advCarouselList{
+#animalsCarouselList{
     display: none;
 }
 
-#advCarousel{
+#animalsCarousel{
     border: 1px solid lightgray;
 }
 

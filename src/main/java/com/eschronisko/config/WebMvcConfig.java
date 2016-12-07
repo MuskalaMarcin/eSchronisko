@@ -59,6 +59,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport
 	resolver.setPrefix(VIEWS);
 	resolver.setSuffix(".html");
 	resolver.setTemplateMode(TemplateMode.HTML);
+	resolver.setCharacterEncoding("UTF-8");
 	resolver.setCacheable(false);
 	return resolver;
     }

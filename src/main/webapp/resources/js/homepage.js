@@ -1,5 +1,8 @@
 $(document).ready(function () {
     _setLogo()
+    $('.carousel').carousel({
+        interval: 2000
+    })
 })
 
 function _setLogo() {
