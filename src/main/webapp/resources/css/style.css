@@ -10,11 +10,11 @@ html, body {
 
 #logoTextImage {
     position: relative;
-    top: 100px;
+    top: 60px;
     float: right;
 }
 
-.divTableRow{
+.divTableRow {
     display: table-row;
 }
 
@@ -52,7 +52,7 @@ html, body {
     margin: auto;
 }
 
-#centerContentText{
+#centerContentText {
     width: 67%;
     min-width: 750px;
     min-height: 250px;
@@ -107,22 +107,22 @@ html, body {
     background-color: #7e7e7e;
 }
 
-.mainContentContainer{
+.mainContentContainer {
     margin: 15px 26px 15px 15px;
     text-align: justify;
 }
 
-.leftContentContainer{
+.leftContentContainer {
     margin: 15px 15px 15px 26px;
     text-align: center;
 }
 
-.leftMenuHeader{
+.leftMenuHeader {
     font-weight: bold;
     font-size: 14px;
 }
 
-.leftMenuContent{
+.leftMenuContent {
 }
 
 #animalsCarouselList{
@@ -133,7 +133,19 @@ html, body {
     border: 1px solid lightgray;
 }
 
-.leftMenuContent, .leftMenuHeader{
+.leftMenuContent, .leftMenuHeader {
     display: block;
     margin-bottom: 15px;
+}
+
+#loginBar {
+    borde: 1px solid lightgray;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: #2d2d2d;
+    width: 665px;
+    margin: auto;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
 }
