@@ -17,17 +17,14 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @Configuration
 @PropertySource("classpath:application.properties")
 @ComponentScan(basePackageClasses = Application.class)
-public class ApplicationConfig
-{
+public class ApplicationConfig {
     @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer()
-    {
-	return new PropertySourcesPlaceholderConfigurer();
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
     }
 
     @Bean
-    public SessionFactory getSessionFactory()
-    {
-	return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
+    public SessionFactory getSessionFactory() {
+        return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
     }
 }
