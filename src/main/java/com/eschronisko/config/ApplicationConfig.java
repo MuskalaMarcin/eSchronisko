@@ -1,6 +1,7 @@
 package com.eschronisko.config;
 
 import com.eschronisko.Application;
+import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -22,5 +23,11 @@ public class ApplicationConfig
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer()
     {
 	return new PropertySourcesPlaceholderConfigurer();
+    }
+
+    @Bean
+    public SessionFactory getSessionFactory()
+    {
+	return new org.hibernate.cfg.Configuration().configure().buildSessionFactory();
     }
 }
