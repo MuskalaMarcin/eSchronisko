@@ -16,7 +16,7 @@
     <div class="divTableRow" id="logo">
         <div class="centerContent">
             <div id="loginBar">
-                <form action="/login" method="post" class="form-inline">
+                <form action="/login" method="post" class="form-inline" id="loginForm">
                     <div class="form-group">
                         <label for="username">Login:</label>
                         <input type="username" class="form-control" id="username" name="username">
@@ -25,11 +25,11 @@
                         <label for="password">Hasło:</label>
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" id="rememberMe" name="rememberMe"> Zapamiętaj mnie</label>
-                    </div>
                     <button type="submit" class="btn btn-success">Zaloguj</button>
                 </form>
+                <a href="/register" th:href="register">
+                    <button class="btn btn-primary">Rejestracja</button>
+                </a>
             </div>
             <img id="logoTextImage" src="../../../resources/images/logo/logoText.png"
                  th:src="@{/resources/images/logo/logoText.png}"/>

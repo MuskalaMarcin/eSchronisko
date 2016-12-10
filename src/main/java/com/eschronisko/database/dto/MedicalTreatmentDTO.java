@@ -8,7 +8,7 @@ import java.sql.Timestamp;
  */
 @Entity
 @Table(name = "medical_treatment", schema = "public", catalog = "eschronisko")
-public class MedicalTreatmentDTO {
+public class MedicalTreatmentDTO extends ParentDTO {
     private int id;
     private String name;
     private String description;

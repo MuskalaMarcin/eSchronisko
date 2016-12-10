@@ -8,7 +8,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "client", schema = "public", catalog = "eschronisko")
-public class ClientDTO {
+public class ClientDTO extends ParentDTO {
     private int id;
     private String name;
     private String surname;

@@ -1,5 +1,6 @@
-package com.eschronisko.account;
+package com.eschronisko.account.login;
 
+import com.eschronisko.account.util.UserRole;
 import com.eschronisko.database.dto.AppUserDTO;
 import com.eschronisko.database.service.AppUserManager;
 import org.springframework.beans.factory.annotation.Autowired;

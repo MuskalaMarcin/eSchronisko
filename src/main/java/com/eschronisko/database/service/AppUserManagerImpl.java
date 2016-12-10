@@ -30,7 +30,7 @@ public class AppUserManagerImpl implements AppUserManager {
 
     @Override
     @Transactional
-    public void deleteEntity(Integer id) {
+    public void deleteEntity(String id) {
         dao.deleteEntity(id);
     }
 

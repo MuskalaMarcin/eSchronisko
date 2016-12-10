@@ -8,7 +8,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "medical_card", schema = "public", catalog = "eschronisko")
-public class MedicalCardDTO {
+public class MedicalCardDTO extends ParentDTO {
     private int id;
     private String healthState;
     private String notes;

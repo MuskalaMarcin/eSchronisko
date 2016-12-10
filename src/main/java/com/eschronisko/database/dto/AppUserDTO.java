@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "app_user", schema = "public", catalog = "eschronisko")
-public class AppUserDTO {
+public class AppUserDTO extends ParentDTO {
     private String login;
     private String password;
     private String eMail;

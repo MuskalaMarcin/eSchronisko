@@ -12,7 +12,7 @@ public interface AppUserManager {
 
     public List<AppUserDTO> getAllEntites();
 
-    public void deleteEntity(Integer appUserId);
+    public void deleteEntity(String appUserId);
 
 
     AppUserDTO getUserWithLogin(String login);

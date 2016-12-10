@@ -140,12 +140,17 @@ html, body {
 
 #loginBar {
     borde: 1px solid lightgray;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     font-size: 12px;
     color: white;
     background-color: #2d2d2d;
-    width: 665px;
+    width: 655px;
     margin: auto;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
+}
+
+#loginForm{
+    display: inline-block;
+    margin-left: 5px;
 }

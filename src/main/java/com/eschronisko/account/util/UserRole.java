@@ -1,4 +1,4 @@
-package com.eschronisko.account;
+package com.eschronisko.account.util;
 
 /**
  * Created by Marcin on 10.12.2016.

@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "food_rations", schema = "public", catalog = "eschronisko")
-public class FoodRationsDTO {
+public class FoodRationsDTO extends ParentDTO {
     private int id;
     private int amount;
     private WarehouseDTO warehouse;

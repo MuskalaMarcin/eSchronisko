@@ -8,7 +8,7 @@ import java.sql.Timestamp;
  */
 @Entity
 @Table(name = "application", schema = "public", catalog = "eschronisko")
-public class ApplicationDTO {
+public class ApplicationDTO extends ParentDTO {
     private int id;
     private Timestamp dispatchDate;
     private String status;

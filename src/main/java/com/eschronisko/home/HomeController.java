@@ -1,6 +1,6 @@
 package com.eschronisko.home;
 
-import com.eschronisko.account.UserRole;
+import com.eschronisko.account.util.UserRole;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
