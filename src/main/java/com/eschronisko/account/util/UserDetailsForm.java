@@ -1,11 +1,12 @@
-package com.eschronisko.account.register;
+package com.eschronisko.account.util;
 
 /**
  * Created by Marcin on 10.12.2016.
  */
-public class RegistrationForm {
+public class UserDetailsForm {
     private String username;
     private String password;
+    private String passwordRepeat;
     private String eMail;
     private String userRole;
     private String name;
@@ -26,6 +27,14 @@ public class RegistrationForm {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPasswordRepeat() {
+        return passwordRepeat;
+    }
+
+    public void setPasswordRepeat(String passwordRepeat) {
+        this.passwordRepeat = passwordRepeat;
     }
 
     public String geteMail() {

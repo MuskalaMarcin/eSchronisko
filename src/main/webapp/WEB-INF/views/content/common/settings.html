@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<body th:fragment="infoContent">
+<body th:fragment="content">
 <link href="../../resources/css/loginForm.css" rel="stylesheet" media="screen"
       th:href="@{/resources/css/loginForm.css}"/>
 <form action="/register" method="post" id="verticalLoginForm">
@@ -25,14 +25,7 @@
         <label class="sr-only" for="address">Adres</label>
         <input type="text" class="form-control" id="address" name="address" placeholder="Adres">
     </div>
-    <div class="form-group">
-        <select class="form-control" id="userRole" name="userRole">
-            <option th:each="state : ${T(com.eschronisko.account.util.UserRole).values()}"
-                    th:value="${state}" th:text="${state.getDisplayName()}">
-            </option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-success">Zarejestruj się</button>
+    <button type="submit" class="btn btn-success">Zapisz</button>
 </form>
 </body>
 </html>

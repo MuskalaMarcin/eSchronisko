@@ -1,5 +1,6 @@
 package com.eschronisko.account.register;
 
+import com.eschronisko.account.util.UserDetailsForm;
 import com.eschronisko.database.service.AdministratorManager;
 import com.eschronisko.database.service.AppUserManager;
 import com.eschronisko.database.service.ClientManager;
@@ -18,7 +19,8 @@ public class RegistrationService {
     @Autowired
     private ClientManager clientManager;
 
-    public boolean register(RegistrationForm registrationForm) {
+    public boolean register(UserDetailsForm userDetailsForm) {
+        System.out.println(userDetailsForm.getName() + userDetailsForm.getSurname());
         return false;
     }
 }

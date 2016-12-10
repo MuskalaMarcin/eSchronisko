@@ -1,0 +1,14 @@
+.formInfoText {
+    color: red;
+    margin: auto;
+}
+
+#verticalLoginForm, #verticalLoginForm > div > button , #verticalLoginForm > button{
+    margin: 10px auto auto auto;
+    width: 300px;
+}
+
+#registerButton {
+    width: 300px;
+    margin-top: -10px;
+}

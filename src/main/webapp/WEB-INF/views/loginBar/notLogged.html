@@ -3,12 +3,12 @@
 <body th:fragment="loginBar(loginMsg)">
 <form action="/login" method="post" class="form-inline" id="loginForm">
     <div class="form-group">
-        <label for="username">Login:</label>
-        <input type="username" class="form-control" id="username" name="username">
+        <label class="sr-only" for="username">Login</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Login">
     </div>
     <div class="form-group">
-        <label for="password">Hasło:</label>
-        <input type="password" class="form-control" id="password" name="password">
+        <label class="sr-only" for="password">Hasło</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło">
     </div>
     <button type="submit" class="btn btn-success">Zaloguj</button>
 </form>

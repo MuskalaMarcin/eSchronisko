@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="infoContent">
-<form action="/login" method="post">
-    <p th:if="${param.error}!=null">
-        Invalid username and password.
-    </p>
-    <p th:if="${param.logout}!=null">
-        You have been logged out.
-    </p>
-    <p>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"/>
-    </p>
-    <p>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"/>
-    </p>
-    <button type="submit" class="btn">Log in</button>
+<link href="../../resources/css/loginForm.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/loginForm.css}"/>
+<form action="/login" method="post" id="verticalLoginForm">
+    <div class="form-group">
+        <label class="sr-only" for="username">Login</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Login">
+        <label class="sr-only" for="password">Hasło</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło">
+        <p class="formInfoText" th:if="${param.error}!=null">
+            Błędny login lub hasło.
+        </p>
+        <p class="formInfoText" th:if="${param.logout}!=null">
+            Zostałeś wylogowany.
+        </p>
+        <button type="submit" class="btn btn-success">Zaloguj się</button>
+    </div>
 </form>
+<a href="/register" th:href="register">
+    <button id="registerButton" class="btn btn-primary">Rejestracja</button>
+</a>
 </body>
 </html>
