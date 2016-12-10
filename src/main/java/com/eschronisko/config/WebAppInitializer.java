@@ -13,42 +13,36 @@ import javax.servlet.ServletRegistration;
  * @author Marcin Muskala
  * @since 07.11.2016
  */
-public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
-{
+public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
-    protected String[] getServletMappings()
-    {
-	return new String[] { "/" };
+    protected String[] getServletMappings() {
+        return new String[]{"/"};
     }
 
     @Override
-    protected Class<?>[] getRootConfigClasses()
-    {
-	return new Class<?>[] { ApplicationConfig.class };
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class<?>[]{ApplicationConfig.class};
     }
 
     @Override
-    protected Class<?>[] getServletConfigClasses()
-    {
-	return null;
+    protected Class<?>[] getServletConfigClasses() {
+        return null;
     }
 
     @Override
-    protected Filter[] getServletFilters()
-    {
-	CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
-	characterEncodingFilter.setEncoding("UTF-8");
-	characterEncodingFilter.setForceEncoding(true);
+    protected Filter[] getServletFilters() {
+        CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
+        characterEncodingFilter.setEncoding("UTF-8");
+        characterEncodingFilter.setForceEncoding(true);
 
-	DelegatingFilterProxy securityFilterChain = new DelegatingFilterProxy("springSecurityFilterChain");
+        DelegatingFilterProxy securityFilterChain = new DelegatingFilterProxy("springSecurityFilterChain");
 
-	return new Filter[] { characterEncodingFilter, securityFilterChain };
+        return new Filter[]{characterEncodingFilter, securityFilterChain};
     }
 
     @Override
-    protected void customizeRegistration(ServletRegistration.Dynamic registration)
-    {
-	registration.setInitParameter("defaultHtmlEscape", "true");
-	registration.setInitParameter("spring.profiles.active", "default");
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+        registration.setInitParameter("defaultHtmlEscape", "true");
+        registration.setInitParameter("spring.profiles.active", "default");
     }
 }

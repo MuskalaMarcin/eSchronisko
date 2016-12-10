@@ -1,16 +1,6 @@
 package com.eschronisko.database.dto;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -18,7 +8,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "medical_card", schema = "public", catalog = "eschronisko")
-public class MedicalCardDTO {
+public class MedicalCardDTO extends ParentDTO {
     private int id;
     private String healthState;
     private String notes;
@@ -28,7 +18,7 @@ public class MedicalCardDTO {
     @Id
     @Column(name = "id", nullable = false)
     @SequenceGenerator(name = "medcardSeq", sequenceName = "medical_card_id_seq", allocationSize = 1)
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="medcardSeq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "medcardSeq")
     public int getId() {
         return id;
     }

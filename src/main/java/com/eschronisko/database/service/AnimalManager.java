@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface AnimalManager {
     public void addEntity(AnimalDTO animalDTO);
+
     public List<AnimalDTO> getAllEntites();
+
     public void deleteEntity(Integer animalId);
 }

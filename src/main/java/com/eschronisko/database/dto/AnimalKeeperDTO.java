@@ -1,21 +1,13 @@
 package com.eschronisko.database.dto;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Marek on 08.12.2016.
  */
 @Entity
 @Table(name = "animal_keeper", schema = "public", catalog = "eschronisko")
-public class AnimalKeeperDTO {
+public class AnimalKeeperDTO extends ParentDTO {
     private int id;
     private String name;
     private String surname;
@@ -25,7 +17,7 @@ public class AnimalKeeperDTO {
     @Id
     @Column(name = "id", nullable = false)
     @SequenceGenerator(name = "keeperSeq", sequenceName = "animal_keeper_id_seq", allocationSize = 1)
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="keeperSeq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "keeperSeq")
     public int getId() {
         return id;
     }

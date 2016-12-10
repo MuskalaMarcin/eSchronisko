@@ -1,5 +1,4 @@
 package com.eschronisko;
 
-public interface Application
-{
+public interface Application {
 }

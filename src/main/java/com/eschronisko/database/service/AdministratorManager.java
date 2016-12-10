@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface AdministratorManager {
     public void addEntity(AdministratorDTO dto);
+
     public List<AdministratorDTO> getAllEntites();
+
     public void deleteEntity(Integer id);
 }

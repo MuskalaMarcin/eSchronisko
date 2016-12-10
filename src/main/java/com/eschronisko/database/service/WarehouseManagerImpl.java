@@ -15,21 +15,25 @@ import java.util.List;
 public class WarehouseManagerImpl implements WarehouseManager {
     @Autowired
     private WarehouseDAO dao;
+
     @Override
     @Transactional
     public void addEntity(WarehouseDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<WarehouseDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
     public void setDao(WarehouseDAO dao) {
         this.dao = dao;
     }

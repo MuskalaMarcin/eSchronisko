@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="menu">
+<span class="leftMenuHeader">MENU</span>
+<div class="leftMenuContent">
+    <ul class="list-group">
+        <a data-toggle="collapse" href="#collapse1">
+            <button class="list-group-item btn-primary">KEEPER</button>
+        </a>
+        <div id="collapse1" class="panel-collapse collapse">
+            <ul class="list-group">
+                <a href="#">
+                    <li class="list-group-item">Link 1</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 2</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 3</li>
+                </a>
+            </ul>
+        </div>
+        <a data-toggle="collapse" href="#collapse2">
+            <button class="list-group-item btn-primary">Grupa 2</button>
+        </a>
+        <div id="collapse2" class="panel-collapse collapse">
+            <ul class="list-group">
+                <a href="#">
+                    <li class="list-group-item">Link 4</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 5</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 6</li>
+                </a>
+            </ul>
+        </div>
+        <a data-toggle="collapse" href="#collapse3">
+            <button class="list-group-item btn-primary">Grupa 3</button>
+        </a>
+        <div id="collapse3" class="panel-collapse collapse">
+            <ul class="list-group">
+                <a href="#">
+                    <li class="list-group-item">Link 7</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 8</li>
+                </a>
+                <a href="#">
+                    <li class="list-group-item">Link 9</li>
+                </a>
+            </ul>
+        </div>
+    </ul>
+</div>
+<span class="leftMenuHeader">REKLAMA</span>
+<div id="animalsCarousel" class="leftMenuContent carousel slide" data-ride="carousel">
+    <ol id="animalsCarouselList">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="../../../resources/images/animals/cat.jpg"
+                 th:src="@{/resources/images/animals/cat.jpg}">
+        </div>
+        <div class="item">
+            <img src="../../../resources/images/animals/dog.jpg"
+                 th:src="@{/resources/images/animals/dog.jpg}">
+        </div>
+        <div class="item">
+            <img src="../../../resources/images/animals/horse.jpg"
+                 th:src="@{/resources/images/animals/horse.jpg}">
+        </div>
+    </div>
+</div>
+</body>
+</html>
