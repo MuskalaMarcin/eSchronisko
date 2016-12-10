@@ -37,7 +37,9 @@ public class MyUserDetailsService implements UserDetailsService {
                 user.getIsActive() != 0, true, true, true, authorities);
     }
 
-    private List<GrantedAuthority> buildUserAuthority(String userRole) {
-        return Stream.of(userRole).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
+    private List<GrantedAuthority> buildUserAuthority(String... userRoles) {
+        return Stream.of(userRoles).map(String::toUpperCase)
+                .filter(f -> Stream.of(UserRole.values()).anyMatch(v -> v.toString().equals(f)))
+                .map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
 }
