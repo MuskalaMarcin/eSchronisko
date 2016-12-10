@@ -1,5 +1,6 @@
 package com.eschronisko.database.service;
 
+import com.eschronisko.database.dao.AppUserDAO;
 import com.eschronisko.database.dto.AppUserDTO;
 
 import java.util.List;
@@ -7,13 +8,5 @@ import java.util.List;
 /**
  * Created by Marek on 08.12.2016.
  */
-public interface AppUserManager {
-    public void addEntity(AppUserDTO appUserDTO);
-
-    public List<AppUserDTO> getAllEntites();
-
-    public void deleteEntity(String appUserId);
-
-
-    AppUserDTO getUserWithLogin(String login);
+public interface AppUserManager extends ParentManager<AppUserDTO, AppUserDAO, String>{
 }

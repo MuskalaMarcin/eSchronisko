@@ -144,7 +144,6 @@ html, body {
 }
 
 #loginBar {
-    borde: 1px solid lightgray;
     padding: 10px 10px 10px 10px;
     font-size: 12px;
     color: white;
@@ -155,7 +154,17 @@ html, body {
     border-bottom-right-radius: 0.3em;
 }
 
+#returnButton {
+    margin-top: 25px;
+}
+
 #loginForm {
     display: inline-block;
     margin-left: 5px;
+}
+
+.infoContent {
+    width: 100%;
+    margin: 25px;
+    text-align: center;
 }

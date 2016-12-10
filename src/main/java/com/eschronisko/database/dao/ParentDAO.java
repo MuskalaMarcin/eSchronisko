@@ -13,5 +13,7 @@ public interface ParentDAO<A extends ParentDTO, B extends Serializable> {
 
     List<A> getAllEntites();
 
-    void deleteEntity(B id);
+    A getWithId(B id);
+
+    boolean deleteEntity(B id);
 }

@@ -33,10 +33,18 @@ abstract class ParentDAOImpl<A extends ParentDTO, B extends Serializable> implem
     }
 
     @Override
-    public void deleteEntity(B id) {
-        A dto = sessionFactory.getCurrentSession().load(clazz, id);
+    public A getWithId(B id) {
+        return this.sessionFactory.getCurrentSession().get(clazz, id);
+    }
+
+    @Override
+    public boolean deleteEntity(B id) {
+        A dto = getWithId(id);
         if (null != dto) {
             this.sessionFactory.getCurrentSession().delete(id);
+            return true;
+        } else {
+            return false;
         }
     }
 }

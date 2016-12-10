@@ -20,43 +20,44 @@ public class CommonController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView getHomePage() {
-        return getCommonModelAndView("content/common/home");
+        return getCommonModelAndView("content/common/home", "Strona główna");
     }
 
     @RequestMapping(value = "/adoption", method = RequestMethod.GET)
     public ModelAndView getAdoption() {
-        return getCommonModelAndView("content/common/adoption");
+        return getCommonModelAndView("content/common/adoption", "Zaadoptuj");
     }
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.GET)
     public ModelAndView getVolunteer() {
-        return getCommonModelAndView("content/common/volunteer");
+        return getCommonModelAndView("content/common/volunteer", "Porady");
     }
 
     @RequestMapping(value = "/tips", method = RequestMethod.GET)
     public ModelAndView getTips() {
-        return getCommonModelAndView("content/common/tips");
+        return getCommonModelAndView("content/common/tips", "Porady");
     }
 
     @RequestMapping(value = "/found", method = RequestMethod.GET)
     public ModelAndView getFound() {
-        return getCommonModelAndView("content/common/found");
+        return getCommonModelAndView("content/common/found", "Znalezione");
     }
 
     @RequestMapping(value = "/cooperation", method = RequestMethod.GET)
     public ModelAndView getCooperation() {
-        return getCommonModelAndView("content/common/cooperation");
+        return getCommonModelAndView("content/common/cooperation", "Współpraca");
     }
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public ModelAndView getContact() {
-        return getCommonModelAndView("content/common/contact");
+        return getCommonModelAndView("content/common/contact", "Kontakt");
     }
 
-    private ModelAndView getCommonModelAndView(String contentPath) {
+    private ModelAndView getCommonModelAndView(String contentPath, String webPageTitle) {
         ModelMap model = new ModelMap();
         commonService.getTemplateFragments(model);
         model.put("content", contentPath);
+        model.put("title", webPageTitle);
         return new ModelAndView("mainTemplate", model);
     }
 }

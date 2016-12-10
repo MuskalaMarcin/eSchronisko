@@ -27,7 +27,7 @@ public class MyUserDetailsService implements UserDetailsService {
     private AppUserManager appUserManager;
 
     public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
-        AppUserDTO user = appUserManager.getUserWithLogin(username);
+        AppUserDTO user = appUserManager.getWithId(username);
         List<GrantedAuthority> authorityList = buildUserAuthority(user.getUserRole());
 
         return buildUserForAuthentication(user, authorityList);
