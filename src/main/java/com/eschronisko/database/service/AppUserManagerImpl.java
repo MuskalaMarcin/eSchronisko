@@ -15,21 +15,32 @@ import java.util.List;
 public class AppUserManagerImpl implements AppUserManager {
     @Autowired
     private AppUserDAO dao;
+
     @Override
     @Transactional
     public void addEntity(AppUserDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<AppUserDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
+
+    @Override
+    @Transactional
+    public AppUserDTO getUserWithLogin(String login) {
+        return getAllEntites().stream().filter(f -> f.getLogin().equals(login)).findAny().orElse(null);
+    }
+
     public void setDao(AppUserDAO dao) {
         this.dao = dao;
     }

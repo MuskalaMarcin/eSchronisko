@@ -8,7 +8,9 @@ import java.util.List;
  * Created by Marek on 08.12.2016.
  */
 public interface AppUserDAO {
-    public void addEntity(AppUserDTO appUserDTO);
-    public List<AppUserDTO> getAllEntites();
-    public void deleteEntity(Integer appUserId);
+    void addEntity(AppUserDTO appUserDTO);
+
+    List<AppUserDTO> getAllEntites();
+
+    void deleteEntity(Integer appUserId);
 }

@@ -9,6 +9,11 @@ import java.util.List;
  */
 public interface AppUserManager {
     public void addEntity(AppUserDTO appUserDTO);
+
     public List<AppUserDTO> getAllEntites();
+
     public void deleteEntity(Integer appUserId);
+
+
+    AppUserDTO getUserWithLogin(String login);
 }
