@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="loginBar(loginMsg)">
+<form action="/login" method="post" class="form-inline" id="loginForm">
+    <div class="form-group">
+        <label for="username">Login:</label>
+        <input type="username" class="form-control" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Hasło:</label>
+        <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-success">Zaloguj</button>
+</form>
+<a href="/register" th:href="register">
+    <button class="btn btn-primary">Rejestracja</button>
+</a>
+</body>
+</html>
