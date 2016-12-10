@@ -1,12 +1,11 @@
 package com.eschronisko.database.dao;
 
-import java.util.List;
-
+import com.eschronisko.database.dto.DonationDTO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import com.eschronisko.database.dto.DonationDTO;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -15,6 +14,7 @@ import org.springframework.stereotype.Repository;
 public class DonationDAOImpl implements DonationDAO {
     @Autowired
     private SessionFactory sessionFactory;
+
     @Override
     public void addEntity(DonationDTO donationDTO) {
         this.sessionFactory.getCurrentSession().save(donationDTO);
@@ -22,7 +22,7 @@ public class DonationDAOImpl implements DonationDAO {
 
     @Override
     public List<DonationDTO> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from donation").list();
+        return this.sessionFactory.getCurrentSession().createQuery("from DonationDTO").list();
     }
 
     @Override

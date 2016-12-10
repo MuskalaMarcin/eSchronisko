@@ -22,7 +22,7 @@ public class AnimalDAOImpl implements AnimalDAO {
 
     @Override
     public List<AnimalDTO> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from animal").list();
+        return this.sessionFactory.getCurrentSession().createQuery("from AnimalDTO").list();
     }
 
     @Override

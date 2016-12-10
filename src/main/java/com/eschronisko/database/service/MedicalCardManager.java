@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface MedicalCardManager {
     public void addEntity(MedicalCardDTO dto);
+
     public List<MedicalCardDTO> getAllEntites();
+
     public void deleteEntity(Integer id);
 }

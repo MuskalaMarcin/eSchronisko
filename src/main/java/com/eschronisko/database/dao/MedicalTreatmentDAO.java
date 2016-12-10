@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface MedicalTreatmentDAO {
     public void addEntity(MedicalTreatmentDTO dto);
+
     public List<MedicalTreatmentDTO> getAllEntites();
+
     public void deleteEntity(Integer id);
 }

@@ -15,21 +15,25 @@ import java.util.List;
 public class DonationManagerImpl implements DonationManager {
     @Autowired
     private DonationDAO dao;
+
     @Override
     @Transactional
     public void addEntity(DonationDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<DonationDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
     public void setDao(DonationDAO dao) {
         this.dao = dao;
     }

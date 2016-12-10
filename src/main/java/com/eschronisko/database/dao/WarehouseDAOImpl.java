@@ -1,12 +1,11 @@
 package com.eschronisko.database.dao;
 
-import java.util.List;
-
+import com.eschronisko.database.dto.WarehouseDTO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import com.eschronisko.database.dto.WarehouseDTO;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -15,6 +14,7 @@ import org.springframework.stereotype.Repository;
 public class WarehouseDAOImpl implements WarehouseDAO {
     @Autowired
     private SessionFactory sessionFactory;
+
     @Override
     public void addEntity(WarehouseDTO dto) {
         this.sessionFactory.getCurrentSession().save(dto);
@@ -22,7 +22,7 @@ public class WarehouseDAOImpl implements WarehouseDAO {
 
     @Override
     public List<WarehouseDTO> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from warehouse").list();
+        return this.sessionFactory.getCurrentSession().createQuery("from WarehouseDTO").list();
     }
 
     @Override

@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface FoodRationsDAO {
     public void addEntity(FoodRationsDTO foodRationsDTO);
+
     public List<FoodRationsDTO> getAllEntites();
+
     public void deleteEntity(Integer foodRationsId);
 }

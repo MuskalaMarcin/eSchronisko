@@ -1,15 +1,6 @@
 package com.eschronisko.database.dto;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -26,7 +17,7 @@ public class ApplicationDTO {
     @Id
     @Column(name = "id", nullable = false)
     @SequenceGenerator(name = "applicationSeq", sequenceName = "application_id_seq", allocationSize = 1)
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="applicationSeq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "applicationSeq")
     public int getId() {
         return id;
     }

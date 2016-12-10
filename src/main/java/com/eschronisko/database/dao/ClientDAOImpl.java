@@ -1,12 +1,11 @@
 package com.eschronisko.database.dao;
 
-import java.util.List;
-
+import com.eschronisko.database.dto.ClientDTO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.eschronisko.database.dto.ClientDTO;
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -15,6 +14,7 @@ import com.eschronisko.database.dto.ClientDTO;
 public class ClientDAOImpl implements ClientDAO {
     @Autowired
     private SessionFactory sessionFactory;
+
     @Override
     public void addEntity(ClientDTO clientDTO) {
         this.sessionFactory.getCurrentSession().save(clientDTO);
@@ -22,7 +22,7 @@ public class ClientDAOImpl implements ClientDAO {
 
     @Override
     public List<ClientDTO> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from client").list();
+        return this.sessionFactory.getCurrentSession().createQuery("from ClientDTO").list();
     }
 
     @Override

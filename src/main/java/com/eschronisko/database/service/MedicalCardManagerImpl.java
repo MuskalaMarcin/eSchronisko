@@ -15,21 +15,25 @@ import java.util.List;
 public class MedicalCardManagerImpl implements MedicalCardManager {
     @Autowired
     private MedicalCardDAO dao;
+
     @Override
     @Transactional
     public void addEntity(MedicalCardDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<MedicalCardDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
     public void setDao(MedicalCardDAO dao) {
         this.dao = dao;
     }

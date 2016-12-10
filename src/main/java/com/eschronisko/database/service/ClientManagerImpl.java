@@ -15,21 +15,25 @@ import java.util.List;
 public class ClientManagerImpl implements ClientManager {
     @Autowired
     private ClientDAO dao;
+
     @Override
     @Transactional
     public void addEntity(ClientDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<ClientDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
     public void setDao(ClientDAO dao) {
         this.dao = dao;
     }

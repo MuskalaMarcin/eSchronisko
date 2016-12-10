@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface DonationManager {
     public void addEntity(DonationDTO donationDTO);
+
     public List<DonationDTO> getAllEntites();
+
     public void deleteEntity(Integer donationId);
 }

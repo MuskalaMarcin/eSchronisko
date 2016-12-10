@@ -1,14 +1,6 @@
 package com.eschronisko.database.dto;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -25,7 +17,7 @@ public class AdministratorDTO {
     @Id
     @Column(name = "id", nullable = false)
     @SequenceGenerator(name = "adminSeq", sequenceName = "administrator_id_seq", allocationSize = 1)
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="adminSeq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "adminSeq")
     public int getId() {
         return id;
     }

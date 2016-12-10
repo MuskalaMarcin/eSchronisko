@@ -15,21 +15,25 @@ import java.util.List;
 public class FoodRationsManagerImpl implements FoodRationsManager {
     @Autowired
     private FoodRationsDAO dao;
+
     @Override
     @Transactional
     public void addEntity(FoodRationsDTO dto) {
         dao.addEntity(dto);
     }
+
     @Override
     @Transactional
     public List<FoodRationsDTO> getAllEntites() {
         return dao.getAllEntites();
     }
+
     @Override
     @Transactional
     public void deleteEntity(Integer id) {
         dao.deleteEntity(id);
     }
+
     public void setDao(FoodRationsDAO dao) {
         this.dao = dao;
     }

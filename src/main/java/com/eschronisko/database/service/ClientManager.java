@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface ClientManager {
     public void addEntity(ClientDTO clientDTO);
+
     public List<ClientDTO> getAllEntites();
+
     public void deleteEntity(Integer clientId);
 }

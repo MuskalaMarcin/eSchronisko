@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface ApplicationDAO {
     public void addEntity(ApplicationDTO applicationDTO);
+
     public List<ApplicationDTO> getAllEntites();
+
     public void deleteEntity(Integer applicationId);
 }

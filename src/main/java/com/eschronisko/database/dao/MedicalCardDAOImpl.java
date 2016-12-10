@@ -1,12 +1,11 @@
 package com.eschronisko.database.dao;
 
-import java.util.List;
-
+import com.eschronisko.database.dto.MedicalCardDTO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import com.eschronisko.database.dto.MedicalCardDTO;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -15,6 +14,7 @@ import org.springframework.stereotype.Repository;
 public class MedicalCardDAOImpl implements MedicalCardDAO {
     @Autowired
     private SessionFactory sessionFactory;
+
     @Override
     public void addEntity(MedicalCardDTO dto) {
         this.sessionFactory.getCurrentSession().save(dto);
@@ -22,7 +22,7 @@ public class MedicalCardDAOImpl implements MedicalCardDAO {
 
     @Override
     public List<MedicalCardDTO> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from medical_card").list();
+        return this.sessionFactory.getCurrentSession().createQuery("from MedicalCardDTO").list();
     }
 
     @Override

@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface VetDAO {
     public void addEntity(VetDTO dto);
+
     public List<VetDTO> getAllEntites();
+
     public void deleteEntity(Integer id);
 }
