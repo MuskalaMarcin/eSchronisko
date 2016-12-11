@@ -15,6 +15,13 @@ CREATE TABLE administrator
   ) ;
 ALTER TABLE administrator ADD CONSTRAINT administrator_PK PRIMARY KEY ( id ) ;
 
+CREATE TABLE article
+  (
+    id      VARCHAR (64) NOT NULL ,
+    title    VARCHAR (256) NOT NULL ,
+    content  TEXT NOT NULL
+  ) ;
+ALTER TABLE article ADD CONSTRAINT article_PK PRIMARY KEY ( id ) ;
 
 CREATE TABLE animal
   (

@@ -1,5 +1,6 @@
 package com.eschronisko.common;
 
+import com.eschronisko.admin.site.SiteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,53 +16,47 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class CommonController {
     @Autowired
-    private CommonService commonService;
+    private SiteService siteService;
 
     @RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
     public String getHomePage(Model model) {
-        getCommonModelAndView("<h1>test</h1>", "Strona główna", model);
+        siteService.getSiteWithModelAndView("home", model);
         return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/adoption", method = RequestMethod.GET)
     public String getAdoption(Model model) {
-        getCommonModelAndView("content/common/adoption", "Zaadoptuj", model);
-        return "mainTemplate";
+        siteService.getSiteWithModelAndView("adoption", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.GET)
     public String getVolunteer(Model model) {
-        getCommonModelAndView("content/common/volunteer", "Porady", model);
-        return "mainTemplate";
+        siteService.getSiteWithModelAndView("volunteer", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/tips", method = RequestMethod.GET)
     public String getTips(Model model) {
-        getCommonModelAndView("content/common/tips", "Porady", model);
-        return "mainTemplate";
+        siteService.getSiteWithModelAndView("tips", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/found", method = RequestMethod.GET)
     public String getFound(Model model) {
-        getCommonModelAndView("content/common/found", "Znalezione", model);
-        return "mainTemplate";
+        siteService.getSiteWithModelAndView("found", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/cooperation", method = RequestMethod.GET)
     public String getCooperation(Model model) {
-        getCommonModelAndView("content/common/cooperation", "Współpraca", model);
-        return "mainTemplate";
+        siteService.getSiteWithModelAndView("cooperation", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public String getContact(Model model) {
-        getCommonModelAndView("content/common/contact", "Kontakt", model);
-        return "mainTemplate";
-    }
-
-    private void getCommonModelAndView(String contentValue, String webPageTitle, Model model) {
-        commonService.getTemplateFragments(model);
-        model.addAttribute("content", contentValue);
-        model.addAttribute("title", webPageTitle);
+        siteService.getSiteWithModelAndView("contact", model);
+        return "staticSiteTemplate";
     }
 }

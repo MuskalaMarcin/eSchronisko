@@ -29,7 +29,19 @@
                 <div class="leftContentContainer" th:include="${menu} :: menu"></div>
             </div>
             <div class="contentText">
-                <div class="mainContentContainer" th:include="${content} :: content"></div>
+                <div class="mainContentContainer">
+                    <form method="post" th:action="'/admin/edit/'+${viewName}">
+                        <input type="text" th:value="${siteTitle}" id="siteTitle" name="siteTitle"/>
+                        <textarea th:text="${siteContent}" id="siteContent" name="siteContent"></textarea>
+                        <p class="formInfoText" th:if="${param.success}!=null">
+                            Dane zostały zapisane.
+                        </p>
+                        <p class="formWarningText" th:if="${param.error}!=null">
+                            Podczas zapisu wystąpił błąd.
+                        </p>
+                        <button type="submit" class="btn btn-success">Zapisz</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

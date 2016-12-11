@@ -33,12 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="divTableRow" id="footerBar">
-        <div class="centerContent">
-            <span class="glyphicon glyphicon-menu-up" id="footerUp" onclick="scrollPageToTop()"></span>
-            <span class="text-right" id="footerAddressSpan">eSchronisko 2016<br>ul. Długa 123<br>31-141 Kraków</span>
-        </div>
-    </div>
+    <div class="divTableRow" id="footerBar" th:include="footer/footer :: footer"></div>
 </div>
 </body>
 </html>
