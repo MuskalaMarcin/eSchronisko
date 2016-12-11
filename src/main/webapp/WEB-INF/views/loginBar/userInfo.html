@@ -3,10 +3,10 @@
 <body th:fragment="loginBar(loginMsg)">
 <span class="loginInfoText">Zalogowano jako: <strong th:text="${loginMsg}"></strong></span>
 <div class="pull-right">
-    <a href="/settings" th:href="settings">
+    <a href="/settings">
         <button class="btn btn-info">Ustawienia</button>
     </a>
-    <a href="/logout" th:href="logout">
+    <a href="/logout">
         <button class="btn btn-danger">Wyloguj</button>
     </a>
 </div>

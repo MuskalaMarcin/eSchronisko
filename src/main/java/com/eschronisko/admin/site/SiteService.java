@@ -33,7 +33,7 @@ public class SiteService {
 
     public void getSiteForEditing(String viewName, Model model) {
         ArticleDTO articleDTO = articleManager.getWithId(viewName);
-        commonService.getTemplateFragments(model);
+        commonService.getLoginBar(model);
         model.addAttribute("viewName", viewName);
         model.addAttribute("siteContent", articleDTO.getContent());
         model.addAttribute("siteTitle", articleDTO.getTitle());
