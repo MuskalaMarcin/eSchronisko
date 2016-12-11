@@ -30,6 +30,7 @@ CREATE TABLE animal
     age                 INTEGER NOT NULL ,
     sex                 VARCHAR (32) NOT NULL ,
     species             VARCHAR (64) NOT NULL ,
+    link_to_image       VARCHAR (256) ,
     room_number         INTEGER NOT NULL ,
     adoption_possible   INTEGER NOT NULL ,
     acceptance_date     TIMESTAMP NOT NULL ,

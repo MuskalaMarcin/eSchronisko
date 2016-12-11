@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<form action="/keeper/foodrations/saveWarehouse" method="post" id="verticalLoginForm">
+    <div class="form-group">
+        <label class="sr-only" for="capacity">Login</label>
+        <input type="number" class="form-control" id="capacity" name="capacity" placeholder="Pojemność"
+               th:required="true">
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
+</body>
+</html>

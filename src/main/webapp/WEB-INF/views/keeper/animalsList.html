@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(animals)}">
+    <div>Brak zwierząt w bazie.</div>
+</div>
+<div th:if="${not #lists.isEmpty(animals)}">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Zdjęcie</th>
+            <th>Imię</th>
+            <th>Płeć</th>
+            <th>Wiek</th>
+            <th>Nr boksu</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="animal: ${animals}">
+            <td><img th:src="${animal.linkToImage}"/></td>
+            <td th:text="${animal.name}"></td>
+            <td th:text="${animal.sex}"></td>
+            <td th:text="${animal.age}"></td>
+            <td th:text="${animal.roomNumber}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/bootstrap.min.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
+<script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</body>
+</html>
