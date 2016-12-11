@@ -1,4 +1,4 @@
-package com.eschronisko.account.account;
+package com.eschronisko.account;
 
 import com.eschronisko.account.util.UserDetailsForm;
 import org.springframework.beans.factory.annotation.Autowired;
