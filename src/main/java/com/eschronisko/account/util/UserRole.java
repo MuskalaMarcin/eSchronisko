@@ -18,7 +18,11 @@ public enum UserRole {
         return displayName;
     }
 
+    public String getRoleValue() {
+        return "ROLE_" + this.toString();
+    }
+
     public static UserRole getUserRole(String roleString) {
-        return Stream.of(values()).filter(f -> f.toString().equals(roleString.toUpperCase())).findAny().orElse(null);
+        return Stream.of(values()).filter(f -> f.getRoleValue().equals(roleString.toUpperCase())).findAny().orElse(null);
     }
 }

@@ -33,7 +33,7 @@ public class CommonService {
         model.addAttribute("menu", "menu/anonMenu");
         if (isLoggedIn(auth)) {
             for (UserRole userRole : UserRole.values()) {
-                if (auth.getAuthorities().stream().anyMatch(m -> m.toString().equals(userRole.toString()))) {
+                if (auth.getAuthorities().stream().anyMatch(m -> m.toString().equals(userRole.getRoleValue()))) {
                     model.addAttribute("menu", "menu/" + userRole.toString().toLowerCase() + "Menu");
                     break;
                 }

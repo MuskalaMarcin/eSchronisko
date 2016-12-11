@@ -40,7 +40,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
     private List<GrantedAuthority> buildUserAuthority(String... userRoles) {
         return Stream.of(userRoles).map(String::toUpperCase)
-                .filter(f -> Stream.of(UserRole.values()).anyMatch(v -> v.toString().equals(f)))
+                .filter(f -> Stream.of(UserRole.values()).anyMatch(v -> v.getRoleValue().equals(f)))
                 .map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
 }

@@ -1,5 +1,6 @@
 package com.eschronisko.config;
 
+import com.eschronisko.account.util.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -35,11 +36,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests().antMatchers("/", "/resources/**", "/account").permitAll()
-                .antMatchers("/admin/**").access("hasRole('ADMIN')")
-                .antMatchers("/vet/**").access("hasRole('VET')")
-                .antMatchers("/keeper/**").access("hasRole('KEEPER')")
-                .antMatchers("/client/**").access("hasRole('CLIENT')")
+                .authorizeRequests()
+                    .antMatchers("/register").anonymous()
+                    .antMatchers("/", "/resources/**").permitAll()
+                    .antMatchers("/logout", "/settings").fullyAuthenticated()
+                    .antMatchers("/admin/**", "/admin/**/**").hasRole(UserRole.ADMIN.toString())
+                    .antMatchers("/vet/**").hasRole(UserRole.VET.toString())
+                    .antMatchers("/keeper/**").hasRole(UserRole.KEEPER.toString())
+                    .antMatchers("/client/**").hasRole(UserRole.CLIENT.toString())
+                    .anyRequest().authenticated()
                 .and()
                 .csrf().disable().formLogin().loginPage("/login").permitAll().and()
                 .csrf().disable().logout().permitAll();

@@ -22,7 +22,7 @@ public class RegistrationController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getRegistrationForm(Model model) {
-        model.addAttribute("infoContent", "content/info/account");
+        model.addAttribute("infoContent", "content/info/register");
         model.addAttribute("title", "Zarejestruj się");
         return "infoTemplate";
     }
