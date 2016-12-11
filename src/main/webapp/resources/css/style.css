@@ -169,3 +169,7 @@ html, body {
     margin: 25px;
     text-align: center;
 }
+
+.buttonCell{
+    width: 50px;
+}

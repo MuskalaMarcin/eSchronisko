@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="'eSchronisko - '+${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../resources/css/style.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/style.css}"/>
+    <link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/infoStyle.css}"/>
+    <script src="../../resources/js/jquery-3.1.1.min.js" th:src="@{/resources/js/jquery-3.1.1.min.js}"></script>
+    <script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+    <script src="../../resources/js/script.js" th:src="@{/resources/js/script.js}"></script>
+</head>
+<body>
+<div class="container-fluid wrapper">
+    <div class="divTableRow" id="logo">
+        <div class="centerContent">
+            <div id="loginBar" class="clearfix" th:include="${loginBar} :: loginBar(${loginMsg})"></div>
+            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"
+                 th:src="@{/resources/images/logo/logoText.png}"/>
+        </div>
+    </div>
+    <div class="divTableRow" id="menuBar">
+        <div class="centerContent" th:include="menuBar/menuBar :: menuBar">></div>
+    </div>
+    <div class="divTableRow" id="content">
+        <div class="centerContent" id="centerContentText">
+            <div class="contentLeft">
+                <div class="leftContentContainer" th:include="menu/adminMenu :: menu"></div>
+            </div>
+            <div class="contentText">
+                <div class="mainContentContainer">
+                    <p class="formInfoText" th:if="${param.success}!=null">
+                        Zmiany zostały zapisane.
+                    </p>
+                    <p class="formWarningText" th:if="${param.error}!=null">
+                        Podczas zapisu wystąpił błąd!
+                    </p>
+                    <table class="table">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Login</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="user : ${usersList}">
+                            <td th:text="${user.getName()}"></td>
+                            <td th:text="${user.getSurname()}"></td>
+                            <td th:text="${user.getUsername()}"></td>
+                            <td class="buttonCell" th:if="${not user.getIsActive()}">
+                                <a th:href="'/admin/activateuser/'+${user.getUsername()}">
+                                    <button class="btn btn-success">Aktywuj</button>
+                                </a>
+                            </td>
+                            <td class="buttonCell" th:if="${user.getIsActive()}">
+                                <a th:href="'/admin/deactivateuser/'+${user.getUsername()}">
+                                    <button class="btn btn-warning">Dezaktywuj</button>
+                                </a>
+                            </td>
+                            <td class="buttonCell">
+                                <a th:href="'/admin/edituser/'+${user.getUsername()}">
+                                    <button class="btn btn-info">Edytuj</button>
+                                </a>
+                            </td>
+                            <td class="buttonCell">
+                                <a th:href="'/admin/deleteuser/'+${user.getUsername()}">
+                                    <button class="btn btn-danger">Usuń</button>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divTableRow" id="footerBar" th:include="footer/footer :: footer"></div>
+</div>
+</body>
+</html>
