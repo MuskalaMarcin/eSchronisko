@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="'eSchronisko - '+${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../resources/css/style.css" rel="stylesheet" media="screen"
+          th:href="@{/resources/css/style.css}"/>
+    <script src="../../resources/js/jquery-3.1.1.min.js" th:src="@{/resources/js/jquery-3.1.1.min.js}"></script>
+    <script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+    <script src="../../resources/js/script.js" th:src="@{/resources/js/script.js}"></script>
+</head>
+<body>
+<div class="container-fluid wrapper">
+    <div class="divTableRow" id="logo">
+        <div class="centerContent">
+            <div id="loginBar" class="clearfix" th:include="${loginBar} :: loginBar(${loginMsg})"></div>
+            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"
+                 th:src="@{/resources/images/logo/logoText.png}"/>
+        </div>
+    </div>
+    <div class="divTableRow" id="menuBar">
+        <div class="centerContent" th:include="menuBar/menuBar :: menuBar">></div>
+    </div>
+    <div class="divTableRow" id="content">
+        <div class="centerContent" id="centerContentText">
+            <div class="contentLeft">
+                <div class="leftContentContainer" th:include="${menu} :: menu"></div>
+            </div>
+            <div class="contentText">
+                <div class="mainContentContainer" th:utext="${content}"></div>
+            </div>
+        </div>
+    </div>
+    <div class="divTableRow" id="footerBar">
+        <div class="centerContent">
+            <span class="glyphicon glyphicon-menu-up" id="footerUp" onclick="scrollPageToTop()"></span>
+            <span class="text-right" id="footerAddressSpan">eSchronisko 2016<br>ul. Długa 123<br>31-141 Kraków</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -17,10 +17,10 @@ public class CommonController {
     @Autowired
     private CommonService commonService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
     public String getHomePage(Model model) {
-        getCommonModelAndView("content/common/home", "Strona główna", model);
-        return "mainTemplate";
+        getCommonModelAndView("<h1>test</h1>", "Strona główna", model);
+        return "staticSiteTemplate";
     }
 
     @RequestMapping(value = "/adoption", method = RequestMethod.GET)
@@ -59,9 +59,9 @@ public class CommonController {
         return "mainTemplate";
     }
 
-    private void getCommonModelAndView(String contentPath, String webPageTitle, Model model) {
+    private void getCommonModelAndView(String contentValue, String webPageTitle, Model model) {
         commonService.getTemplateFragments(model);
-        model.addAttribute("content", contentPath);
+        model.addAttribute("content", contentValue);
         model.addAttribute("title", webPageTitle);
     }
 }

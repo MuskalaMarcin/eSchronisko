@@ -38,15 +38,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                     .antMatchers("/register").anonymous()
-                    .antMatchers("/", "/resources/**").permitAll()
+                    .antMatchers("/", "/home", "/adoption", "/volunteer", "/tips", "/found", "/cooperation", "/contact", "/resources/**").permitAll()
                     .antMatchers("/logout", "/settings").fullyAuthenticated()
                     .antMatchers("/admin/**", "/admin/**/**").hasRole(UserRole.ADMIN.toString())
-                    .antMatchers("/vet/**").hasRole(UserRole.VET.toString())
-                    .antMatchers("/keeper/**").hasRole(UserRole.KEEPER.toString())
-                    .antMatchers("/client/**").hasRole(UserRole.CLIENT.toString())
+                    .antMatchers("/vet/**", "/vet/**/**").hasRole(UserRole.VET.toString())
+                    .antMatchers("/keeper/**", "/keeper/**/**").hasRole(UserRole.KEEPER.toString())
+                    .antMatchers("/client/**", "/client/**/**").hasRole(UserRole.CLIENT.toString())
                     .anyRequest().authenticated()
                 .and()
-                .csrf().disable().formLogin().loginPage("/login").permitAll().and()
+                .csrf().disable().formLogin().loginPage("/login").permitAll()
+                .and()
                 .csrf().disable().logout().permitAll();
     }
 
