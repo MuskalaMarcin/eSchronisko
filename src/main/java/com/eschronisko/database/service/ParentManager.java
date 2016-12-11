@@ -12,6 +12,8 @@ import java.util.List;
 public interface ParentManager<A extends ParentDTO, B extends ParentDAO, C extends Serializable> {
     void addEntity(A dto);
 
+    void updateEntity(A dto);
+
     List<A> getAllEntites();
 
     void deleteEntity(C id);

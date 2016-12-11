@@ -28,6 +28,11 @@ abstract class ParentDAOImpl<A extends ParentDTO, B extends Serializable> implem
     }
 
     @Override
+    public void updateEntity(A dto) {
+        this.sessionFactory.getCurrentSession().update(dto);
+    }
+
+    @Override
     public List<A> getAllEntites() {
         return this.sessionFactory.getCurrentSession().createQuery("from " + clazzName).list();
     }

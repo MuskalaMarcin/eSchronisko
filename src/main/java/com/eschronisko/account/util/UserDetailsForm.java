@@ -19,8 +19,6 @@ public class UserDetailsForm {
     @NotNull
     @Size(min = 1)
     private String eMail;
-    @NotNull
-    @Size(min = 1)
     private String userRole;
     @NotNull
     @Size(min = 1)

@@ -23,6 +23,12 @@ public abstract class ParentManagerImpl<A extends ParentDTO, B extends ParentDAO
 
     @Override
     @Transactional
+    public void updateEntity(A dto) {
+        dao.updateEntity(dto);
+    }
+
+    @Override
+    @Transactional
     public List<A> getAllEntites() {
         return dao.getAllEntites();
     }

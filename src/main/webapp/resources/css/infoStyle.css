@@ -1,5 +1,12 @@
-.formInfoText {
+.formWarningText {
     color: red;
+    margin: auto;
+    text-align: center;
+}
+
+.formInfoText {
+    text-align: center;
+    color: green;
     margin: auto;
 }
 

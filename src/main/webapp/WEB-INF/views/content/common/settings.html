@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
-<link href="../../resources/css/loginForm.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/infoStyle.css}"/>
-<form action="/register" method="post" id="verticalLoginForm">
+<form action="/settings" method="post" id="verticalLoginForm">
+    <input type="hidden" id="userRole" name="userRole" th:required="true" th:value="${savedData.userRole}">
     <div class="form-group">
         <label class="sr-only" for="username">Login</label>
-        <input type="text" class="form-control" id="username" name="username" placeholder="Login">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Login" th:required="true"
+               th:value="${savedData.username}">
         <label class="sr-only" for="password">Hasło</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło"
+               th:required="true">
         <label class="sr-only" for="passwordRepeat">Powtórz hasło</label>
         <input type="password" class="form-control" id="passwordRepeat" name="passwordRepeat"
-               placeholder="Powtórz hasło">
+               placeholder="Powtórz hasło" th:required="true">
     </div>
     <div class="form-group">
         <label class="sr-only" for="eMail">E-mail</label>
-        <input type="text" class="form-control" id="eMail" name="eMail" placeholder="E-mail">
+        <input type="email" class="form-control" id="eMail" name="eMail" placeholder="E-mail" th:required="true"
+               th:value="${savedData.eMail}">
     </div>
     <div class="form-group">
         <label class="sr-only" for="name">Imię</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Imię">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Imię" th:required="true"
+               th:value="${savedData.name}">
         <label class="sr-only" for="surname">Nazwisko</label>
-        <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko">
+        <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko" th:required="true"
+               th:value="${savedData.surname}">
         <label class="sr-only" for="address">Adres</label>
-        <input type="text" class="form-control" id="address" name="address" placeholder="Adres">
+        <input type="text" class="form-control" id="address" name="address" placeholder="Adres" th:required="true"
+               th:value="${savedData.address}">
     </div>
+    <p class="formInfoText" th:if="${param.saved}!=null">
+        Dane zostały zapisane.
+    </p>
+    <p class="formWarningText" th:if="${param.error}!=null">
+        Podczas zapisu wystąpił błąd.
+    </p>
     <button type="submit" class="btn btn-success">Zapisz</button>
 </form>
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
 </body>
 </html>

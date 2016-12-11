@@ -1,4 +1,4 @@
-package com.eschronisko.account.register;
+package com.eschronisko.account.account;
 
 import com.eschronisko.account.util.UserDetailsForm;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +18,11 @@ import javax.validation.Valid;
 @RequestMapping(value = "register")
 public class RegistrationController {
     @Autowired
-    private RegistrationService registrationService;
+    private AccountService accountService;
 
     @RequestMapping(method = RequestMethod.GET)
     public String getRegistrationForm(Model model) {
-        model.addAttribute("infoContent", "content/info/register");
+        model.addAttribute("infoContent", "content/info/account");
         model.addAttribute("title", "Zarejestruj się");
         return "infoTemplate";
     }
@@ -31,7 +31,7 @@ public class RegistrationController {
     public String saveRegistrationData(@ModelAttribute("registerForm") @Valid UserDetailsForm userDetailsForm,
                                        BindingResult result, Model model) {
         if (!result.hasErrors() && userDetailsForm.getPassword().equals(userDetailsForm.getPasswordRepeat())
-                && registrationService.register(userDetailsForm)) {
+                && accountService.register(userDetailsForm)) {
             model.addAttribute("infoContent", "content/info/registerSuccess");
             model.addAttribute("title", "Status rejestracji");
         } else {

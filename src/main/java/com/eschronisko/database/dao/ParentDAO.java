@@ -11,6 +11,8 @@ import java.util.List;
 public interface ParentDAO<A extends ParentDTO, B extends Serializable> {
     void addEntity(A dto);
 
+    void updateEntity(A dto);
+
     List<A> getAllEntites();
 
     A getWithId(B id);

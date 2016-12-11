@@ -2,10 +2,9 @@ package com.eschronisko.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Controller for common pages.
@@ -19,45 +18,50 @@ public class CommonController {
     private CommonService commonService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView getHomePage() {
-        return getCommonModelAndView("content/common/home", "Strona główna");
+    public String getHomePage(Model model) {
+        getCommonModelAndView("content/common/home", "Strona główna", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/adoption", method = RequestMethod.GET)
-    public ModelAndView getAdoption() {
-        return getCommonModelAndView("content/common/adoption", "Zaadoptuj");
+    public String getAdoption(Model model) {
+        getCommonModelAndView("content/common/adoption", "Zaadoptuj", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.GET)
-    public ModelAndView getVolunteer() {
-        return getCommonModelAndView("content/common/volunteer", "Porady");
+    public String getVolunteer(Model model) {
+        getCommonModelAndView("content/common/volunteer", "Porady", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/tips", method = RequestMethod.GET)
-    public ModelAndView getTips() {
-        return getCommonModelAndView("content/common/tips", "Porady");
+    public String getTips(Model model) {
+        getCommonModelAndView("content/common/tips", "Porady", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/found", method = RequestMethod.GET)
-    public ModelAndView getFound() {
-        return getCommonModelAndView("content/common/found", "Znalezione");
+    public String getFound(Model model) {
+        getCommonModelAndView("content/common/found", "Znalezione", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/cooperation", method = RequestMethod.GET)
-    public ModelAndView getCooperation() {
-        return getCommonModelAndView("content/common/cooperation", "Współpraca");
+    public String getCooperation(Model model) {
+        getCommonModelAndView("content/common/cooperation", "Współpraca", model);
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
-    public ModelAndView getContact() {
-        return getCommonModelAndView("content/common/contact", "Kontakt");
+    public String getContact(Model model) {
+        getCommonModelAndView("content/common/contact", "Kontakt", model);
+        return "mainTemplate";
     }
 
-    private ModelAndView getCommonModelAndView(String contentPath, String webPageTitle) {
-        ModelMap model = new ModelMap();
+    private void getCommonModelAndView(String contentPath, String webPageTitle, Model model) {
         commonService.getTemplateFragments(model);
-        model.put("content", contentPath);
-        model.put("title", webPageTitle);
-        return new ModelAndView("mainTemplate", model);
+        model.addAttribute("content", contentPath);
+        model.addAttribute("title", webPageTitle);
     }
 }
