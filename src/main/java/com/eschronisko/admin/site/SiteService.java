@@ -37,6 +37,7 @@ public class SiteService {
         model.addAttribute("viewName", viewName);
         model.addAttribute("siteContent", articleDTO.getContent());
         model.addAttribute("siteTitle", articleDTO.getTitle());
+        model.addAttribute("title", "Edytuj " + viewName);
     }
 
     public boolean saveChanges(String viewName, String siteContent, String siteTitle) {
