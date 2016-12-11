@@ -38,7 +38,10 @@
                     <p class="formWarningText" th:if="${param.error}!=null">
                         Podczas zapisu wystąpił błąd!
                     </p>
-                    <table class="table">
+                    <p class="formWarningText" th:if="${usersList.isEmpty()}">
+                        Brak użytkowników spełniających wybrane warunki.
+                    </p>
+                    <table th:if="${not usersList.isEmpty()}" class="table">
                         <thead class="thead-inverse">
                         <tr>
                             <th>Imię</th>
