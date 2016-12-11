@@ -1,16 +1,35 @@
 package com.eschronisko.account.util;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 /**
  * Created by Marcin on 10.12.2016.
  */
 public class UserDetailsForm {
+    @NotNull
+    @Size(min = 1)
     private String username;
+    @NotNull
+    @Size(min = 1)
     private String password;
+    @NotNull
+    @Size(min = 1)
     private String passwordRepeat;
+    @NotNull
+    @Size(min = 1)
     private String eMail;
+    @NotNull
+    @Size(min = 1)
     private String userRole;
+    @NotNull
+    @Size(min = 1)
     private String name;
+    @NotNull
+    @Size(min = 1)
     private String surname;
+    @NotNull
+    @Size(min = 1)
     private String address;
 
     public String getUsername() {

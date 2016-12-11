@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="infoContent">
-<link href="../../resources/css/loginForm.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/loginForm.css}"/>
 <form action="/register" method="post" id="verticalLoginForm">
     <div class="form-group">
         <label class="sr-only" for="username">Login</label>
-        <input type="text" class="form-control" id="username" name="username" placeholder="Login">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Login" th:required="true">
         <label class="sr-only" for="password">Hasło</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło"th:required="true">
         <label class="sr-only" for="passwordRepeat">Powtórz hasło</label>
         <input type="password" class="form-control" id="passwordRepeat" name="passwordRepeat"
-               placeholder="Powtórz hasło">
+               placeholder="Powtórz hasło" th:required="true">
     </div>
     <div class="form-group">
         <label class="sr-only" for="eMail">E-mail</label>
-        <input type="text" class="form-control" id="eMail" name="eMail" placeholder="E-mail">
+        <input type="email" class="form-control" id="eMail" name="eMail" placeholder="E-mail" th:required="true">
     </div>
     <div class="form-group">
         <label class="sr-only" for="name">Imię</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Imię">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Imię" th:required="true">
         <label class="sr-only" for="surname">Nazwisko</label>
-        <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko">
+        <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko" th:required="true">
         <label class="sr-only" for="address">Adres</label>
-        <input type="text" class="form-control" id="address" name="address" placeholder="Adres">
+        <input type="text" class="form-control" id="address" name="address" placeholder="Adres" th:required="true">
     </div>
     <div class="form-group">
-        <select class="form-control" id="userRole" name="userRole">
+        <select class="form-control" id="userRole" name="userRole" th:required="true">
             <option th:each="state : ${T(com.eschronisko.account.util.UserRole).values()}"
                     th:value="${state}" th:text="${state.getDisplayName()}">
             </option>
@@ -34,5 +32,8 @@
     </div>
     <button type="submit" class="btn btn-success">Zarejestruj się</button>
 </form>
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
 </body>
 </html>
