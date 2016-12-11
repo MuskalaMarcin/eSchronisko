@@ -81,7 +81,7 @@ public class AccountService {
             appUserDTO.setIsActive(0);
             appUserDTO.setLogin(userDetailsForm.getUsername());
             appUserDTO.setPassword(passwordEncoder.encode(userDetailsForm.getPassword()));
-            appUserDTO.setUserRole(userRole.toString());
+            appUserDTO.setUserRole(userRole.getRoleValue());
 
             switch (userRole) {
                 case ADMIN:

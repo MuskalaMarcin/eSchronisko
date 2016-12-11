@@ -8,10 +8,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by Marcin on 11.12.2016.
  */
 @Controller
+@RequestMapping(value = "admin/report")
 public class ReportController {
-    @RequestMapping(value = "admin/report/daily", method = RequestMethod.GET)
+    @RequestMapping(value = "/daily", method = RequestMethod.GET)
     public String getDailyReport() {
-        System.out.println("tutaj");
+
+        //TODO: add daily report
         return "Raport dzienny";
+    }
+
+    @RequestMapping(value = "/monthly", method = RequestMethod.GET)
+    public String getMonthlyReport() {
+
+        //TODO: add monthly report
+        return "Raport miesieczny";
+    }
+
+    @RequestMapping(value = "/yearly", method = RequestMethod.GET)
+    public String getYearlyReport() {
+
+        //TODO: add yearly report
+        return "Raport roczny";
     }
 }

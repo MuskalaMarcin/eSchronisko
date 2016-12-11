@@ -26,7 +26,7 @@
     <div class="form-group">
         <select class="form-control" id="userRole" name="userRole" th:required="true">
             <option th:each="state : ${T(com.eschronisko.account.util.UserRole).values()}"
-                    th:value="${state}" th:text="${state.getDisplayName()}">
+                    th:value="${state.getRoleValue()}" th:text="${state.getDisplayName()}">
             </option>
         </select>
     </div>
