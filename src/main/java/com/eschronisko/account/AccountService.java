@@ -190,4 +190,45 @@ public class AccountService {
             return false;
         }
     }
+
+    public boolean deleteUser(String login) {
+        try {
+            AppUserDTO user = appUserManager.getWithId(login);
+            UserRole role = UserRole.getUserRole(user.getUserRole());
+            int roleAccountId = -1;
+            switch (role) {
+                case ADMIN:
+                    roleAccountId = user.getAdministrator().getId();
+                    break;
+                case VET:
+                    roleAccountId = user.getVet().getId();
+                    break;
+                case KEEPER:
+                    roleAccountId = user.getAnimalKeeper().getId();
+                    break;
+                case CLIENT:
+                    roleAccountId = user.getClient().getId();
+                    break;
+            }
+            appUserManager.deleteEntity(login);
+            switch (role) {
+                case ADMIN:
+                    administratorManager.deleteEntity(roleAccountId);
+                    break;
+                case VET:
+                    vetManager.deleteEntity(roleAccountId);
+                    break;
+                case KEEPER:
+                    animalKeeperManager.deleteEntity(roleAccountId);
+                    break;
+                case CLIENT:
+                    clientManager.deleteEntity(roleAccountId);
+                    break;
+            }
+            return true;
+        } catch (HibernateException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }

@@ -46,7 +46,7 @@ abstract class ParentDAOImpl<A extends ParentDTO, B extends Serializable> implem
     public boolean deleteEntity(B id) {
         A dto = getWithId(id);
         if (null != dto) {
-            this.sessionFactory.getCurrentSession().delete(id);
+            this.sessionFactory.getCurrentSession().delete(dto);
             return true;
         } else {
             return false;

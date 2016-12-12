@@ -22,10 +22,7 @@
     <div class="divTableRow" id="content">
         <div class="centerContent" id="centerContentText">
             <div class="infoContent">
-                <div th:include="${infoContent} :: infoContent"></div>
-                <a href="/">
-                    <button class="btn btn-default returnButton">Powrót</button>
-                </a>
+                <div th:include="${confirmation} :: confirmation(${msg},${successLink})"></div>
             </div>
         </div>
     </div>
