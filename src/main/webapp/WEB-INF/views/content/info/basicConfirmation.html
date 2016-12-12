@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="confirmation(msg,successLink)">
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<p id="infoMessage" th:utext="${msg}"></p>
+<form th:action="${successLink}" method="post">
+    <button type="submit" class="btn btn-success returnButton">Potwierdź</button>
+</form>
+<a th:href="${returnLink}">
+    <button class="btn btn-default returnButton">Powrót</button>
+</a>
+</body>
+</html>

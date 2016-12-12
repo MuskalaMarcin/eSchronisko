@@ -59,4 +59,9 @@ public class CommonController {
         siteService.getSiteWithModelAndView("contact", model);
         return "staticSiteTemplate";
     }
+
+    @RequestMapping(value = "/404", method = RequestMethod.GET)
+    public String show404() {
+        return "404";
+    }
 }

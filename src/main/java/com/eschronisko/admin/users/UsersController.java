@@ -39,6 +39,14 @@ public class UsersController {
         return "admin/manageuser/userDisplayTemplate";
     }
 
+    @RequestMapping(value = "all", method = RequestMethod.GET)
+    public String getAllUsers(Model model) {
+        model.addAttribute("title", "Użytkownicy");
+        model.addAttribute("usersList", usersService.getAllUsersDetails());
+        commonService.getLoginBar(model);
+        return "admin/manageuser/userDisplayTemplate";
+    }
+
     @RequestMapping(value = "search", method = RequestMethod.POST)
     @ResponseBody
     public List<UserDetailsForm> getSuggestions(@RequestParam String prefix) {
