@@ -52,4 +52,9 @@ public class UsersController {
     public List<UserDetailsForm> getSuggestions(@RequestParam String prefix) {
         return usersService.getUsersStartingWith(prefix);
     }
+
+    @RequestMapping(value = "search", method = RequestMethod.GET)
+    public String getSearchUsers(@RequestParam String prefix) {
+        return "";
+    }
 }

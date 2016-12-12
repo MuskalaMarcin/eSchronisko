@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.Arrays;
+
 /**
  * @author Marcin Muskala
  * @since 12.12.2016
@@ -101,5 +103,14 @@ public class UserManagerController {
         } else {
             return "redirect:/admin/users/all?error";
         }
+    }
+
+    @RequestMapping(value = "/admin/showUser/{login}", method = RequestMethod.POST)
+    public String showUser(@PathVariable String login, Model model) {
+        usersService.checkUser(login);
+        model.addAttribute("title", "Użytkownik " + login);
+        model.addAttribute("usersList", Arrays.asList(usersService.getUserData(login)));
+        commonService.getLoginBar(model);
+        return "admin/manageuser/userDisplayTemplate";
     }
 }
