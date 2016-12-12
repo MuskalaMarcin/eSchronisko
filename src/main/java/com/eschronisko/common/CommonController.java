@@ -64,4 +64,9 @@ public class CommonController {
     public String show404() {
         return "404";
     }
+
+    @RequestMapping(value = "/403", method = RequestMethod.GET)
+    public String show403() {
+        return "403";
+    }
 }
