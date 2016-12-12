@@ -39,9 +39,9 @@ public class UserManagerController {
     public String activateUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.activateUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -61,9 +61,9 @@ public class UserManagerController {
     public String deactivateUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.deactivateUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -83,9 +83,9 @@ public class UserManagerController {
     public String deleteUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.deleteUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -103,9 +103,9 @@ public class UserManagerController {
     public String editUser(@ModelAttribute UserDetailsForm userDetailsForm) {
         usersService.checkUser(userDetailsForm.getUsername());
         if (usersService.editUser(userDetailsForm)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + userDetailsForm.getUsername() + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + userDetailsForm.getUsername() + "?error";
         }
     }
 

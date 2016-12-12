@@ -212,3 +212,9 @@ html, body {
 #searchPrefix{
     width: 300px;
 }
+
+#suggestionsDiv {
+    text-align: center;
+    margin: 10px auto auto auto;
+    width: 60%;
+}

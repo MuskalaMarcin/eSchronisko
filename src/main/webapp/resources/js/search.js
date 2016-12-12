@@ -3,29 +3,45 @@
  */
 $(document).ready(function () {
     var searchInput = $("#searchPrefix");
+    var table = $(".responseTable");
 
     searchInput.keyup(function () {
         var suggestionsDiv = $("#suggestionsDiv");
+        var responseBody = $("#responseBody");
 
         if ($(this).val()) {
             $.post('http://localhost:8080/admin/users/search', {prefix: searchInput.val()}, function (returnedData) {
                 suggestionsDiv.empty();
+                responseBody.empty();
+                table.hide();
                 if (returnedData.length > 0) {
                     $.each(returnedData, function (k, v) {
-                        var list = $("<ul/>").attr("id", "suggestionsList").appendTo(suggestionsDiv);
-                        var listEl = "<table class='min-table'><tr><td class='min-cell'>" + v.name + "</td><td class='min-cell'>" + v.surname + "</td><td class='min-cell'>" + v.username + "</td></tr></table>";
-                        $("<li/>").attr("class", "suggestion").append(listEl).click(function () {
-                            window.location.href = 'http://localhost:8080/admin/showuser/' + v.username;
-                        }).appendTo(list);
+                        var activateButton;
+                        if (v.isActive) {
+                            activateButton = "<td class=\"buttonCell\"><a href=\"/admin/deactivateuser/" + v.username + "\"><button class=\"btn btn-warning\">Dezaktywuj</button></a></td>"
+                        } else {
+                            activateButton = "<td class=\"buttonCell\"><a href=\"/admin/activateuser/" + v.username + "\"><button class=\"btn btn-success\">Aktywuj</button></a></td>"
+                        }
+                        var resultRow = "<tr><td>" + v.name + "</td><td>" + v.surname + "</td><td>" + v.username + "</td>"
+                            + activateButton + "<td class=\"buttonCell\"><a href=\"/admin/edituser/" + v.username + "\">"
+                            + "<a href=\"/admin/edituser/" + v.username + "\"><button class = \"btn btn-info\">Edytuj</button>"
+                            + "</a></td><td class=\"buttonCell\"><a href=\"/admin/deleteuser/" + v.username + "\">"
+                            + "<button class=\"btn btn-danger\">Usuń</button></a></td></tr>";
+                        responseBody.append(resultRow);
+                        table.show();
                     })
                 }
                 else {
-                    suggestionsDiv.append("Brak sugestii.");
+                    suggestionsDiv.append("Brak wyników.");
+                    responseBody.empty();
+                    table.hide();
                 }
             });
         }
-        else{
+        else {
+            responseBody.empty();
             suggestionsDiv.empty();
+            table.hide();
         }
     });
 });
