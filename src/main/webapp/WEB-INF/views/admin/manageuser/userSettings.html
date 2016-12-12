@@ -1,80 +1,45 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="'eSchronisko - '+${title}"></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
-          th:href="@{/resources/css/bootstrap.min.css}"/>
-    <link href="../../resources/css/style.css" rel="stylesheet" media="screen"
-          th:href="@{/resources/css/style.css}"/>
-    <script src="../../resources/js/jquery-3.1.1.min.js" th:src="@{/resources/js/jquery-3.1.1.min.js}"></script>
-    <script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
-    <script src="../../resources/js/script.js" th:src="@{/resources/js/script.js}"></script>
-    <link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
-          th:href="@{/resources/css/infoStyle.css}"/>
-    <script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
-</head>
-<body>
-<div class="container-fluid wrapper">
-    <div class="divTableRow" id="logo">
-        <div class="centerContent">
-            <div id="loginBar" class="clearfix" th:include="${loginBar} :: loginBar(${loginMsg})"></div>
-            <img id="logoTextImage" src="../../resources/images/logo/logoText.png"
-                 th:src="@{/resources/images/logo/logoText.png}"/>
+<body th:fragment="content">
+<div class="mainContentContainer">
+    <form action="/admin/edituser" method="post" id="verticalLoginForm">
+        <input type="hidden" id="userRole" name="userRole" th:required="true"
+               th:value="${savedData.userRole}">
+        <div class="form-group">
+            <label class="sr-only" for="username">Login</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Login"
+                   th:required="true"
+                   th:value="${savedData.username}" readonly>
+            <label class="sr-only" for="password">Hasło</label>
+            <input type="password" class="form-control" id="password" name="password"
+                   placeholder="Hasło">
+            <label class="sr-only" for="passwordRepeat">Powtórz hasło</label>
+            <input type="password" class="form-control" id="passwordRepeat" name="passwordRepeat"
+                   placeholder="Powtórz hasło">
         </div>
-    </div>
-    <div class="divTableRow" id="menuBar">
-        <div class="centerContent" th:include="menuBar/menuBar :: menuBar">></div>
-    </div>
-    <div class="divTableRow" id="content">
-        <div class="centerContent" id="centerContentText">
-            <div class="contentLeft">
-                <div class="leftContentContainer" th:include="menu/adminMenu :: menu"></div>
-            </div>
-            <div class="contentText">
-                <div class="mainContentContainer">
-                    <form action="/admin/edituser" method="post" id="verticalLoginForm">
-                        <input type="hidden" id="userRole" name="userRole" th:required="true"
-                               th:value="${savedData.userRole}">
-                        <div class="form-group">
-                            <label class="sr-only" for="username">Login</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Login"
-                                   th:required="true"
-                                   th:value="${savedData.username}" readonly>
-                            <label class="sr-only" for="password">Hasło</label>
-                            <input type="password" class="form-control" id="password" name="password"
-                                   placeholder="Hasło">
-                            <label class="sr-only" for="passwordRepeat">Powtórz hasło</label>
-                            <input type="password" class="form-control" id="passwordRepeat" name="passwordRepeat"
-                                   placeholder="Powtórz hasło">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="eMail">E-mail</label>
-                            <input type="email" class="form-control" id="eMail" name="eMail" placeholder="E-mail"
-                                   th:required="true"
-                                   th:value="${savedData.eMail}">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="name">Imię</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Imię"
-                                   th:required="true"
-                                   th:value="${savedData.name}">
-                            <label class="sr-only" for="surname">Nazwisko</label>
-                            <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko"
-                                   th:required="true"
-                                   th:value="${savedData.surname}">
-                            <label class="sr-only" for="address">Adres</label>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Adres"
-                                   th:required="true"
-                                   th:value="${savedData.address}">
-                        </div>
-                        <button type="submit" class="btn btn-success">Zapisz</button>
-                    </form>
-                </div>
-            </div>
+        <div class="form-group">
+            <label class="sr-only" for="eMail">E-mail</label>
+            <input type="email" class="form-control" id="eMail" name="eMail" placeholder="E-mail"
+                   th:required="true"
+                   th:value="${savedData.eMail}">
         </div>
-    </div>
-    <div class="divTableRow" id="footerBar" th:include="footer/footer :: footer"></div>
+        <div class="form-group">
+            <label class="sr-only" for="name">Imię</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Imię"
+                   th:required="true"
+                   th:value="${savedData.name}">
+            <label class="sr-only" for="surname">Nazwisko</label>
+            <input type="text" class="form-control" id="surname" name="surname" placeholder="Nazwisko"
+                   th:required="true"
+                   th:value="${savedData.surname}">
+            <label class="sr-only" for="address">Adres</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Adres"
+                   th:required="true"
+                   th:value="${savedData.address}">
+        </div>
+        <button type="submit" class="btn btn-success">Zapisz</button>
+    </form>
 </div>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
 </body>
 </html>

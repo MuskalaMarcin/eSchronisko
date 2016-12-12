@@ -1,6 +1,5 @@
 package com.eschronisko.database.dao;
 
-import com.eschronisko.database.dto.AppUserDTO;
 import com.eschronisko.database.dto.ArticleDTO;
 
 /**

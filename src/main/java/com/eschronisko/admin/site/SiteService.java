@@ -27,13 +27,15 @@ public class SiteService {
     public void getSiteWithModelAndView(String viewName, Model model) {
         ArticleDTO articleDTO = articleManager.getWithId(viewName);
         commonService.getTemplateFragments(model);
-        model.addAttribute("content", articleDTO.getContent());
+        model.addAttribute("content", "content/common/staticSite");
+        model.addAttribute("siteContent", articleDTO.getContent());
         model.addAttribute("title", articleDTO.getTitle());
     }
 
     public void getSiteForEditing(String viewName, Model model) {
         ArticleDTO articleDTO = articleManager.getWithId(viewName);
-        commonService.getLoginBar(model);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/editSite");
         model.addAttribute("viewName", viewName);
         model.addAttribute("siteContent", articleDTO.getContent());
         model.addAttribute("siteTitle", articleDTO.getTitle());
