@@ -69,13 +69,34 @@ public class MedicalCareController {
 
     @RequestMapping(method = RequestMethod.POST, value = "saveMedicalTreatment")
     public String saveMedicalTreatment(@ModelAttribute(value="medicalTreatment") @Valid MedicalTreatmentDTO medicalTreatment,
-                                  @RequestParam("medicalCardId") int medicalCardId, BindingResult result, Model model) {
+                                  @RequestParam("medicalCardId") int medicalCardId,
+                                       @RequestParam("endDateString") String endDateString,
+                                       BindingResult result, Model model) {
         medicalTreatment.setMedicalCard(medicalCardManager.getWithId(medicalCardId));
         medicalTreatment.setStartDate(new Timestamp(System.currentTimeMillis()));
+        medicalTreatment.setEndDate(Timestamp.valueOf(endDateString.replace("T", " ") + ":00"));
         medicalTreatmentManager.addEntity(medicalTreatment);
         model.addAttribute("infoContent", "content/info/insertSuccess");
         model.addAttribute("title", "Status dodania obiektu");
         return "infoTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "medicalCards")
+    public String getMedicalCardsList(Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "vet/medicalCardsList");
+        model.addAttribute("title", "Karty medyczne");
+        model.addAttribute("medicalCards", medicalCardManager.getAllEntites());
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "medicalTreatments")
+    public String getMmedicalTreatmentsList(Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "vet/medicalTreatmentsList");
+        model.addAttribute("title", "Planowane zabiegi");
+        model.addAttribute("medicalTreatments", medicalTreatmentManager.getAllEntites());
+        return "mainTemplate";
     }
 
 }

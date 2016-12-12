@@ -83,4 +83,22 @@ public class FoodRationsController {
         return "infoTemplate";
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "warehousesState")
+    public String getWarehousesState(Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "keeper/warehousestate");
+        model.addAttribute("title", "Stan magazynów");
+        model.addAttribute("warehouses", warehouseManager.getAllEntites());
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "foodRationsGranted")
+    public String getFoodRationsGranted(Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "keeper/foodRationsGranted");
+        model.addAttribute("title", "Przyznane racje żywnościowe");
+        model.addAttribute("foodRations", foodRationsManager.getAllEntites());
+        return "mainTemplate";
+    }
+
 }

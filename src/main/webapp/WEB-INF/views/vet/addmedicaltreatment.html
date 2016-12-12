@@ -19,6 +19,7 @@
                         th:text="${medicalCard.animal.name}">
                 </option>
             </select>
+            <input type="datetime-local" class="form-control" id="endDateString" name="endDateString" placeholder="Termin zabiegu" th:required="true">
         </div>
         <button type="submit" class="btn btn-success">Zapisz</button>
     </form>

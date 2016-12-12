@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(medicalTreatments)}">
+    <div>Brak zaplanowanych zabiegów w bazie.</div>
+</div>
+<div th:if="${not #lists.isEmpty(medicalTreatments)}">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Imię zwierzęcia</th>
+            <th>Nazwa zabiegu</th>
+            <th>Opis zabiegu</th>
+            <th>Priorytet zabiegu</th>
+            <th>Data decyzji o zabiegu</th>
+            <th>Planowana data zabiegu</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="medicalTreatment: ${medicalTreatments}">
+            <td th:text="${medicalTreatment.medicalCard.animal.name}"></td>
+            <td th:text="${medicalTreatment.name}"></td>
+            <td th:text="${medicalTreatment.description}"></td>
+            <td>
+                <div th:switch="${medicalTreatment.importance}">
+                    <p th:case="'1'">Priorytetowy</p>
+                    <p th:case="'0'">Zwykły</p>
+                </div>
+            </td>
+            <td th:text="${medicalTreatment.startDate}"></td>
+            <td th:text="${medicalTreatment.endDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/bootstrap.min.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
+<script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</body>
+</html>
