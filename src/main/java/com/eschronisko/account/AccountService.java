@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 /**
  * Created by Marcin on 10.12.2016.
@@ -140,13 +141,18 @@ public class AccountService {
     }
 
     public boolean updateSettings(UserDetailsForm userDetailsForm, Authentication auth) {
-        UserRole userRole = UserRole.getUserRole(userDetailsForm.getUserRole());
+        AppUserDTO appUserDTO = commonService.getLoggedUser(auth);
+        return updateUser(appUserDTO, userDetailsForm);
+    }
 
+    public boolean updateUser(AppUserDTO appUserDTO, UserDetailsForm userDetailsForm) {
         try {
-            AppUserDTO appUserDTO = commonService.getLoggedUser(auth);
+            UserRole userRole = UserRole.getUserRole(userDetailsForm.getUserRole());
             appUserDTO.seteMail(userDetailsForm.geteMail());
             appUserDTO.setLogin(userDetailsForm.getUsername());
-            appUserDTO.setPassword(passwordEncoder.encode(userDetailsForm.getPassword()));
+            if (!StringUtils.isEmpty(userDetailsForm.getPassword())) {
+                appUserDTO.setPassword(passwordEncoder.encode(userDetailsForm.getPassword()));
+            }
 
             switch (userRole) {
                 case ADMIN:
