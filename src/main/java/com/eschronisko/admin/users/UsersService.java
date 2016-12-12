@@ -2,10 +2,7 @@ package com.eschronisko.admin.users;
 
 import com.eschronisko.account.AccountService;
 import com.eschronisko.account.util.UserDetailsForm;
-import com.eschronisko.account.util.UserRole;
-import com.eschronisko.database.dto.AdministratorDTO;
 import com.eschronisko.database.dto.AppUserDTO;
-import com.eschronisko.database.dto.ParentDTO;
 import com.eschronisko.database.service.AppUserManager;
 import com.eschronisko.exception.ResourceNotFoundException;
 import org.hibernate.HibernateException;
@@ -91,5 +88,15 @@ public class UsersService {
 
     public void checkUser(String login) {
         if (appUserManager.getWithId(login) == null) throw new ResourceNotFoundException();
+    }
+
+    public UserDetailsForm getUserData(String login) {
+        AppUserDTO user = appUserManager.getWithId(login);
+        return accountService.getUserDetails(user);
+    }
+
+    public boolean editUser(UserDetailsForm userDetailsForm) {
+        AppUserDTO user = appUserManager.getWithId(userDetailsForm.getUsername());
+        return accountService.updateUser(user, userDetailsForm);
     }
 }

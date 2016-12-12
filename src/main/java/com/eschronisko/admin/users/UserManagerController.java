@@ -1,11 +1,16 @@
 package com.eschronisko.admin.users;
 
+import com.eschronisko.account.util.UserDetailsForm;
+import com.eschronisko.common.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.Arrays;
 
 /**
  * @author Marcin Muskala
@@ -15,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UserManagerController {
     @Autowired
     private UsersService usersService;
+    @Autowired
+    private CommonService commonService;
 
     @RequestMapping(value = "/admin/activateuser/{login}", method = RequestMethod.GET)
     public String activateUserConfirmation(@PathVariable String login, Model model) {
@@ -80,7 +87,30 @@ public class UserManagerController {
     }
 
     @RequestMapping(value = "/admin/edituser/{login}", method = RequestMethod.GET)
-    public String editUser(@PathVariable String login, Model model) {
-        return null;
+    public String editUserView(@PathVariable String login, Model model) {
+        usersService.checkUser(login);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("title", "Edytuj użytkownika " + login);
+        model.addAttribute("savedData", usersService.getUserData(login));
+        return "admin/manageuser/userSettings";
+    }
+
+    @RequestMapping(value = "/admin/edituser", method = RequestMethod.POST)
+    public String editUser(@ModelAttribute UserDetailsForm userDetailsForm) {
+        usersService.checkUser(userDetailsForm.getUsername());
+        if (usersService.editUser(userDetailsForm)) {
+            return "redirect:/admin/users/all?success";
+        } else {
+            return "redirect:/admin/users/all?error";
+        }
+    }
+
+    @RequestMapping(value = "/admin/showUser/{login}", method = RequestMethod.POST)
+    public String showUser(@PathVariable String login, Model model) {
+        usersService.checkUser(login);
+        model.addAttribute("title", "Użytkownik " + login);
+        model.addAttribute("usersList", Arrays.asList(usersService.getUserData(login)));
+        commonService.getLoginBar(model);
+        return "admin/manageuser/userDisplayTemplate";
     }
 }
