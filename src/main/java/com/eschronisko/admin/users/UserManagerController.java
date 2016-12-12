@@ -109,7 +109,7 @@ public class UserManagerController {
         }
     }
 
-    @RequestMapping(value = "/admin/showUser/{login}", method = RequestMethod.POST)
+    @RequestMapping(value = "/admin/showuser/{login}", method = RequestMethod.GET)
     public String showUser(@PathVariable String login, Model model) {
         usersService.checkUser(login);
         model.addAttribute("title", "Użytkownik " + login);

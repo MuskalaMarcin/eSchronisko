@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div class="search-group">
+    <div class="form-inline">
+        <div class="form-group">
+            <label for="searchPrefix">Szukaj:</label>
+            <input type="text" class="form-control" id="searchPrefix" name="searchPrefix">
+        </div>
+    </div>
+    <div id="suggestionsDiv"></div>
+</div>
+<link href="../../resources/css/search.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/search.css}"/>
+<script src="../../resources/js/search.js" th:src="@{/resources/js/search.js}"></script>
+</body>
+</html>

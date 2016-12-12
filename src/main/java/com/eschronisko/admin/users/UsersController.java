@@ -53,11 +53,15 @@ public class UsersController {
     @RequestMapping(value = "search", method = RequestMethod.POST)
     @ResponseBody
     public List<UserDetailsForm> getSuggestions(@RequestParam String prefix) {
+        System.out.println(prefix);
         return usersService.getUsersStartingWith(prefix);
     }
 
     @RequestMapping(value = "search", method = RequestMethod.GET)
-    public String getSearchUsers(@RequestParam String prefix) {
-        return "";
+    public String getSearchUsers(Model model) {
+        model.addAttribute("title", "Wyszukaj użytkownika");
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/searchUser");
+        return "mainTemplate";
     }
 }

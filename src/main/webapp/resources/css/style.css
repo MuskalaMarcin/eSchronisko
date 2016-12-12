@@ -127,9 +127,6 @@ html, body {
     font-size: 14px;
 }
 
-.leftMenuContent {
-}
-
 #animalsCarouselList {
     display: none;
 }
@@ -205,4 +202,13 @@ html, body {
 #submitButton{
     margin-top: 10px;
     width: 100%;
+}
+
+.search-group{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchPrefix{
+    width: 300px;
 }
