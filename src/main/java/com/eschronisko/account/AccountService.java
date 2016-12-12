@@ -31,9 +31,7 @@ public class AccountService {
     @Autowired
     private CommonService commonService;
 
-
-    public UserDetailsForm getCurrentValues(Authentication auth) {
-        AppUserDTO appUserDTO = commonService.getLoggedUser(auth);
+    public UserDetailsForm getUserDetails(AppUserDTO appUserDTO) {
         UserDetailsForm user = new UserDetailsForm();
 
         user.setUserRole(appUserDTO.getUserRole());
@@ -41,6 +39,7 @@ public class AccountService {
         user.setPassword("");
         user.setPasswordRepeat("");
         user.setUsername(appUserDTO.getLogin());
+        user.setIsActive(appUserDTO.getIsActive() == 1);
 
         switch (UserRole.getUserRole(appUserDTO.getUserRole())) {
             case VET:
@@ -70,6 +69,12 @@ public class AccountService {
         }
 
         return user;
+    }
+
+
+    public UserDetailsForm getCurrentValues(Authentication auth) {
+        AppUserDTO appUserDTO = commonService.getLoggedUser(auth);
+        return getUserDetails(appUserDTO);
     }
 
     public boolean register(UserDetailsForm userDetailsForm) {

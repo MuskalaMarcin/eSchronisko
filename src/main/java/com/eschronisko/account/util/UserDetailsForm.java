@@ -19,6 +19,7 @@ public class UserDetailsForm {
     @NotNull
     @Size(min = 1)
     private String eMail;
+    private boolean isActive;
     private String userRole;
     @NotNull
     @Size(min = 1)
@@ -29,6 +30,14 @@ public class UserDetailsForm {
     @NotNull
     @Size(min = 1)
     private String address;
+
+    public boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(boolean isActive) {
+        this.isActive = isActive;
+    }
 
     public String getUsername() {
         return username;
