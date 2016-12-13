@@ -6,7 +6,8 @@
         <label class="sr-only" for="username">Login</label>
         <input type="text" class="form-control" id="username" name="username" placeholder="Login" th:required="true">
         <label class="sr-only" for="password">Hasło</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło"th:required="true">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Hasło"
+               th:required="true">
         <label class="sr-only" for="passwordRepeat">Powtórz hasło</label>
         <input type="password" class="form-control" id="passwordRepeat" name="passwordRepeat"
                placeholder="Powtórz hasło" th:required="true">
@@ -32,8 +33,6 @@
     </div>
     <button type="submit" class="btn btn-success">Zarejestruj się</button>
 </form>
-<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/infoStyle.css}"/>
 <script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
 </body>
 </html>

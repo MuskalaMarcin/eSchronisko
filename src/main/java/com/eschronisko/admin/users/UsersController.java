@@ -27,34 +27,41 @@ public class UsersController {
     public String getActiveUsers(Model model) {
         model.addAttribute("title", "Aktywni użytkownicy");
         model.addAttribute("usersList", usersService.getActiveUsersDetails());
-        commonService.getLoginBar(model);
-        return "admin/manageuser/userDisplayTemplate";
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/userDisplay");
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "notactive", method = RequestMethod.GET)
     public String getNotActiveUsers(Model model) {
         model.addAttribute("title", "Nieaktywni użytkownicy");
         model.addAttribute("usersList", usersService.getNotActiveUsersDetails());
-        commonService.getLoginBar(model);
-        return "admin/manageuser/userDisplayTemplate";
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/userDisplay");
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "all", method = RequestMethod.GET)
     public String getAllUsers(Model model) {
         model.addAttribute("title", "Użytkownicy");
         model.addAttribute("usersList", usersService.getAllUsersDetails());
-        commonService.getLoginBar(model);
-        return "admin/manageuser/userDisplayTemplate";
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/userDisplay");
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "search", method = RequestMethod.POST)
     @ResponseBody
     public List<UserDetailsForm> getSuggestions(@RequestParam String prefix) {
+        System.out.println(prefix);
         return usersService.getUsersStartingWith(prefix);
     }
 
     @RequestMapping(value = "search", method = RequestMethod.GET)
-    public String getSearchUsers(@RequestParam String prefix) {
-        return "";
+    public String getSearchUsers(Model model) {
+        model.addAttribute("title", "Wyszukaj użytkownika");
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/searchUser");
+        return "mainTemplate";
     }
 }

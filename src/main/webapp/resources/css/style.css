@@ -127,9 +127,6 @@ html, body {
     font-size: 14px;
 }
 
-.leftMenuContent {
-}
-
 #animalsCarouselList {
     display: none;
 }
@@ -178,4 +175,46 @@ html, body {
     margin-top: 40px;
     color: red;
     font-weight: bolder;
+}
+
+.formWarningText {
+    color: red;
+    margin: auto;
+    text-align: center;
+}
+
+.formInfoText {
+    text-align: center;
+    color: green;
+    margin: auto;
+}
+
+#verticalLoginForm, #verticalLoginForm > div > button , #verticalLoginForm > button{
+    margin: 10px auto auto auto;
+    width: 300px;
+}
+
+#registerButton {
+    width: 300px;
+    margin-top: -10px;
+}
+
+#submitButton{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.search-group{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchPrefix{
+    width: 300px;
+}
+
+#suggestionsDiv {
+    text-align: center;
+    margin: 10px auto auto auto;
+    width: 60%;
 }

@@ -22,7 +22,7 @@ public class SiteController {
     public String showEditWindow(@PathVariable String viewName, Model model) {
         if (siteService.validateViewName(viewName)) {
             siteService.getSiteForEditing(viewName, model);
-            return "admin/editSiteTemplate";
+            return "mainTemplate";
         } else {
             throw new ResourceNotFoundException();
         }

@@ -28,19 +28,20 @@ public class UserManagerController {
         usersService.checkUser(login);
         model.addAttribute("msg", "Czy napewno chcesz aktywować konto użytkownika " + login);
         model.addAttribute("title", "Potwierdzenie aktywacji");
+        model.addAttribute("infoContent", "content/info/basicConfirmation");
         model.addAttribute("successLink", "/admin/activateuser/" + login);
         model.addAttribute("confirmation", "content/info/basicConfirmation");
         model.addAttribute("returnLink", "/admin/users/all");
-        return "confirmationTemplate";
+        return "infoTemplate";
     }
 
     @RequestMapping(value = "/admin/activateuser/{login}", method = RequestMethod.POST)
     public String activateUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.activateUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -49,19 +50,20 @@ public class UserManagerController {
         usersService.checkUser(login);
         model.addAttribute("msg", "Czy napewno chcesz dezaktywować konto użytkownika " + login);
         model.addAttribute("title", "Potwierdzenie dezaktywacji");
+        model.addAttribute("infoContent", "content/info/basicConfirmation");
         model.addAttribute("successLink", "/admin/deactivateuser/" + login);
         model.addAttribute("confirmation", "content/info/basicConfirmation");
         model.addAttribute("returnLink", "/admin/users/all");
-        return "confirmationTemplate";
+        return "infoTemplate";
     }
 
     @RequestMapping(value = "/admin/deactivateuser/{login}", method = RequestMethod.POST)
     public String deactivateUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.deactivateUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -71,18 +73,19 @@ public class UserManagerController {
         model.addAttribute("msg", "Czy napewno chcesz usunąć konto użytkownika " + login);
         model.addAttribute("title", "Potwierdzenie usunięcia");
         model.addAttribute("successLink", login);
+        model.addAttribute("infoContent", "content/info/basicConfirmation");
         model.addAttribute("confirmation", "content/info/basicConfirmation");
         model.addAttribute("returnLink", "/admin/users/all");
-        return "confirmationTemplate";
+        return "infoTemplate";
     }
 
     @RequestMapping(value = "/admin/deleteuser/{login}", method = RequestMethod.POST)
     public String deleteUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.deleteUser(login)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + login + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + login + "?error";
         }
     }
 
@@ -90,27 +93,29 @@ public class UserManagerController {
     public String editUserView(@PathVariable String login, Model model) {
         usersService.checkUser(login);
         commonService.getTemplateFragments(model);
+        model.addAttribute("content", "admin/manageuser/userSettings");
         model.addAttribute("title", "Edytuj użytkownika " + login);
         model.addAttribute("savedData", usersService.getUserData(login));
-        return "admin/manageuser/userSettings";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/admin/edituser", method = RequestMethod.POST)
     public String editUser(@ModelAttribute UserDetailsForm userDetailsForm) {
         usersService.checkUser(userDetailsForm.getUsername());
         if (usersService.editUser(userDetailsForm)) {
-            return "redirect:/admin/users/all?success";
+            return "redirect:/admin/showuser/" + userDetailsForm.getUsername() + "?success";
         } else {
-            return "redirect:/admin/users/all?error";
+            return "redirect:/admin/showuser/" + userDetailsForm.getUsername() + "?error";
         }
     }
 
-    @RequestMapping(value = "/admin/showUser/{login}", method = RequestMethod.POST)
+    @RequestMapping(value = "/admin/showuser/{login}", method = RequestMethod.GET)
     public String showUser(@PathVariable String login, Model model) {
         usersService.checkUser(login);
         model.addAttribute("title", "Użytkownik " + login);
+        model.addAttribute("content", "admin/manageuser/userDisplay");
         model.addAttribute("usersList", Arrays.asList(usersService.getUserData(login)));
-        commonService.getLoginBar(model);
-        return "admin/manageuser/userDisplayTemplate";
+        commonService.getTemplateFragments(model);
+        return "mainTemplate";
     }
 }

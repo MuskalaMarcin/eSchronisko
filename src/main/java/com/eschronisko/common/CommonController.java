@@ -21,43 +21,43 @@ public class CommonController {
     @RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
     public String getHomePage(Model model) {
         siteService.getSiteWithModelAndView("home", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/adoption", method = RequestMethod.GET)
     public String getAdoption(Model model) {
         siteService.getSiteWithModelAndView("adoption", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/volunteer", method = RequestMethod.GET)
     public String getVolunteer(Model model) {
         siteService.getSiteWithModelAndView("volunteer", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/tips", method = RequestMethod.GET)
     public String getTips(Model model) {
         siteService.getSiteWithModelAndView("tips", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/found", method = RequestMethod.GET)
     public String getFound(Model model) {
         siteService.getSiteWithModelAndView("found", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/cooperation", method = RequestMethod.GET)
     public String getCooperation(Model model) {
         siteService.getSiteWithModelAndView("cooperation", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public String getContact(Model model) {
         siteService.getSiteWithModelAndView("contact", model);
-        return "staticSiteTemplate";
+        return "mainTemplate";
     }
 
     @RequestMapping(value = "/404", method = RequestMethod.GET)

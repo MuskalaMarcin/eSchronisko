@@ -23,7 +23,7 @@
         <div class="centerContent" id="centerContentText">
             <div class="infoContent">
                 <div th:include="${infoContent} :: infoContent"></div>
-                <a href="/">
+                <a th:href="${returnLink}?:'/'">
                     <button class="btn btn-default returnButton">Powrót</button>
                 </a>
             </div>
