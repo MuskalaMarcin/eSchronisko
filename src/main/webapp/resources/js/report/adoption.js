@@ -36,11 +36,11 @@ function drawMonthChart() {
     var data = google.visualization.arrayToDataTable(responseData);
 
     var options = {
-        title: 'Monthly Coffee Production by Country',
-        vAxis: {title: 'Cups'},
-        hAxis: {title: 'Month'},
+        title: 'Tygodniowy raport adopcji.',
+        vAxis: {title: 'Ilość'},
+        hAxis: {title: 'Dzień tygodnia'},
         seriesType: 'bars',
-        series: {5: {type: 'line'}}
+        series: {2: {type: 'line'}}
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('monthChart'));
@@ -57,11 +57,11 @@ function drawYearChart() {
     var data = google.visualization.arrayToDataTable(responseData);
 
     var options = {
-        title: 'Monthly Coffee Production by Country',
-        vAxis: {title: 'Cups'},
-        hAxis: {title: 'Month'},
+        title: 'Tygodniowy raport adopcji.',
+        vAxis: {title: 'Ilość'},
+        hAxis: {title: 'Dzień tygodnia'},
         seriesType: 'bars',
-        series: {5: {type: 'line'}}
+        series: {2: {type: 'line'}}
     };
 
     var chart = new google.visualization.ComboChart(document.getElementById('yearChart'));
