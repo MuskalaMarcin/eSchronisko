@@ -116,8 +116,10 @@ public class MedicalCareController {
     @RequestMapping(method = RequestMethod.POST, value = "/editmedicalcard/{id}")
     public String editMedicalCard(@ModelAttribute("medicalCard") MedicalCardDTO dto,
                                   @PathVariable int id, Model model) {
-        dto.setAnimal(animalManager.getWithId(id));
-        medicalCardManager.updateEntity(dto);
+        MedicalCardDTO medicalCardDTO = medicalCardManager.getWithId(id);
+        medicalCardDTO.setHealthState(dto.getHealthState());
+        medicalCardDTO.setNotes(dto.getNotes());
+        medicalCardManager.updateEntity(medicalCardDTO);
         commonService.getTemplateFragments(model);
         model.addAttribute("infoContent", "content/info/editSuccess");
         model.addAttribute("title", "Status edycji");
