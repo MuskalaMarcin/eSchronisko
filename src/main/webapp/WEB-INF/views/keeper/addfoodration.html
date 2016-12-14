@@ -5,6 +5,7 @@
     <div>Brak zwierząt, którym można przypisać racje żywnościowe.</div>
 </div>
 <div th:if="${not #lists.isEmpty(animals)}">
+    <h2>Dodaj rację żywnościową:</h2>
     <form action="/keeper/foodrations/saveFoodRation" method="post" id="verticalLoginForm">
         <div class="form-group">
             <select class="form-control" id="animalId" name="animalId">

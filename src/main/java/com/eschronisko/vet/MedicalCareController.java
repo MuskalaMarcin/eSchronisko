@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.validation.Valid;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -49,7 +48,7 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveMedicalCard")
-    public String saveMedicalCard(@ModelAttribute(value="medicalCard") @Valid MedicalCardDTO medicalCard,
+    public String saveMedicalCard(@ModelAttribute(value="medicalCard") MedicalCardDTO medicalCard,
                                   @RequestParam("animalId") int animalId, BindingResult result, Model model) {
         medicalCard.setAnimal(animalManager.getWithId(animalId));
         medicalCardManager.addEntity(medicalCard);
@@ -68,8 +67,8 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveMedicalTreatment")
-    public String saveMedicalTreatment(@ModelAttribute(value="medicalTreatment") @Valid MedicalTreatmentDTO medicalTreatment,
-                                  @RequestParam("medicalCardId") int medicalCardId,
+    public String saveMedicalTreatment(@ModelAttribute(value="medicalTreatment") MedicalTreatmentDTO medicalTreatment,
+                                       @RequestParam("medicalCardId") int medicalCardId,
                                        @RequestParam("endDateString") String endDateString,
                                        BindingResult result, Model model) {
         medicalTreatment.setMedicalCard(medicalCardManager.getWithId(medicalCardId));

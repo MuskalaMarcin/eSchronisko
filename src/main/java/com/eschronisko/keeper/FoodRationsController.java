@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -51,7 +50,7 @@ public class FoodRationsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveFoodRation")
-    public String saveFoodRation(@ModelAttribute(value="foodRations") @Valid FoodRationsDTO foodRations, BindingResult result,
+    public String saveFoodRation(@ModelAttribute(value="foodRations") FoodRationsDTO foodRations, BindingResult result,
                                  @RequestParam("animalId") int animalId, @RequestParam("warehouseId") int warehouseId,
                                  Model model) {
         WarehouseDTO warehouseDTO = warehouseManager.getWithId(warehouseId);
@@ -74,7 +73,7 @@ public class FoodRationsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveWarehouse")
-    public String saveWarehouse(@ModelAttribute(value="warehouse") @Valid WarehouseDTO warehouse, BindingResult result,
+    public String saveWarehouse(@ModelAttribute(value="warehouse") WarehouseDTO warehouse, BindingResult result,
                                 Model model) {
         warehouse.setAmoutLeft(warehouse.getCapacity());
         warehouseManager.addEntity(warehouse);

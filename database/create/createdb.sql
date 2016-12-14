@@ -69,7 +69,8 @@ CREATE TABLE application
     id            INTEGER NOT NULL ,
     dispatch_date TIMESTAMP NOT NULL ,
     status        VARCHAR (32) NOT NULL ,
-    client_id     INTEGER NOT NULL
+    client_id     INTEGER NOT NULL ,
+    animal_id    INTEGER NOT NULL
   ) ;
 ALTER TABLE application ADD CONSTRAINT application_PK PRIMARY KEY ( id ) ;
 
@@ -155,6 +156,8 @@ ALTER TABLE app_user ADD CONSTRAINT App_user_client_FK FOREIGN KEY ( client_id )
 ALTER TABLE app_user ADD CONSTRAINT App_user_vet_FK FOREIGN KEY ( vet_id ) REFERENCES vet ( id ) ;
 
 ALTER TABLE application ADD CONSTRAINT application_client_FK FOREIGN KEY ( client_id ) REFERENCES client ( id ) ;
+
+ALTER TABLE application ADD CONSTRAINT application_client_FK FOREIGN KEY ( animal_id ) REFERENCES animal ( registration_number ) ;
 
 ALTER TABLE donation ADD CONSTRAINT donation_client_FK FOREIGN KEY ( client_id ) REFERENCES client ( id ) ;
 

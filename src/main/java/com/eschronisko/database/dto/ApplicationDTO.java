@@ -13,6 +13,7 @@ public class ApplicationDTO extends ParentDTO {
     private Timestamp dispatchDate;
     private String status;
     private ClientDTO client;
+    private AnimalDTO animal;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -76,5 +77,15 @@ public class ApplicationDTO extends ParentDTO {
 
     public void setClient(ClientDTO client) {
         this.client = client;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "animal_id", referencedColumnName = "registration_number", nullable = false)
+    public AnimalDTO getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(AnimalDTO animal) {
+        this.animal = animal;
     }
 }

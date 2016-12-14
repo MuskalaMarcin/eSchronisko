@@ -2,6 +2,7 @@ package com.eschronisko.database.dto;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -21,6 +22,7 @@ public class AnimalDTO extends ParentDTO {
     private Timestamp adoptionDate;
     private FoodRationsDTO foodRationses;
     private MedicalCardDTO medicalCard;
+    private List<ApplicationDTO> applications;
 
     @Id
     @Column(name = "registration_number", nullable = false)
@@ -177,4 +179,14 @@ public class AnimalDTO extends ParentDTO {
     public void setMedicalCard(MedicalCardDTO medicalCard) {
         this.medicalCard = medicalCard;
     }
+
+    @OneToMany(mappedBy = "client")
+    public List<ApplicationDTO> getApplications() {
+        return applications;
+    }
+
+    public void setApplications(List<ApplicationDTO> applications) {
+        this.applications = applications;
+    }
+
 }

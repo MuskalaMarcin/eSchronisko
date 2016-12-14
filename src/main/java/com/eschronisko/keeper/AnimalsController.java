@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.validation.Valid;
 import java.sql.Timestamp;
 
 /**
@@ -35,7 +34,7 @@ public class AnimalsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveAnimal")
-    public String saveAnimal(@ModelAttribute(value="animal") @Valid AnimalDTO animal, BindingResult result, Model model) {
+    public String saveAnimal(@ModelAttribute(value="animal") AnimalDTO animal, BindingResult result, Model model) {
         animal.setAcceptanceDate(new Timestamp(System.currentTimeMillis()));
         animalManager.addEntity(animal);
         model.addAttribute("infoContent", "content/info/insertSuccess");
