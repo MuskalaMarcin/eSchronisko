@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(donations)}">
+    <div>Brak wysłanych dotacji.</div>
+</div>
+<div th:if="${not #lists.isEmpty(donations)}">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Kwota</th>
+            <th>Data</th>
+            <th>Dotujący</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="donation: ${donations}">
+            <td th:text="${donation.amount}"></td>
+            <td th:text="${donation.donationDate}"></td>
+            <td th:text="${donation.client.name + ' ' + donation.client.surname}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

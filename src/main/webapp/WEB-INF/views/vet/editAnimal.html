@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<form th:action="'/vet/medicalcare/editadoptionpossible/'+${animal.registrationNumber}" method="post" id="verticalLoginForm">
+    <div class="form-group">
+        <h2><span th:text="${animal.species + ' ' + animal.name}"
+                  class="label label-default"></span></h2>
+        <select class="form-control" id="adoptionPossible" name="adoptionPossible">
+            <option th:value="1">Możliwość adopcji</option>
+            <option th:value="0">Brak możliwości adopcji</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(animals)}">
+    <div>Wszystkie zwierzęta posiadają kartę medyczną.</div>
+</div>
+<div th:if="${not #lists.isEmpty(animals)}">
+    <form action="/vet/medicalcare/saveMedicalCard" method="post" id="verticalLoginForm">
+        <div class="form-group">
+            <select class="form-control" id="animalId" name="animalId">
+                <option th:each="animal : ${animals}"
+                        th:value="${animal.registrationNumber}"
+                        th:text="${animal.name}">
+                </option>
+            </select>
+            <select class="form-control" id="healthState" name="healthState">
+                <option th:value="Zdrowy">Zdrowy</option>
+                <option th:value="Leczony">W trakcie leczenia</option>
+            </select>
+            <input type="text" class="form-control" id="notes" name="notes" placeholder="Dodatkowe informacje">
+        </div>
+        <button type="submit" class="btn btn-success">Zapisz</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(medicalCards)}">
+    <div>Brak kart medycznych w bazie.</div>
+</div>
+<div th:if="${not #lists.isEmpty(medicalCards)}">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Nr karty</th>
+            <th>Imię zwierzęcia</th>
+            <th>Gatunek</th>
+            <th>Stan zdrowia</th>
+            <th>Dodatkowe informacje</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="medicalCard: ${medicalCards}">
+            <td th:text="${medicalCard.id}"></td>
+            <td th:text="${medicalCard.animal.name}"></td>
+            <td th:text="${medicalCard.animal.species}"></td>
+            <td th:text="${medicalCard.healthState}"></td>
+            <td th:text="${medicalCard.notes}"></td>
+            <td class="buttonCell">
+                <a th:href="'/vet/medicalcare/editmedicalcard/'+${medicalCard.getId()}">
+                    <button class="btn btn-info">Edytuj</button>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

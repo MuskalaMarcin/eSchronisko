@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(warehouses)}">
+    <div>Brak magazynów w bazie.</div>
+</div>
+<div th:if="${not #lists.isEmpty(warehouses)}">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Nr magazynu</th>
+            <th>Pojemność</th>
+            <th>Pozostało</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="warehouse: ${warehouses}">
+            <td th:text="${warehouse.id}"></td>
+            <td th:text="${warehouse.capacity}"></td>
+            <td th:text="${warehouse.amoutLeft}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

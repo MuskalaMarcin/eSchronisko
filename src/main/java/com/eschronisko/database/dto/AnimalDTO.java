@@ -1,7 +1,13 @@
 package com.eschronisko.database.dto;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * Created by Marek on 08.12.2016.
@@ -14,12 +20,14 @@ public class AnimalDTO extends ParentDTO {
     private int age;
     private String sex;
     private String species;
+    private String linkToImage;
     private int roomNumber;
     private int adoptionPossible;
     private Timestamp acceptanceDate;
     private Timestamp adoptionDate;
     private FoodRationsDTO foodRationses;
     private MedicalCardDTO medicalCard;
+    private List<ApplicationDTO> applications;
 
     @Id
     @Column(name = "registration_number", nullable = false)
@@ -71,6 +79,16 @@ public class AnimalDTO extends ParentDTO {
 
     public void setSpecies(String species) {
         this.species = species;
+    }
+
+    @Basic
+    @Column(name = "link_to_image", nullable = true, length = 256)
+    public String getLinkToImage() {
+        return linkToImage;
+    }
+
+    public void setLinkToImage(String linkToImage) {
+        this.linkToImage = linkToImage;
     }
 
     @Basic
@@ -150,6 +168,7 @@ public class AnimalDTO extends ParentDTO {
     }
 
     @OneToOne(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
     public FoodRationsDTO getFoodRationses() {
         return foodRationses;
     }
@@ -159,6 +178,7 @@ public class AnimalDTO extends ParentDTO {
     }
 
     @OneToOne(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
     public MedicalCardDTO getMedicalCard() {
         return medicalCard;
     }
@@ -166,4 +186,15 @@ public class AnimalDTO extends ParentDTO {
     public void setMedicalCard(MedicalCardDTO medicalCard) {
         this.medicalCard = medicalCard;
     }
+
+    @OneToMany(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
+    public List<ApplicationDTO> getApplications() {
+        return applications;
+    }
+
+    public void setApplications(List<ApplicationDTO> applications) {
+        this.applications = applications;
+    }
+
 }

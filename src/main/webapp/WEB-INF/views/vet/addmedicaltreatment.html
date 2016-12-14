@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(medicalCards)}">
+    <div>Brak kart medycznych w bazie.</div>
+</div>
+<div th:if="${not #lists.isEmpty(medicalCards)}">
+    <form action="/vet/medicalcare/saveMedicalTreatment" method="post" id="verticalLoginForm">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nazwa zabiegu" th:required="true">
+            <input type="text" class="form-control" id="description" name="description" placeholder="Opis zabiegu">
+            <select class="form-control" id="importance" name="importance">
+                <option th:value="1">Priorytetowy</option>
+                <option th:value="0">Zwykły</option>
+            </select>
+            <select class="form-control" id="medicalCardId" name="medicalCardId">
+                <option th:each="medicalCard : ${medicalCards}"
+                        th:value="${medicalCard.id}"
+                        th:text="${medicalCard.animal.name}">
+                </option>
+            </select>
+            <input type="datetime-local" class="form-control" id="endDateString" name="endDateString" placeholder="Termin zabiegu" th:required="true">
+        </div>
+        <button type="submit" class="btn btn-success">Zapisz</button>
+    </form>
+</div>
+
+<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
+      th:href="@{/resources/css/infoStyle.css}"/>
+<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
+</body>
+</html>

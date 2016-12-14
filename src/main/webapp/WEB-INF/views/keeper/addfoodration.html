@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<div th:if="${#lists.isEmpty(animals)}">
+    <div>Brak zwierząt, którym można przypisać racje żywnościowe.</div>
+</div>
+<div th:if="${not #lists.isEmpty(animals)}">
+    <h2>Dodaj rację żywnościową:</h2>
+    <form action="/keeper/foodrations/saveFoodRation" method="post" id="verticalLoginForm">
+        <div class="form-group">
+            <select class="form-control" id="animalId" name="animalId">
+                <option th:each="animal : ${animals}"
+                        th:value="${animal.registrationNumber}"
+                        th:text="${animal.name}">
+                </option>
+            </select>
+            <select class="form-control" id="amount" name="amount">
+                <option th:value="1">1 racja / dzień</option>
+                <option th:value="2">2 racje / dzień</option>
+                <option th:value="3">3 racje / dzień</option>
+                <option th:value="4">4 racje / dzień</option>
+                <option th:value="5">5 racji / dzień</option>
+            </select>
+            <select class="form-control" id="warehouseId" name="warehouseId">
+                <option th:each="warehouse : ${warehouses}"
+                        th:value="${warehouse.id}">
+                    Magazyn nr: <span th:text="${warehouse.id}"></span>
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Zapisz</button>
+    </form>
+</div>
+</body>
+</html>

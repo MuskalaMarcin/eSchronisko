@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<form action="/client/donate" method="post" id="verticalLoginForm">
+    <h2>Wyślij dotację:</h2>
+    <div class="form-group">
+        <input type="number" class="form-control" id="amount" name="amount" placeholder="Kwota" th:required="true">
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+</body>
+</html>

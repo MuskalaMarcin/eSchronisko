@@ -1,6 +1,11 @@
 package com.eschronisko.database.dto;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.List;
 
 /**
@@ -80,6 +85,7 @@ public class MedicalCardDTO extends ParentDTO {
     }
 
     @OneToMany(mappedBy = "medicalCard")
+    @Cascade(CascadeType.DELETE)
     public List<MedicalTreatmentDTO> getMedicalTreatments() {
         return medicalTreatments;
     }

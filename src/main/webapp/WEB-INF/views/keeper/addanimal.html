@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<form action="/keeper/animals/saveAnimal" method="post" id="verticalLoginForm">
+    <h2>Dodaj zwierzę:</h2>
+    <div class="form-group">
+        <label class="sr-only" for="name">Imię</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Imię" th:required="true">
+        <label class="sr-only" for="age">Wiek</label>
+        <input type="number" class="form-control" id="age" name="age" placeholder="Wiek" th:required="true">
+        <input type="number" class="form-control" id="roomNumber" name="roomNumber" placeholder="Numer boksu" th:required="true">
+        <select class="form-control" id="sex" name="sex">
+            <option th:value="Samiec">Samiec</option>
+            <option th:value="Samica">Samica</option>
+        </select>
+        <select class="form-control" id="species" name="species">
+            <option th:value="Pies">Pies</option>
+            <option th:value="Kot">Kot</option>
+        </select>
+        <select class="form-control" id="adoptionPossible" name="adoptionPossible">
+            <option th:value="1">Możliwość adopcji</option>
+            <option th:value="0">Brak możliwości adopcji</option>
+        </select>
+        <input type="text" class="form-control" id="linkToImage" name="linkToImage" placeholder="Link do zdjęcia">
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+</body>
+</html>
