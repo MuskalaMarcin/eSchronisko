@@ -1,6 +1,7 @@
 package com.eschronisko.client;
 
 import com.eschronisko.common.CommonService;
+import com.eschronisko.database.dto.AnimalDTO;
 import com.eschronisko.database.dto.ApplicationDTO;
 import com.eschronisko.database.dto.ClientDTO;
 import com.eschronisko.database.dto.DonationDTO;
@@ -42,7 +43,11 @@ public class ClientController {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "client/animalsList");
         model.addAttribute("title", "Lista zwierząt");
-        model.addAttribute("animals", animalManager.getAllEntites());
+        List<AnimalDTO> animalDTOs = animalManager.getAllEntites().stream()
+                .filter(animalDTO -> animalDTO.getAdoptionPossible() == 1)
+                .filter(animalDTO -> animalDTO.getAdoptionDate() == null)
+                .collect(Collectors.toList());
+        model.addAttribute("animals", animalDTOs);
         return "mainTemplate";
     }
 

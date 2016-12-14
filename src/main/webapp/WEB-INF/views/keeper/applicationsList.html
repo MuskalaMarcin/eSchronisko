@@ -18,6 +18,16 @@
             <td th:text="${app.client.name + ' ' + app.client.surname}"></td>
             <td th:text="${app.animal.name}"></td>
             <td th:text="${app.dispatchDate}"></td>
+            <td class="buttonCell">
+                <a th:href="'/keeper/acceptApplication/'+${app.getId()}">
+                    <button class="btn btn-success">Zaakceptuj</button>
+                </a>
+            </td>
+            <td class="buttonCell">
+                <a th:href="'/keeper/refuseApplication/'+${app.getId()}">
+                    <button class="btn btn-danger">Odrzuć</button>
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -49,6 +50,40 @@ public class AnimalsController {
         model.addAttribute("title", "Lista zwierząt");
         model.addAttribute("animals", animalManager.getAllEntites());
         return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "deleteanimal/{id}")
+    public String deleteAnimal(@PathVariable int id, Model model) {
+        animalManager.deleteEntity(id);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/deleteSuccess");
+        model.addAttribute("title", "Status");
+        return "infoTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/editanimal/{id}")
+    public String editAnimalForm(@PathVariable int id, Model model) {
+        AnimalDTO dto = animalManager.getWithId(id);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "keeper/editAnimal");
+        model.addAttribute("title", "Edytuj zwierzę " + dto.getName());
+        model.addAttribute("animal", dto);
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/editanimal/{id}")
+    public String editAnimal(@ModelAttribute("animal") AnimalDTO dto,
+                                  @PathVariable int id, Model model) {
+        AnimalDTO animalDTO = animalManager.getWithId(id);
+        animalDTO.setAge(dto.getAge());
+        animalDTO.setLinkToImage(dto.getLinkToImage());
+        animalDTO.setAdoptionPossible(dto.getAdoptionPossible());
+        animalDTO.setRoomNumber(dto.getRoomNumber());
+        animalManager.updateEntity(animalDTO);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/editSuccess");
+        model.addAttribute("title", "Status edycji");
+        return "infoTemplate";
     }
 
 }

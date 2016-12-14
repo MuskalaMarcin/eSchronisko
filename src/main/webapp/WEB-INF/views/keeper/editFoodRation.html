@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+    <form th:action="'/keeper/foodrations/editfoodration/'+${foodRation.id}" method="post" id="verticalLoginForm">
+    <div class="form-group">
+        <h2><span th:text="${foodRation.animal.species + ' ' + foodRation.animal.name}"
+                  class="label label-default"></span></h2>
+        <select class="form-control" id="amount" name="amount">
+            <option th:value="1">1 racja / dzień</option>
+            <option th:value="2">2 racje / dzień</option>
+            <option th:value="3">3 racje / dzień</option>
+            <option th:value="4">4 racje / dzień</option>
+            <option th:value="5">5 racji / dzień</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+</body>
+</html>

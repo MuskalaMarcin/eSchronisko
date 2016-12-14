@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="content">
+<form th:action="'/vet/medicalcare/editmedicalcard/'+${medicalCard.animal.registrationNumber}" method="post" id="verticalLoginForm">
+    <div class="form-group">
+        <h2><span th:text="${medicalCard.animal.species + ' ' + medicalCard.animal.name}"
+                  class="label label-default"></span></h2>
+        <select class="form-control" id="healthState" name="healthState">
+            <option th:value="Zdrowy">Zdrowy</option>
+            <option th:value="Leczony">W trakcie leczenia</option>
+        </select>
+        <input type="text" class="form-control" id="notes" name="notes" placeholder="Dodatkowe informacje">
+    </div>
+    <button type="submit" class="btn btn-success">Zapisz</button>
+</form>
+</body>
+</html>

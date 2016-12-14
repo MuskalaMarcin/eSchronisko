@@ -1,6 +1,11 @@
 package com.eschronisko.database.dto;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -163,6 +168,7 @@ public class AnimalDTO extends ParentDTO {
     }
 
     @OneToOne(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
     public FoodRationsDTO getFoodRationses() {
         return foodRationses;
     }
@@ -172,6 +178,7 @@ public class AnimalDTO extends ParentDTO {
     }
 
     @OneToOne(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
     public MedicalCardDTO getMedicalCard() {
         return medicalCard;
     }
@@ -180,7 +187,8 @@ public class AnimalDTO extends ParentDTO {
         this.medicalCard = medicalCard;
     }
 
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "animal")
+    @Cascade(CascadeType.DELETE)
     public List<ApplicationDTO> getApplications() {
         return applications;
     }

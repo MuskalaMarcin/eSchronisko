@@ -10,6 +10,7 @@
         <tr>
             <th>Nr karty</th>
             <th>Imię zwierzęcia</th>
+            <th>Gatunek</th>
             <th>Stan zdrowia</th>
             <th>Dodatkowe informacje</th>
         </tr>
@@ -18,18 +19,17 @@
         <tr th:each="medicalCard: ${medicalCards}">
             <td th:text="${medicalCard.id}"></td>
             <td th:text="${medicalCard.animal.name}"></td>
+            <td th:text="${medicalCard.animal.species}"></td>
             <td th:text="${medicalCard.healthState}"></td>
             <td th:text="${medicalCard.notes}"></td>
+            <td class="buttonCell">
+                <a th:href="'/vet/medicalcare/editmedicalcard/'+${medicalCard.getId()}">
+                    <button class="btn btn-info">Edytuj</button>
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
 </div>
-
-<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/infoStyle.css}"/>
-<link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/bootstrap.min.css}"/>
-<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
-<script src="../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
 </body>
 </html>

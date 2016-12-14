@@ -15,11 +15,11 @@
                 </option>
             </select>
             <select class="form-control" id="amount" name="amount">
-                <option th:value="2">1 racja / dzień</option>
+                <option th:value="1">1 racja / dzień</option>
                 <option th:value="2">2 racje / dzień</option>
                 <option th:value="3">3 racje / dzień</option>
                 <option th:value="4">4 racje / dzień</option>
-                <option th:value="4">5 racji / dzień</option>
+                <option th:value="5">5 racji / dzień</option>
             </select>
             <select class="form-control" id="warehouseId" name="warehouseId">
                 <option th:each="warehouse : ${warehouses}"
@@ -31,9 +31,5 @@
         <button type="submit" class="btn btn-success">Zapisz</button>
     </form>
 </div>
-
-<link href="../../resources/css/infoStyle.css" rel="stylesheet" media="screen"
-      th:href="@{/resources/css/infoStyle.css}"/>
-<script src="../../resources/js/registerForm.js" th:src="@{/resources/js/registerForm.js}"></script>
 </body>
 </html>

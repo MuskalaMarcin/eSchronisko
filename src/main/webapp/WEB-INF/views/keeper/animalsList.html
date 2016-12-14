@@ -13,6 +13,8 @@
             <th>Płeć</th>
             <th>Wiek</th>
             <th>Nr boksu</th>
+            <th>Data przyjęcia</th>
+            <th>Data adopcji</th>
         </tr>
         </thead>
         <tbody>
@@ -22,14 +24,16 @@
             <td th:text="${animal.sex}"></td>
             <td th:text="${animal.age}"></td>
             <td th:text="${animal.roomNumber}"></td>
+            <td th:text="${animal.acceptanceDate}"></td>
+            <td th:text="${animal.adoptionDate}"></td>
             <td class="buttonCell">
-                <a th:href="'/keeper/editanimal/'+${animal.getRegistrationNumber()}">
+                <a th:href="'/keeper/animals/editanimal/'+${animal.getRegistrationNumber()}">
                     <button class="btn btn-info">Edytuj</button>
                 </a>
             </td>
             <td class="buttonCell">
-                <a th:href="'/keeper/deleteanimal/'+${user.getUsername()}">
-                    <button class="btn btn-info">Usuń</button>
+                <a th:href="'/keeper/animals/deleteanimal/'+${animal.getRegistrationNumber()}">
+                    <button class="btn btn-danger">Usuń</button>
                 </a>
             </td>
         </tr>

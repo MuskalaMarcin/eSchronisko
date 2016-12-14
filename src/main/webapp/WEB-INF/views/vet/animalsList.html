@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
 <div th:if="${#lists.isEmpty(animals)}">
-    <div>Brak zwierząt do adopcji.</div>
+    <div>Brak zwierząt w bazie.</div>
 </div>
 <div th:if="${not #lists.isEmpty(animals)}">
     <h2>Lista zwierząt:</h2>
@@ -13,6 +13,8 @@
             <th>Imię</th>
             <th>Płeć</th>
             <th>Wiek</th>
+            <th>Stan zdrowia</th>
+            <th>Możliwość adopcji</th>
         </tr>
         </thead>
         <tbody>
@@ -21,9 +23,16 @@
             <td th:text="${animal.name}"></td>
             <td th:text="${animal.sex}"></td>
             <td th:text="${animal.age}"></td>
+            <td th:text="${animal.medicalCard} ? ${animal.medicalCard.healthState} : 'Brak założonej karty'"></td>
+            <td>
+                <div th:switch="${animal.adoptionPossible}">
+                    <p th:case="'1'">Tak</p>
+                    <p th:case="'0'">Nie</p>
+                </div>
+            </td>
             <td class="buttonCell">
-                <a th:href="'/client/adopt/'+${animal.getRegistrationNumber()}">
-                    <button class="btn btn-info">Adoptuj</button>
+                <a th:href="'/vet/medicalcare/editadoptionpossible/'+${animal.getRegistrationNumber()}">
+                    <button class="btn btn-info">Edytuj</button>
                 </a>
             </td>
         </tr>

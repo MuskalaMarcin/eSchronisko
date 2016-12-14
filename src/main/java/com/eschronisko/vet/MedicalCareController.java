@@ -11,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -90,12 +87,71 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "medicalTreatments")
-    public String getMmedicalTreatmentsList(Model model) {
+    public String getMedicalTreatmentsList(Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "vet/medicalTreatmentsList");
         model.addAttribute("title", "Planowane zabiegi");
         model.addAttribute("medicalTreatments", medicalTreatmentManager.getAllEntites());
         return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "deletetreatment/{id}")
+    public String deleteMedicalTreatment(@PathVariable int id, Model model) {
+        medicalTreatmentManager.deleteEntity(id);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/deleteSuccess");
+        model.addAttribute("title", "Status");
+        return "infoTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/editmedicalcard/{id}")
+    public String editMedicalCardForm(@PathVariable int id, Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "vet/editMedicalCard");
+        model.addAttribute("title", "Edytuj kartę nr " + id);
+        model.addAttribute("medicalCard", medicalCardManager.getWithId(id));
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/editmedicalcard/{id}")
+    public String editMedicalCard(@ModelAttribute("medicalCard") MedicalCardDTO dto,
+                                  @PathVariable int id, Model model) {
+        dto.setAnimal(animalManager.getWithId(id));
+        medicalCardManager.updateEntity(dto);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/editSuccess");
+        model.addAttribute("title", "Status edycji");
+        return "infoTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "animalsList")
+    public String getAnimalsList(Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "vet/animalsList");
+        model.addAttribute("title", "Lista zwierząt");
+        model.addAttribute("animals", animalManager.getAllEntites());
+        return "mainTemplate";
+    }
+
+    @RequestMapping(value = "/editadoptionpossible/{id}", method = RequestMethod.GET)
+    public String editAnimalForm(@PathVariable int id, Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "vet/editAnimal");
+        model.addAttribute("title", "Edytuj możliwość adopcji zwierzęcia");
+        model.addAttribute("animal", animalManager.getWithId(id));
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/editadoptionpossible/{id}")
+    public String editAnimal(@ModelAttribute("medicalCard") AnimalDTO dto,
+                                  @PathVariable int id, Model model) {
+        AnimalDTO animalDTO = animalManager.getWithId(id);
+        animalDTO.setAdoptionPossible(dto.getAdoptionPossible());
+        animalManager.updateEntity(animalDTO);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/editSuccess");
+        model.addAttribute("title", "Status edycji");
+        return "infoTemplate";
     }
 
 }

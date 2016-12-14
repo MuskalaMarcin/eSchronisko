@@ -11,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -98,6 +95,31 @@ public class FoodRationsController {
         model.addAttribute("title", "Przyznane racje żywnościowe");
         model.addAttribute("foodRations", foodRationsManager.getAllEntites());
         return "mainTemplate";
+    }
+
+    @RequestMapping(value = "/editfoodration/{id}", method = RequestMethod.GET)
+    public String editAnimalForm(@PathVariable int id, Model model) {
+        commonService.getTemplateFragments(model);
+        model.addAttribute("content", "keeper/editFoodRation");
+        model.addAttribute("title", "Edytuj rację żywnościową");
+        FoodRationsDTO dto = foodRationsManager.getWithId(id);
+        model.addAttribute("foodRation", dto);
+        return "mainTemplate";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/editfoodration/{id}")
+    public String editAnimal(@ModelAttribute("foodRation") FoodRationsDTO dto,
+                             @PathVariable int id, Model model) {
+        FoodRationsDTO foodRationsDTO = foodRationsManager.getWithId(id);
+        WarehouseDTO warehouseDTO = warehouseManager.getWithId(foodRationsDTO.getWarehouse().getId());
+        warehouseDTO.setAmoutLeft(warehouseDTO.getAmoutLeft()+foodRationsDTO.getAmount()-dto.getAmount());
+        foodRationsDTO.setAmount(dto.getAmount());
+        warehouseManager.updateEntity(warehouseDTO);
+        foodRationsManager.updateEntity(foodRationsDTO);
+        commonService.getTemplateFragments(model);
+        model.addAttribute("infoContent", "content/info/editSuccess");
+        model.addAttribute("title", "Status edycji");
+        return "infoTemplate";
     }
 
 }
