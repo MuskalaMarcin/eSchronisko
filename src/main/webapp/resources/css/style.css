@@ -218,3 +218,7 @@ html, body {
     margin: 10px auto auto auto;
     width: 60%;
 }
+
+.chart{
+    margin: 0 20px 0 20px;
+}
