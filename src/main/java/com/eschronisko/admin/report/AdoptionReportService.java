@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.TextStyle;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
@@ -21,15 +22,26 @@ import java.util.Locale;
  */
 @Service
 public class AdoptionReportService implements IReportService {
+    private List<AnimalDTO> animalsList;
+    private LocalDateTime lastUpdateTime;
+
     @Autowired
     private AnimalManager animalManager;
+
+    private synchronized List<AnimalDTO> getAllAnimals() {
+        if (animalsList == null || lastUpdateTime.until(LocalDateTime.now(), ChronoUnit.SECONDS) > 10) {
+            animalsList = animalManager.getAllEntites();
+            lastUpdateTime = LocalDateTime.now();
+        }
+        return animalsList;
+    }
 
     @Override
     public List<List<Object>> getWeekReport() {
         List<List<Object>> dataTable = new ArrayList<>();
         dataTable.add(Arrays.asList("Dzień", "Przyjęcia", "Adopcje", "Różnica"));
         LocalDate today = LocalDate.now();
-        List<AnimalDTO> allAnimals = animalManager.getAllEntites();
+        List<AnimalDTO> allAnimals = getAllAnimals();
         for (LocalDate date = today.minusDays(7); date.until(today, ChronoUnit.DAYS) >= 0; date = date.plusDays(1)) {
             final LocalDate finalDate = date;
             Long acceptedNumber = allAnimals.stream().filter(animal ->
@@ -52,7 +64,7 @@ public class AdoptionReportService implements IReportService {
             LocalDate weekStart = LocalDate.now().with(ChronoField.DAY_OF_WEEK, 1).minusWeeks(3);
             WeekFields weekFields = WeekFields.of(Locale.getDefault());
 
-            List<AnimalDTO> allAnimals = animalManager.getAllEntites();
+            List<AnimalDTO> allAnimals = getAllAnimals();
             for (int i = 0; i < 4; weekEnd = weekEnd.plusWeeks(1), weekStart = weekStart.plusWeeks(1), i++) {
                 final LocalDate finalWeekStart = weekStart;
                 final LocalDate finalWeekEnd = weekEnd;
@@ -79,7 +91,7 @@ public class AdoptionReportService implements IReportService {
             LocalDate monthStart = LocalDate.now().withDayOfMonth(1).minusMonths(11);
             LocalDate monthEnd = LocalDate.now().withDayOfMonth(31).minusMonths(11);
 
-            List<AnimalDTO> allAnimals = animalManager.getAllEntites();
+            List<AnimalDTO> allAnimals = getAllAnimals();
             for (int i = 0; i < 12; monthStart = monthStart.plusMonths(1), monthEnd = monthEnd.plusMonths(1), i++) {
                 final LocalDate finalMonthStart = monthStart;
                 final LocalDate finalMonthEnd = monthEnd;

@@ -14,3 +14,15 @@ function _setLogo() {
 function scrollPageToTop() {
     $("html, body").animate({scrollTop: 0}, 300);
 }
+
+function _drawChart(dataUrl, options, elementId) {
+    $.ajax({
+        url: dataUrl,
+        context: document.body,
+        success: function (data) {
+            var data = google.visualization.arrayToDataTable(data);
+            var chart = new google.visualization.ComboChart(document.getElementById(elementId));
+            chart.draw(data, options);
+        }
+    });
+}
