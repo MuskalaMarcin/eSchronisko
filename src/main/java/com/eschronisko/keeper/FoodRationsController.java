@@ -10,7 +10,6 @@ import com.eschronisko.database.service.WarehouseManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -47,7 +46,7 @@ public class FoodRationsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveFoodRation")
-    public String saveFoodRation(@ModelAttribute(value="foodRations") FoodRationDTO foodRations, BindingResult result,
+    public String saveFoodRation(@ModelAttribute(value = "foodRations") FoodRationDTO foodRations,
                                  @RequestParam("animalId") int animalId, @RequestParam("warehouseId") int warehouseId,
                                  Model model) {
         WarehouseDTO warehouseDTO = warehouseManager.getWithId(warehouseId);
@@ -70,8 +69,7 @@ public class FoodRationsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveWarehouse")
-    public String saveWarehouse(@ModelAttribute(value="warehouse") WarehouseDTO warehouse, BindingResult result,
-                                Model model) {
+    public String saveWarehouse(@ModelAttribute(value = "warehouse") WarehouseDTO warehouse, Model model) {
         warehouse.setAmountLeft(warehouse.getCapacity());
         warehouseManager.addEntity(warehouse);
         model.addAttribute("infoContent", "content/info/insertSuccess");
@@ -108,11 +106,10 @@ public class FoodRationsController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/editfoodration/{id}")
-    public String editAnimal(@ModelAttribute("foodRation") FoodRationDTO dto,
-                             @PathVariable int id, Model model) {
+    public String editAnimal(@ModelAttribute("foodRation") FoodRationDTO dto, @PathVariable int id, Model model) {
         FoodRationDTO foodRationDTO = foodRationManager.getWithId(id);
         WarehouseDTO warehouseDTO = warehouseManager.getWithId(foodRationDTO.getWarehouse().getId());
-        warehouseDTO.setAmountLeft(warehouseDTO.getAmountLeft()+ foodRationDTO.getAmount()-dto.getAmount());
+        warehouseDTO.setAmountLeft(warehouseDTO.getAmountLeft() + foodRationDTO.getAmount() - dto.getAmount());
         foodRationDTO.setAmount(dto.getAmount());
         warehouseManager.updateEntity(warehouseDTO);
         foodRationManager.updateEntity(foodRationDTO);
