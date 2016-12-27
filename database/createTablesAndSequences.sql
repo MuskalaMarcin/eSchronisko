@@ -1,3 +1,27 @@
+CREATE SEQUENCE administrator_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE animal_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE animal_keeper_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE application_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE client_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE donation_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE food_ration_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE medical_card_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE medical_treatment_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE vet_id_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE warehouse_id_seq START WITH 1 INCREMENT BY 1;
+
+GRANT ALL ON SEQUENCE public.administrator_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.animal_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.animal_keeper_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.application_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.client_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.donation_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.food_ration_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.medical_card_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.medical_treatment_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.vet_id_seq TO GROUP eschronisko_group;
+GRANT ALL ON SEQUENCE public.warehouse_id_seq TO GROUP eschronisko_group;
+
 CREATE TABLE administrator
   (
     id      INTEGER NOT NULL ,
@@ -87,14 +111,14 @@ CREATE TABLE donation
 ALTER TABLE donation ADD CONSTRAINT payment_PK PRIMARY KEY ( id ) ;
 
 
-CREATE TABLE food_rations
+CREATE TABLE food_ration
   (
     id           INTEGER NOT NULL ,
     amount       INTEGER NOT NULL ,
     warehouse_id INTEGER NOT NULL ,
     animal_id    INTEGER NOT NULL
   ) ;
-ALTER TABLE food_rations ADD CONSTRAINT food_rations_PK PRIMARY KEY ( id ) ;
+ALTER TABLE food_ration ADD CONSTRAINT food_ration_PK PRIMARY KEY ( id ) ;
 
 
 CREATE TABLE medical_card
@@ -145,10 +169,10 @@ ALTER TABLE app_user ADD CONSTRAINT app_user_vet_FK FOREIGN KEY ( vet_id ) REFER
 ALTER TABLE application ADD CONSTRAINT application_client_FK FOREIGN KEY ( client_id ) REFERENCES client ( id ) ;
 ALTER TABLE application ADD CONSTRAINT application_animal_FK FOREIGN KEY ( animal_id ) REFERENCES animal ( registration_number ) ;
 ALTER TABLE donation ADD CONSTRAINT donation_client_FK FOREIGN KEY ( client_id ) REFERENCES client ( id ) ;
-ALTER TABLE food_rations ADD CONSTRAINT food_rations_animal_FK FOREIGN KEY ( animal_id ) REFERENCES animal ( registration_number ) ;
+ALTER TABLE food_ration ADD CONSTRAINT food_ration_animal_FK FOREIGN KEY ( animal_id ) REFERENCES animal ( registration_number ) ;
 ALTER TABLE medical_card ADD CONSTRAINT medical_card_animal_FK FOREIGN KEY ( animal_id ) REFERENCES animal ( registration_number ) ;
 ALTER TABLE medical_treatment ADD CONSTRAINT treatment_medical_card_FK FOREIGN KEY ( medical_card_id ) REFERENCES medical_card ( id ) ;
-ALTER TABLE food_rations ADD CONSTRAINT warehouse_FK FOREIGN KEY ( warehouse_id ) REFERENCES warehouse ( id ) ;
+ALTER TABLE food_ration ADD CONSTRAINT warehouse_FK FOREIGN KEY ( warehouse_id ) REFERENCES warehouse ( id ) ;
 
 GRANT ALL ON TABLE public.administrator TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.animal TO GROUP eschronisko_group;
@@ -158,7 +182,7 @@ GRANT ALL ON TABLE public.application TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.article TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.client TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.donation TO GROUP eschronisko_group;
-GRANT ALL ON TABLE public.food_rations TO GROUP eschronisko_group;
+GRANT ALL ON TABLE public.food_ration TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.medical_card TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.medical_treatment TO GROUP eschronisko_group;
 GRANT ALL ON TABLE public.vet TO GROUP eschronisko_group;

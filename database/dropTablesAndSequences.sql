@@ -1,3 +1,17 @@
+DROP TABLE "donation";
+DROP TABLE "application";
+DROP TABLE "app_user";
+DROP TABLE "client";
+DROP TABLE "article";
+DROP TABLE "administrator";
+DROP TABLE "medical_treatment";
+DROP TABLE "medical_card";
+DROP TABLE "food_ration";
+DROP TABLE "animal";
+DROP TABLE "animal_keeper";
+DROP TABLE "vet";
+DROP TABLE "warehouse";
+
 DROP SEQUENCE administrator_id_seq;
 DROP SEQUENCE animal_id_seq;
 DROP SEQUENCE animal_keeper_id_seq;

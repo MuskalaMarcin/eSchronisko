@@ -6,8 +6,8 @@ import javax.persistence.*;
  * Created by Marek on 08.12.2016.
  */
 @Entity
-@Table(name = "food_rations", schema = "public", catalog = "eschronisko")
-public class FoodRationsDTO extends ParentDTO {
+@Table(name = "food_ration", schema = "public", catalog = "eschronisko")
+public class FoodRationDTO extends ParentDTO {
     private int id;
     private int amount;
     private WarehouseDTO warehouse;
@@ -15,7 +15,7 @@ public class FoodRationsDTO extends ParentDTO {
 
     @Id
     @Column(name = "id", nullable = false)
-    @SequenceGenerator(name = "foodRationSeq", sequenceName = "food_rations_id_seq", allocationSize = 1)
+    @SequenceGenerator(name = "foodRationSeq", sequenceName = "food_ration_id_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "foodRationSeq")
     public int getId() {
         return id;
@@ -40,7 +40,7 @@ public class FoodRationsDTO extends ParentDTO {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        FoodRationsDTO that = (FoodRationsDTO) o;
+        FoodRationDTO that = (FoodRationDTO) o;
 
         if (id != that.id) return false;
         if (amount != that.amount) return false;

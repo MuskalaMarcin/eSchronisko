@@ -25,7 +25,7 @@ public class AnimalDTO extends ParentDTO {
     private int adoptionPossible;
     private Timestamp acceptanceDate;
     private Timestamp adoptionDate;
-    private FoodRationsDTO foodRationses;
+    private FoodRationDTO foodRationses;
     private MedicalCardDTO medicalCard;
     private List<ApplicationDTO> applications;
 
@@ -169,11 +169,11 @@ public class AnimalDTO extends ParentDTO {
 
     @OneToOne(mappedBy = "animal")
     @Cascade(CascadeType.DELETE)
-    public FoodRationsDTO getFoodRationses() {
+    public FoodRationDTO getFoodRationses() {
         return foodRationses;
     }
 
-    public void setFoodRationses(FoodRationsDTO foodRationses) {
+    public void setFoodRationses(FoodRationDTO foodRationses) {
         this.foodRationses = foodRationses;
     }
 

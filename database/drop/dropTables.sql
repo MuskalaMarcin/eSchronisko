@@ -6,7 +6,7 @@ DROP TABLE "article";
 DROP TABLE "administrator";
 DROP TABLE "medical_treatment";
 DROP TABLE "medical_card";
-DROP TABLE "food_rations";
+DROP TABLE "food_ration";
 DROP TABLE "animal";
 DROP TABLE "animal_keeper";
 DROP TABLE "vet";

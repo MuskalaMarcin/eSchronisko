@@ -2,10 +2,10 @@ package com.eschronisko.keeper;
 
 import com.eschronisko.common.CommonService;
 import com.eschronisko.database.dto.AnimalDTO;
-import com.eschronisko.database.dto.FoodRationsDTO;
+import com.eschronisko.database.dto.FoodRationDTO;
 import com.eschronisko.database.dto.WarehouseDTO;
 import com.eschronisko.database.service.AnimalManager;
-import com.eschronisko.database.service.FoodRationsManager;
+import com.eschronisko.database.service.FoodRationManager;
 import com.eschronisko.database.service.WarehouseManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +26,7 @@ public class FoodRationsController {
     @Autowired
     private AnimalManager animalManager;
     @Autowired
-    private FoodRationsManager foodRationsManager;
+    private FoodRationManager foodRationManager;
     @Autowired
     private WarehouseManager warehouseManager;
     @Autowired
@@ -41,21 +41,21 @@ public class FoodRationsController {
                 .filter(animalDTO -> animalDTO.getFoodRationses() == null).collect(Collectors.toList());
         model.addAttribute("animals", animalDTOList);
         List<WarehouseDTO> warehouseDTOs = warehouseManager.getAllEntites().stream()
-                .filter(warehouseDTO -> warehouseDTO.getAmoutLeft() > 0).collect(Collectors.toList());
+                .filter(warehouseDTO -> warehouseDTO.getAmountLeft() > 0).collect(Collectors.toList());
         model.addAttribute("warehouses", warehouseDTOs);
         return "mainTemplate";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveFoodRation")
-    public String saveFoodRation(@ModelAttribute(value="foodRations") FoodRationsDTO foodRations, BindingResult result,
+    public String saveFoodRation(@ModelAttribute(value="foodRations") FoodRationDTO foodRations, BindingResult result,
                                  @RequestParam("animalId") int animalId, @RequestParam("warehouseId") int warehouseId,
                                  Model model) {
         WarehouseDTO warehouseDTO = warehouseManager.getWithId(warehouseId);
-        warehouseDTO.setAmoutLeft(warehouseDTO.getAmoutLeft() - foodRations.getAmount());
+        warehouseDTO.setAmountLeft(warehouseDTO.getAmountLeft() - foodRations.getAmount());
         foodRations.setAnimal(animalManager.getWithId(animalId));
         foodRations.setWarehouse(warehouseDTO);
         warehouseManager.updateEntity(warehouseDTO);
-        foodRationsManager.addEntity(foodRations);
+        foodRationManager.addEntity(foodRations);
         model.addAttribute("infoContent", "content/info/insertSuccess");
         model.addAttribute("title", "Status dodania obiektu");
         return "infoTemplate";
@@ -72,7 +72,7 @@ public class FoodRationsController {
     @RequestMapping(method = RequestMethod.POST, value = "saveWarehouse")
     public String saveWarehouse(@ModelAttribute(value="warehouse") WarehouseDTO warehouse, BindingResult result,
                                 Model model) {
-        warehouse.setAmoutLeft(warehouse.getCapacity());
+        warehouse.setAmountLeft(warehouse.getCapacity());
         warehouseManager.addEntity(warehouse);
         model.addAttribute("infoContent", "content/info/insertSuccess");
         model.addAttribute("title", "Status dodania obiektu");
@@ -93,7 +93,7 @@ public class FoodRationsController {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "keeper/foodRationsGranted");
         model.addAttribute("title", "Przyznane racje żywnościowe");
-        model.addAttribute("foodRations", foodRationsManager.getAllEntites());
+        model.addAttribute("foodRations", foodRationManager.getAllEntites());
         return "mainTemplate";
     }
 
@@ -102,20 +102,20 @@ public class FoodRationsController {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "keeper/editFoodRation");
         model.addAttribute("title", "Edytuj rację żywnościową");
-        FoodRationsDTO dto = foodRationsManager.getWithId(id);
+        FoodRationDTO dto = foodRationManager.getWithId(id);
         model.addAttribute("foodRation", dto);
         return "mainTemplate";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/editfoodration/{id}")
-    public String editAnimal(@ModelAttribute("foodRation") FoodRationsDTO dto,
+    public String editAnimal(@ModelAttribute("foodRation") FoodRationDTO dto,
                              @PathVariable int id, Model model) {
-        FoodRationsDTO foodRationsDTO = foodRationsManager.getWithId(id);
-        WarehouseDTO warehouseDTO = warehouseManager.getWithId(foodRationsDTO.getWarehouse().getId());
-        warehouseDTO.setAmoutLeft(warehouseDTO.getAmoutLeft()+foodRationsDTO.getAmount()-dto.getAmount());
-        foodRationsDTO.setAmount(dto.getAmount());
+        FoodRationDTO foodRationDTO = foodRationManager.getWithId(id);
+        WarehouseDTO warehouseDTO = warehouseManager.getWithId(foodRationDTO.getWarehouse().getId());
+        warehouseDTO.setAmountLeft(warehouseDTO.getAmountLeft()+ foodRationDTO.getAmount()-dto.getAmount());
+        foodRationDTO.setAmount(dto.getAmount());
         warehouseManager.updateEntity(warehouseDTO);
-        foodRationsManager.updateEntity(foodRationsDTO);
+        foodRationManager.updateEntity(foodRationDTO);
         commonService.getTemplateFragments(model);
         model.addAttribute("infoContent", "content/info/editSuccess");
         model.addAttribute("title", "Status edycji");
