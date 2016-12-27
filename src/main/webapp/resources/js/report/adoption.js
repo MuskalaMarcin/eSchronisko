@@ -36,9 +36,9 @@ function drawMonthChart() {
     var data = google.visualization.arrayToDataTable(responseData);
 
     var options = {
-        title: 'Tygodniowy raport adopcji.',
+        title: 'Miesięczny raport adopcji.',
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {title: 'Tydzień roku'},
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
@@ -57,9 +57,9 @@ function drawYearChart() {
     var data = google.visualization.arrayToDataTable(responseData);
 
     var options = {
-        title: 'Tygodniowy raport adopcji.',
+        title: 'Roczny raport adopcji.',
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {title: 'Miesiąc'},
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
