@@ -1,0 +1,13 @@
+DROP TABLE "donation";
+DROP TABLE "application";
+DROP TABLE "app_user";
+DROP TABLE "client";
+DROP TABLE "article";
+DROP TABLE "administrator";
+DROP TABLE "medical_treatment";
+DROP TABLE "medical_card";
+DROP TABLE "food_rations";
+DROP TABLE "animal";
+DROP TABLE "animal_keeper";
+DROP TABLE "vet";
+DROP TABLE "warehouse";

@@ -12,6 +12,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created by Marcin on 10.12.2016.
  */
@@ -78,9 +86,29 @@ public class AccountService {
         return getUserDetails(appUserDTO);
     }
 
+
+    private void encodePasswords() {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get("D:\\Projekty\\eSchronisko\\database\\inserts\\appUser.sql"));
+            Pattern pattern = Pattern.compile("(insert into app_user \\(login, password, e_mail, is_active, user_role, client_id, vet_id, animal_keeper_id, administrator_id\\) values \\('\\w+', )('.+')((, '.+')+.*)");
+            LinkedList<String> output = new LinkedList<>();
+            lines.forEach(l -> {
+                System.out.println(l);
+                Matcher m = pattern.matcher(l);
+                System.out.println("matches: czy nie maczes " + m.matches());
+                String out = m.group(1) + "'" + passwordEncoder.encode(m.group(2).replaceAll("'", "")) + "' /*" + m.group(2).replaceAll("'", "") + "*/ " + m.group(3);
+                output.add(out);
+                System.out.println(out);
+            });
+            Files.write(Paths.get("D:\\Projekty\\eSchronisko\\database\\inserts\\appUserConv.sql"), output);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public boolean register(UserDetailsForm userDetailsForm) {
         UserRole userRole = UserRole.getUserRole(userDetailsForm.getUserRole());
-
+        encodePasswords();
         try {
             AppUserDTO appUserDTO = new AppUserDTO();
             appUserDTO.seteMail(userDetailsForm.geteMail());
