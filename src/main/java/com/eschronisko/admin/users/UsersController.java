@@ -24,27 +24,27 @@ public class UsersController {
     private CommonService commonService;
 
     @RequestMapping(value = "active", method = RequestMethod.GET)
-    public String getActiveUsers(Model model) {
+    public String getActiveUsers(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         model.addAttribute("title", "Aktywni użytkownicy");
-        model.addAttribute("usersList", usersService.getActiveUsersDetails());
+        model.addAttribute("usersList", usersService.getActiveUsersDetails(page));
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "admin/manageuser/userDisplay");
         return "mainTemplate";
     }
 
     @RequestMapping(value = "notactive", method = RequestMethod.GET)
-    public String getNotActiveUsers(Model model) {
+    public String getNotActiveUsers(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         model.addAttribute("title", "Nieaktywni użytkownicy");
-        model.addAttribute("usersList", usersService.getNotActiveUsersDetails());
+        model.addAttribute("usersList", usersService.getNotActiveUsersDetails(page));
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "admin/manageuser/userDisplay");
         return "mainTemplate";
     }
 
     @RequestMapping(value = "all", method = RequestMethod.GET)
-    public String getAllUsers(Model model) {
+    public String getAllUsers(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         model.addAttribute("title", "Użytkownicy");
-        model.addAttribute("usersList", usersService.getAllUsersDetails());
+        model.addAttribute("usersList", usersService.getAllUsersDetails(page));
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "admin/manageuser/userDisplay");
         return "mainTemplate";
@@ -53,7 +53,6 @@ public class UsersController {
     @RequestMapping(value = "search", method = RequestMethod.POST)
     @ResponseBody
     public List<UserDetailsForm> getSuggestions(@RequestParam String prefix) {
-        System.out.println(prefix);
         return usersService.getUsersStartingWith(prefix);
     }
 
