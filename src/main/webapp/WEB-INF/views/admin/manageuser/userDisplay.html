@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
+<div class="titleText"><h3 th:text="${title}"></h3></div>
 <p class="formInfoText" th:if="${param.success}!=null">
     Zmiany zostały zapisane.
 </p>
 <p class="formWarningText" th:if="${param.error}!=null">
     Podczas zapisu wystąpił błąd!
 </p>
-<p class="formWarningText" th:if="${usersList.isEmpty()}">
+<p class="formWarningText" th:if="${usersList.getContent().isEmpty()}">
     Brak użytkowników spełniających wybrane warunki.
 </p>
-<table th:if="${not usersList.isEmpty()}" class="table">
+<table th:if="${not usersList.getContent().isEmpty()}" class="table">
     <thead class="thead-inverse">
     <tr>
         <th>Imię</th>
@@ -19,7 +20,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="user : ${usersList}">
+    <tr th:each="user : ${usersList.getContent()}">
         <td th:text="${user.getName()}"></td>
         <td th:text="${user.getSurname()}"></td>
         <td th:text="${user.getUsername()}"></td>
@@ -46,5 +47,6 @@
     </tr>
     </tbody>
 </table>
+<div th:include="pagination :: pagination(usersList)">></div>
 </body>
 </html>

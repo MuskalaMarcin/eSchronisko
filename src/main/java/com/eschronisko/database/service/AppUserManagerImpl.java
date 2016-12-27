@@ -1,5 +1,6 @@
 package com.eschronisko.database.service;
 
+import com.eschronisko.common.Page;
 import com.eschronisko.database.dao.AppUserDAO;
 import com.eschronisko.database.dto.AppUserDTO;
 import org.springframework.stereotype.Service;
@@ -15,13 +16,15 @@ import java.util.stream.Collectors;
 public class AppUserManagerImpl extends ParentManagerImpl<AppUserDTO, AppUserDAO, String> implements AppUserManager {
     @Override
     @Transactional
-    public List<AppUserDTO> getActiveUsers() {
-        return getAllEntites().stream().filter(f -> f.getIsActive() == 1).collect(Collectors.toList());
+    public Page<AppUserDTO> getActiveUsers(Integer pageNumber) {
+        List<AppUserDTO> activeUsers = getAllEntites().stream().filter(f -> f.getIsActive() == 1).collect(Collectors.toList());
+        return filterByPage(activeUsers, pageNumber);
     }
 
     @Override
     @Transactional
-    public List<AppUserDTO> getNotActiveUsers() {
-        return getAllEntites().stream().filter(f -> f.getIsActive() == 0).collect(Collectors.toList());
+    public Page<AppUserDTO> getNotActiveUsers(Integer pageNumber) {
+        List<AppUserDTO> notActiveUsers = getAllEntites().stream().filter(f -> f.getIsActive() == 0).collect(Collectors.toList());
+        return filterByPage(notActiveUsers, pageNumber);
     }
 }

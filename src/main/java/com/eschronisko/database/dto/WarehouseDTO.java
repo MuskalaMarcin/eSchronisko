@@ -10,9 +10,9 @@ import java.util.List;
 @Table(name = "warehouse", schema = "public", catalog = "eschronisko")
 public class WarehouseDTO extends ParentDTO {
     private int id;
-    private int amoutLeft;
+    private int amountLeft;
     private int capacity;
-    private List<FoodRationsDTO> foodRationses;
+    private List<FoodRationDTO> foodRationses;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -27,13 +27,13 @@ public class WarehouseDTO extends ParentDTO {
     }
 
     @Basic
-    @Column(name = "amout_left", nullable = false)
-    public int getAmoutLeft() {
-        return amoutLeft;
+    @Column(name = "amount_left", nullable = false)
+    public int getAmountLeft() {
+        return amountLeft;
     }
 
-    public void setAmoutLeft(int amoutLeft) {
-        this.amoutLeft = amoutLeft;
+    public void setAmountLeft(int amountLeft) {
+        this.amountLeft = amountLeft;
     }
 
     @Basic
@@ -54,7 +54,7 @@ public class WarehouseDTO extends ParentDTO {
         WarehouseDTO that = (WarehouseDTO) o;
 
         if (id != that.id) return false;
-        if (amoutLeft != that.amoutLeft) return false;
+        if (amountLeft != that.amountLeft) return false;
         if (capacity != that.capacity) return false;
 
         return true;
@@ -63,17 +63,17 @@ public class WarehouseDTO extends ParentDTO {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + amoutLeft;
+        result = 31 * result + amountLeft;
         result = 31 * result + capacity;
         return result;
     }
 
     @OneToMany(mappedBy = "warehouse")
-    public List<FoodRationsDTO> getFoodRationses() {
+    public List<FoodRationDTO> getFoodRationses() {
         return foodRationses;
     }
 
-    public void setFoodRationses(List<FoodRationsDTO> foodRationses) {
+    public void setFoodRationses(List<FoodRationDTO> foodRationses) {
         this.foodRationses = foodRationses;
     }
 }

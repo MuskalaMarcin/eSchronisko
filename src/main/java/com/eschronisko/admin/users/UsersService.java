@@ -2,6 +2,7 @@ package com.eschronisko.admin.users;
 
 import com.eschronisko.account.AccountService;
 import com.eschronisko.account.util.UserDetailsForm;
+import com.eschronisko.common.Page;
 import com.eschronisko.database.dto.AppUserDTO;
 import com.eschronisko.database.service.AppUserManager;
 import com.eschronisko.exception.ResourceNotFoundException;
@@ -24,16 +25,16 @@ public class UsersService {
     @Autowired
     private AppUserManager appUserManager;
 
-    public List<UserDetailsForm> getActiveUsersDetails() {
-        return appUserManager.getActiveUsers().stream().map(accountService::getUserDetails).collect(Collectors.toList());
+    public Page<UserDetailsForm> getActiveUsersDetails(Integer pageNumber) {
+        return convertPageToUserDetailsPage(appUserManager.getActiveUsers(pageNumber));
     }
 
-    public List<UserDetailsForm> getNotActiveUsersDetails() {
-        return appUserManager.getNotActiveUsers().stream().map(accountService::getUserDetails).collect(Collectors.toList());
+    public Page<UserDetailsForm> getNotActiveUsersDetails(Integer pageNumber) {
+        return convertPageToUserDetailsPage(appUserManager.getNotActiveUsers(pageNumber));
     }
 
     public List<UserDetailsForm> getUsersStartingWith(final String prefix) {
-        return getAllUsersDetails().stream().filter(f -> {
+        return appUserManager.getAllEntites().stream().map(accountService::getUserDetails).filter(f -> {
             if (prefix.isEmpty()) {
                 return false;
             } else if (prefix.contains(" ")) {
@@ -54,8 +55,13 @@ public class UsersService {
                 || StringUtils.startsWithIgnoreCase(user.getUsername(), prefix);
     }
 
-    public List<UserDetailsForm> getAllUsersDetails() {
-        return appUserManager.getAllEntites().stream().map(accountService::getUserDetails).collect(Collectors.toList());
+    private Page<UserDetailsForm> convertPageToUserDetailsPage(Page<AppUserDTO> usersPage) {
+        List<UserDetailsForm> userDetails = usersPage.getContent().stream().map(accountService::getUserDetails).collect(Collectors.toList());
+        return new Page<>(usersPage.getPageNumber(), usersPage.getTotalPages(), userDetails);
+    }
+
+    public Page<UserDetailsForm> getAllUsersDetails(Integer pageNumber) {
+        return convertPageToUserDetailsPage(appUserManager.getAllEntites(pageNumber));
     }
 
     public boolean activateUser(String login) {

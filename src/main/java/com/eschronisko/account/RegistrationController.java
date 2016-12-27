@@ -30,13 +30,18 @@ public class RegistrationController {
     @RequestMapping(method = RequestMethod.POST)
     public String saveRegistrationData(@ModelAttribute("registerForm") @Valid UserDetailsForm userDetailsForm,
                                        BindingResult result, Model model) {
-        if (!result.hasErrors() && userDetailsForm.getPassword().equals(userDetailsForm.getPasswordRepeat())
-                && accountService.register(userDetailsForm)) {
-            model.addAttribute("infoContent", "content/info/registerSuccess");
-            model.addAttribute("title", "Status rejestracji");
+        if (!result.hasErrors() && userDetailsForm.getPassword().equals(userDetailsForm.getPasswordRepeat())) {
+            if (accountService.register(userDetailsForm)) {
+                model.addAttribute("infoContent", "content/info/registerSuccess");
+                model.addAttribute("title", "Status rejestracji");
+            }
+            else {
+                model.addAttribute("infoContent", "content/info/registerFailed");
+                model.addAttribute("title", "Błąd podczas zapisu danych do bazy.");
+            }
         } else {
             model.addAttribute("infoContent", "content/info/registerFailed");
-            model.addAttribute("title", "Błąd rejestracji");
+            model.addAttribute("title", "Błąd podczas wprowadzania danych rejestracji");
         }
         return "infoTemplate";
     }

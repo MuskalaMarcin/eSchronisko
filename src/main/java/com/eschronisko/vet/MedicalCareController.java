@@ -45,7 +45,7 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveMedicalCard")
-    public String saveMedicalCard(@ModelAttribute(value="medicalCard") MedicalCardDTO medicalCard,
+    public String saveMedicalCard(@ModelAttribute(value = "medicalCard") MedicalCardDTO medicalCard,
                                   @RequestParam("animalId") int animalId, BindingResult result, Model model) {
         medicalCard.setAnimal(animalManager.getWithId(animalId));
         medicalCardManager.addEntity(medicalCard);
@@ -64,7 +64,7 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "saveMedicalTreatment")
-    public String saveMedicalTreatment(@ModelAttribute(value="medicalTreatment") MedicalTreatmentDTO medicalTreatment,
+    public String saveMedicalTreatment(@ModelAttribute(value = "medicalTreatment") MedicalTreatmentDTO medicalTreatment,
                                        @RequestParam("medicalCardId") int medicalCardId,
                                        @RequestParam("endDateString") String endDateString,
                                        BindingResult result, Model model) {
@@ -127,11 +127,11 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "animalsList")
-    public String getAnimalsList(Model model) {
+    public String getAnimalsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "vet/animalsList");
         model.addAttribute("title", "Lista zwierząt");
-        model.addAttribute("animals", animalManager.getAllEntites());
+        model.addAttribute("animals", animalManager.getAllEntites(page));
         return "mainTemplate";
     }
 
@@ -146,7 +146,7 @@ public class MedicalCareController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/editadoptionpossible/{id}")
     public String editAnimal(@ModelAttribute("medicalCard") AnimalDTO dto,
-                                  @PathVariable int id, Model model) {
+                             @PathVariable int id, Model model) {
         AnimalDTO animalDTO = animalManager.getWithId(id);
         animalDTO.setAdoptionPossible(dto.getAdoptionPossible());
         animalManager.updateEntity(animalDTO);

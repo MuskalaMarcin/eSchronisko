@@ -1,11 +1,6 @@
 package com.eschronisko.database.dto;
 
-import org.hibernate.annotations.*;
-import org.hibernate.annotations.CascadeType;
-
 import javax.persistence.*;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -25,7 +20,7 @@ public class AnimalDTO extends ParentDTO {
     private int adoptionPossible;
     private Timestamp acceptanceDate;
     private Timestamp adoptionDate;
-    private FoodRationsDTO foodRationses;
+    private FoodRationDTO foodRationses;
     private MedicalCardDTO medicalCard;
     private List<ApplicationDTO> applications;
 
@@ -167,18 +162,16 @@ public class AnimalDTO extends ParentDTO {
         return result;
     }
 
-    @OneToOne(mappedBy = "animal")
-    @Cascade(CascadeType.DELETE)
-    public FoodRationsDTO getFoodRationses() {
+    @OneToOne(mappedBy = "animal", cascade = CascadeType.REMOVE)
+    public FoodRationDTO getFoodRationses() {
         return foodRationses;
     }
 
-    public void setFoodRationses(FoodRationsDTO foodRationses) {
+    public void setFoodRationses(FoodRationDTO foodRationses) {
         this.foodRationses = foodRationses;
     }
 
-    @OneToOne(mappedBy = "animal")
-    @Cascade(CascadeType.DELETE)
+    @OneToOne(mappedBy = "animal", cascade = CascadeType.REMOVE)
     public MedicalCardDTO getMedicalCard() {
         return medicalCard;
     }
@@ -187,8 +180,7 @@ public class AnimalDTO extends ParentDTO {
         this.medicalCard = medicalCard;
     }
 
-    @OneToMany(mappedBy = "animal")
-    @Cascade(CascadeType.DELETE)
+    @OneToMany(mappedBy = "animal", cascade = CascadeType.REMOVE)
     public List<ApplicationDTO> getApplications() {
         return applications;
     }

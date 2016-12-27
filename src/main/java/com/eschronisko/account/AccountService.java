@@ -72,7 +72,6 @@ public class AccountService {
         return user;
     }
 
-
     public UserDetailsForm getCurrentValues(Authentication auth) {
         AppUserDTO appUserDTO = commonService.getLoggedUser(auth);
         return getUserDetails(appUserDTO);
@@ -80,7 +79,6 @@ public class AccountService {
 
     public boolean register(UserDetailsForm userDetailsForm) {
         UserRole userRole = UserRole.getUserRole(userDetailsForm.getUserRole());
-
         try {
             AppUserDTO appUserDTO = new AppUserDTO();
             appUserDTO.seteMail(userDetailsForm.geteMail());

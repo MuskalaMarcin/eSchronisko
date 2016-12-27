@@ -34,7 +34,7 @@ abstract class ParentDAOImpl<A extends ParentDTO, B extends Serializable> implem
 
     @Override
     public List<A> getAllEntites() {
-        return this.sessionFactory.getCurrentSession().createQuery("from " + clazzName).list();
+        return this.sessionFactory.getCurrentSession().createCriteria(clazz).list();
     }
 
     @Override

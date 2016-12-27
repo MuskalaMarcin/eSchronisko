@@ -6,64 +6,42 @@ google.charts.setOnLoadCallback(function () {
 });
 
 function drawWeekChart() {
-    var responseData = JSON.parse($.ajax({
-        url: "http://localhost:8080/admin/report/adoption/week",
-        dataType: "json",
-        async: false
-    }).responseText);
-
-    var data = google.visualization.arrayToDataTable(responseData);
-
     var options = {
         title: 'Tygodniowy raport adopcji.',
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {
+            title: 'Dzień tygodnia',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
 
-    var chart = new google.visualization.ComboChart(document.getElementById('weekChart'));
-    chart.draw(data, options);
+    _drawChart("http://localhost:8080/admin/report/adoption/week", options, 'weekChart');
 }
 
 function drawMonthChart() {
-    var responseData = JSON.parse($.ajax({
-        url: "http://localhost:8080/admin/report/adoption/month",
-        dataType: "json",
-        async: false
-    }).responseText);
-
-    var data = google.visualization.arrayToDataTable(responseData);
-
     var options = {
-        title: 'Tygodniowy raport adopcji.',
+        title: 'Miesięczny raport adopcji.',
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {title: 'Tydzień roku'},
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
 
-    var chart = new google.visualization.ComboChart(document.getElementById('monthChart'));
-    chart.draw(data, options);
+    _drawChart("http://localhost:8080/admin/report/adoption/month", options, 'monthChart');
 }
 
 function drawYearChart() {
-    var responseData = JSON.parse($.ajax({
-        url: "http://localhost:8080/admin/report/adoption/year",
-        dataType: "json",
-        async: false
-    }).responseText);
-
-    var data = google.visualization.arrayToDataTable(responseData);
-
     var options = {
-        title: 'Tygodniowy raport adopcji.',
+        title: 'Roczny raport adopcji.',
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {title: 'Miesiąc'},
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
 
-    var chart = new google.visualization.ComboChart(document.getElementById('yearChart'));
-    chart.draw(data, options);
+    _drawChart("http://localhost:8080/admin/report/adoption/year", options, 'yearChart');
 }
