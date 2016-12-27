@@ -7,11 +7,17 @@ google.charts.setOnLoadCallback(function () {
 
 function drawWeekChart() {
     var options = {
-        title: 'Tygodniowy raport stanu magazynu.',
+        title: 'Tygodniowy raport wydatków magazynu.',
+        height: 350,
         vAxis: {title: 'Ilość racji żywnościowych'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {
+            title: 'Dzień tygodnia',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
-        series: {2: {type: 'line'}}
+        series: {1: {type: 'line'}}
     };
 
     _drawChart("http://localhost:8080/admin/report/warehouse/week", options, 'weekChart');
@@ -19,11 +25,12 @@ function drawWeekChart() {
 
 function drawMonthChart() {
     var options = {
-        title: 'Miesięczny raport stanu magazynu.',
+        title: 'Miesięczny raport wydatków magazynu.',
+        height: 350,
         vAxis: {title: 'Ilość racji żywnościowych'},
         hAxis: {title: 'Tydzień roku'},
         seriesType: 'bars',
-        series: {2: {type: 'line'}}
+        series: {1: {type: 'line'}}
     };
 
     _drawChart("http://localhost:8080/admin/report/warehouse/month", options, 'monthChart');
@@ -31,11 +38,17 @@ function drawMonthChart() {
 
 function drawYearChart() {
     var options = {
-        title: 'Roczny raport stanu magazynu.',
+        title: 'Roczny raport wydatków magazynu.',
+        height: 350,
         vAxis: {title: 'Ilość racji żywnościowych'},
-        hAxis: {title: 'Miesiąc'},
+        hAxis: {
+            title: 'Miesiąc',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
-        series: {2: {type: 'line'}}
+        series: {1: {type: 'line'}}
     };
 
     _drawChart("http://localhost:8080/admin/report/warehouse/year", options, 'yearChart');

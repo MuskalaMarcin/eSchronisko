@@ -8,6 +8,7 @@ google.charts.setOnLoadCallback(function () {
 function drawWeekChart() {
     var options = {
         title: 'Tygodniowy raport adopcji.',
+        height: 350,
         vAxis: {title: 'Ilość'},
         hAxis: {
             title: 'Dzień tygodnia',
@@ -25,8 +26,11 @@ function drawWeekChart() {
 function drawMonthChart() {
     var options = {
         title: 'Miesięczny raport adopcji.',
+        height: 350,
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Tydzień roku'},
+        hAxis: {
+            title: 'Tydzień roku',
+        },
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };
@@ -37,8 +41,14 @@ function drawMonthChart() {
 function drawYearChart() {
     var options = {
         title: 'Roczny raport adopcji.',
+        height: 350,
         vAxis: {title: 'Ilość'},
-        hAxis: {title: 'Miesiąc'},
+        hAxis: {
+            title: 'Miesiąc',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
         series: {2: {type: 'line'}}
     };

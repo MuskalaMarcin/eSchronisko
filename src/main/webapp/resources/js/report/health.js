@@ -8,8 +8,14 @@ google.charts.setOnLoadCallback(function () {
 function drawWeekChart() {
     var options = {
         title: 'Tygodniowy raport zdrowia.',
+        height: 350,
         vAxis: {title: 'Ilość zabiegów'},
-        hAxis: {title: 'Dzień tygodnia'},
+        hAxis: {
+            title: 'Dzień tygodnia',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
         series: {1: {type: 'line'}}
     };
@@ -20,6 +26,7 @@ function drawWeekChart() {
 function drawMonthChart() {
     var options = {
         title: 'Miesięczny raport zdrowia.',
+        height: 350,
         vAxis: {title: 'Ilość zabiegów'},
         hAxis: {title: 'Tydzień roku'},
         seriesType: 'bars',
@@ -32,8 +39,14 @@ function drawMonthChart() {
 function drawYearChart() {
     var options = {
         title: 'Roczny raport zdrowia.',
+        height: 350,
         vAxis: {title: 'Ilość zabiegów'},
-        hAxis: {title: 'Miesiąc'},
+        hAxis: {
+            title: 'Miesiąc',
+            slantedText: true,
+            slantedTextAngle: 45,
+            showTextEvery: 1
+        },
         seriesType: 'bars',
         series: {1: {type: 'line'}}
     };
