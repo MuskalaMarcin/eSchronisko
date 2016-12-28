@@ -1,20 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="war" name="eSchronisko:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/eSchronisko_war</output-path>
-    <root id="archive" name="eSchronisko_war.war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="eschronisko-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="eSchronisko:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
-          <element id="library" level="project" name="Maven: javax.el:el-api:2.2" />
-          <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:1.1" />
-          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
-          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" />
-          <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.2.5.Final" />
-          <element id="library" level="project" name="Maven: org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1" />
-          <element id="library" level="project" name="Maven: org.jboss:jandex:2.0.3.Final" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>

@@ -10,7 +10,7 @@ $(document).ready(function () {
         var responseBody = $("#responseBody");
 
         if ($(this).val()) {
-            $.post('http://localhost:8080/admin/users/search', {prefix: searchInput.val()}, function (returnedData) {
+            $.post('/admin/users/search', {prefix: searchInput.val()}, function (returnedData) {
                 suggestionsDiv.empty();
                 responseBody.empty();
                 table.hide();

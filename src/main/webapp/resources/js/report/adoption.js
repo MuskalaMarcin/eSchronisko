@@ -20,7 +20,7 @@ function drawWeekChart() {
         series: {2: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/adoption/week", options, 'weekChart');
+    _drawChart("/admin/report/adoption/week", options, 'weekChart');
 }
 
 function drawMonthChart() {
@@ -35,7 +35,7 @@ function drawMonthChart() {
         series: {2: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/adoption/month", options, 'monthChart');
+    _drawChart("/admin/report/adoption/month", options, 'monthChart');
 }
 
 function drawYearChart() {
@@ -53,5 +53,5 @@ function drawYearChart() {
         series: {2: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/adoption/year", options, 'yearChart');
+    _drawChart("/admin/report/adoption/year", options, 'yearChart');
 }

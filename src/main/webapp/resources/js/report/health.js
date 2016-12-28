@@ -20,7 +20,7 @@ function drawWeekChart() {
         series: {1: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/health/week", options, 'weekChart');
+    _drawChart("/admin/report/health/week", options, 'weekChart');
 }
 
 function drawMonthChart() {
@@ -33,7 +33,7 @@ function drawMonthChart() {
         series: {1: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/health/month", options, 'monthChart');
+    _drawChart("/admin/report/health/month", options, 'monthChart');
 }
 
 function drawYearChart() {
@@ -51,5 +51,5 @@ function drawYearChart() {
         series: {1: {type: 'line'}}
     };
 
-    _drawChart("http://localhost:8080/admin/report/health/year", options, 'yearChart');
+    _drawChart("/admin/report/health/year", options, 'yearChart');
 }
