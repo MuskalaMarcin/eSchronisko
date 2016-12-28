@@ -73,19 +73,20 @@ public class WarehouseReportService extends ParentReportService<FoodRationDTO, F
         LocalDate acceptanceDate = animal.getAcceptanceDate().toLocalDateTime().toLocalDate();
         long daysNumber = 0;
         LocalDate rationsStart = (acceptanceDate.isBefore(startDate)) ? startDate : acceptanceDate;
-        if (acceptanceDate.isBefore(endDate)) {
+        if (acceptanceDate.isBefore(endDate) || acceptanceDate.isEqual(endDate)) {
             if (animal.getAdoptionDate() == null) {
                 daysNumber = rationsStart.until(endDate, ChronoUnit.DAYS);
             } else {
                 LocalDate adoptionDate = animal.getAdoptionDate().toLocalDateTime().toLocalDate();
-                if (adoptionDate.isAfter(endDate)) {
+                if (adoptionDate.isAfter(endDate) || adoptionDate.isEqual(endDate)) {
                     daysNumber = rationsStart.until(endDate, ChronoUnit.DAYS);
-                } else {
+                } else if (adoptionDate.isAfter(startDate) || adoptionDate.isEqual(startDate)) {
                     daysNumber = rationsStart.until(adoptionDate, ChronoUnit.DAYS);
+                } else {
+                    daysNumber--;
                 }
             }
-            daysNumber = Math.abs(daysNumber);
-            if (startDate.isEqual(endDate)) daysNumber++;
+            daysNumber++;
         }
 
         return daysNumber * foodRation.getAmount();
