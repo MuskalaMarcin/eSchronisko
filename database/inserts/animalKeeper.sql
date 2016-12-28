@@ -1,4 +1,4 @@
-insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Zbigniew', 'Opiekuñczy', '00-100 Opiekunowo ul. Opiekunów 62');
+insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Zbigniew', 'OpiekuÅ„czy', '00-100 Opiekunowo ul. OpiekunÃ³w 62');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Samuel', 'Ray', '618 Orin Terrace');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Catherine', 'Ryan', '47 Clove Pass');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Christopher', 'Greene', '127 Blue Bill Park Terrace');

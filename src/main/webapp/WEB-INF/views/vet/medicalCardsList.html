@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
-<div th:if="${#lists.isEmpty(medicalCards)}">
+<div th:if="${medicalCards.getContent().isEmpty()}">
     <div>Brak kart medycznych w bazie.</div>
 </div>
-<div th:if="${not #lists.isEmpty(medicalCards)}">
+<div th:if="${not medicalCards.getContent().isEmpty()}">
     <table class="table table-sm">
         <thead>
         <tr>
@@ -16,7 +16,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="medicalCard: ${medicalCards}">
+        <tr th:each="medicalCard: ${medicalCards.getContent()}">
             <td th:text="${medicalCard.id}"></td>
             <td th:text="${medicalCard.animal.name}"></td>
             <td th:text="${medicalCard.animal.species}"></td>
@@ -30,6 +30,7 @@
         </tr>
         </tbody>
     </table>
+    <div th:include="pagination :: pagination(medicalCards)">></div>
 </div>
 </body>
 </html>

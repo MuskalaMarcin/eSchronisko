@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Timestamp;
 
@@ -44,11 +45,11 @@ public class AnimalsController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "animalsList")
-    public String animalsList(Model model) {
+    public String animalsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "keeper/animalsList");
         model.addAttribute("title", "Lista zwierząt");
-        model.addAttribute("animals", animalManager.getAllEntites());
+        model.addAttribute("animals", animalManager.getAllEntites(page));
         return "mainTemplate";
     }
 

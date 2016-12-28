@@ -19,7 +19,7 @@
         </thead>
         <tbody>
         <tr th:each="animal: ${animals.getContent()}">
-            <td><img th:src="${animal.linkToImage}"/></td>
+            <td><img style="width: 150px" th:src="${animal.linkToImage}"/></td>
             <td th:text="${animal.name}"></td>
             <td th:text="${animal.sex}"></td>
             <td th:text="${animal.age}"></td>

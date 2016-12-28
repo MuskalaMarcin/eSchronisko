@@ -78,20 +78,20 @@ public class MedicalCareController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "medicalCards")
-    public String getMedicalCardsList(Model model) {
+    public String getMedicalCardsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "vet/medicalCardsList");
         model.addAttribute("title", "Karty medyczne");
-        model.addAttribute("medicalCards", medicalCardManager.getAllEntites());
+        model.addAttribute("medicalCards", medicalCardManager.getAllEntites(page));
         return "mainTemplate";
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "medicalTreatments")
-    public String getMedicalTreatmentsList(Model model) {
+    public String getMedicalTreatmentsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "vet/medicalTreatmentsList");
         model.addAttribute("title", "Planowane zabiegi");
-        model.addAttribute("medicalTreatments", medicalTreatmentManager.getAllEntites());
+        model.addAttribute("medicalTreatments", medicalTreatmentManager.getAllEntites(page));
         return "mainTemplate";
     }
 
