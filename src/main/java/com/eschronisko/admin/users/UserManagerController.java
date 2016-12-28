@@ -83,9 +83,9 @@ public class UserManagerController {
     public String deleteUser(@PathVariable String login) {
         usersService.checkUser(login);
         if (usersService.deleteUser(login)) {
-            return "redirect:/admin/showuser/" + login + "?success";
+            return "redirect:/admin/users/all?success";
         } else {
-            return "redirect:/admin/showuser/" + login + "?error";
+            return "redirect:/admin/users/all?error";
         }
     }
 
