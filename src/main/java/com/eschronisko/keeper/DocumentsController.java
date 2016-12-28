@@ -12,10 +12,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Timestamp;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Marek on 13.12.2016.
@@ -34,22 +33,20 @@ public class DocumentsController {
     private CommonService commonService;
 
     @RequestMapping(method = RequestMethod.GET, value = "donationsList")
-    public String getDonationsList(Model model) {
+    public String getDonationsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "keeper/donationsList");
         model.addAttribute("title", "Dotacje");
-        model.addAttribute("donations", donationManager.getAllEntites());
+        model.addAttribute("donations", donationManager.getAllEntites(page));
         return "mainTemplate";
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "applicationsList")
-    public String getApplicationsList(Model model) {
+    public String getApplicationsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "keeper/applicationsList");
         model.addAttribute("title", "Wnioski");
-        List<ApplicationDTO> applicationDTOList = applicationManager.getAllEntites().stream()
-                .filter(applicationDTO -> applicationDTO.getStatus().equals("Oczekujący")).collect(Collectors.toList());
-        model.addAttribute("applications", applicationDTOList);
+        model.addAttribute("applications", applicationManager.getWaitingApplications(page));
         return "mainTemplate";
     }
 

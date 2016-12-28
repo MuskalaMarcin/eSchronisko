@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
-<div th:if="${#lists.isEmpty(foodRations)}">
+<div th:if="${foodRations.getContent().isEmpty()}">
     <div>Brak przyznanych racji żywnościowych.</div>
 </div>
-<div th:if="${not #lists.isEmpty(foodRations)}">
+<div th:if="${not foodRations.getContent().isEmpty()}">
     <table class="table table-sm">
         <thead>
         <tr>
@@ -14,7 +14,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="foodRation: ${foodRations}">
+        <tr th:each="foodRation: ${foodRations.getContent()}">
             <td th:text="${foodRation.animal.name}"></td>
             <td th:text="${foodRation.amount}"></td>
             <td th:text="${foodRation.warehouse.id}"></td>
@@ -26,6 +26,7 @@
         </tr>
         </tbody>
     </table>
+    <div th:include="pagination :: pagination(foodRations)">></div>
 </div>
 </body>
 </html>

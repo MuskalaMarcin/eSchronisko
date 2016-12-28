@@ -1,143 +1,143 @@
-INSERT INTO article (id, title, content) VALUES ('home', 'Strona g³ówna', '<h1 style="text-align: center;"><strong>eSchronisko</strong></h1>
-<p>Witamy na stronie naszego schroniska. Zapoznaj siê z treœci¹ pozosta³ych podstron lub zarejestruj korzystaj¹c z formularza, aby uzyskaæ dostêp do dalszych czêœci serwisu.</p>
-<p style="padding-left: 30px; text-align: right;">Pozdrawiamy, zesp&oacute;³ eSchronisko.</p>');
+INSERT INTO article (id, title, content) VALUES ('home', 'Strona gÅ‚Ã³wna', '<h1 style="text-align: center;"><strong>eSchronisko</strong></h1>
+<p>Witamy na stronie naszego schroniska. Zapoznaj siÄ™ z treÅ›ciÄ… pozostaÅ‚ych podstron lub zarejestruj korzystajÄ…c z formularza, aby uzyskaÄ‡ dostÄ™p do dalszych czÄ™Å›ci serwisu.</p>
+<p style="padding-left: 30px; text-align: right;">Pozdrawiamy, zesp&oacute;Å‚ eSchronisko.</p>');
 INSERT INTO article (id, title, content) VALUES ('adoption', 'Adopcja', '<h3 style="text-align: center;">Adopcja</h3>
-<p>Adopcja zwierzêcia w kilku prostych krokach:</p>
-<p>1. Zarejestruj siê na stronie.<br />2. Przegl¹dnij listê zwierz¹t dostêpnych do adopcji.<br />3. Wybierz zwierzê i z³&oacute;¿ wniosek.<br />4. Poczekaj na rozpatrzenie wniosku przez naszych pracownik&oacute;w.<br />5. W przypadku pozytywnego rozpatrzenia wniosku odbierz zwierzê w wybranym terminie.</p>');
+<p>Adopcja zwierzÄ™cia w kilku prostych krokach:</p>
+<p>1. Zarejestruj siÄ™ na stronie.<br />2. PrzeglÄ…dnij listÄ™ zwierzÄ…t dostÄ™pnych do adopcji.<br />3. Wybierz zwierzÄ™ i zÅ‚&oacute;Å¼ wniosek.<br />4. Poczekaj na rozpatrzenie wniosku przez naszych pracownik&oacute;w.<br />5. W przypadku pozytywnego rozpatrzenia wniosku odbierz zwierzÄ™ w wybranym terminie.</p>');
 INSERT INTO article (id, title, content) VALUES ('volunteer', 'Wolontariat', '<h3 style="text-align: center;">Wolontariat</h3>
 <div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;">&nbsp;</div>
-<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Bardzo istotnym punktem dzia³alnoœci edukacyjnej&nbsp;</span><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Krakowskiego Schroniska dla Bezdomnych Zwierz¹t</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;jest </span><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">wolontariat. Dziêki wielkiemu oddaniu i poœwiêceniu wielu os&oacute;b nasze schronisko rozwija siê, a los naszych podopiecznych staje siê choæ trochê l¿ejszy.</span></div>
+<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Bardzo istotnym punktem dziaÅ‚alnoÅ›ci edukacyjnej&nbsp;</span><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Krakowskiego Schroniska dla Bezdomnych ZwierzÄ…t</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;jest </span><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">wolontariat. DziÄ™ki wielkiemu oddaniu i poÅ›wiÄ™ceniu wielu os&oacute;b nasze schronisko rozwija siÄ™, a los naszych podopiecznych staje siÄ™ choÄ‡ trochÄ™ lÅ¼ejszy.</span></div>
 <div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;">&nbsp;</div>
-<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Wszystkich nowych chêtnych do wsp&oacute;lpracy i pomocy powitamy z ogromn¹ radoœci¹.</span></div>
+<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Wszystkich nowych chÄ™tnych do wsp&oacute;lpracy i pomocy powitamy z ogromnÄ… radoÅ›ciÄ….</span></div>
 <div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;">&nbsp;</div>
-<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Krakowskie Towarzystwo Opieki nad Zwierzêtami</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;i&nbsp;</span><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Schronisko dla Bezdomnych Zwierz¹t</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;przyjmuj¹ zg³oszenia os&oacute;b, kt&oacute;re w ramach wolontariatu pragn¹ pom&oacute;c Schronisku lub KTOZ (wyprowadzanie zwierz¹t, czesanie, pielêgnacja kot&oacute;w, udzia³ w zbieraniu ¿ywnoœci dla bezdomnych zwierz¹t w supermarketach).</span></div>
+<div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: justify;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Krakowskie Towarzystwo Opieki nad ZwierzÄ™tami</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;i&nbsp;</span><strong style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Schronisko dla Bezdomnych ZwierzÄ…t</strong><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">&nbsp;przyjmujÄ… zgÅ‚oszenia os&oacute;b, kt&oacute;re w ramach wolontariatu pragnÄ… pom&oacute;c Schronisku lub KTOZ (wyprowadzanie zwierzÄ…t, czesanie, pielÄ™gnacja kot&oacute;w, udziaÅ‚ w zbieraniu Å¼ywnoÅ›ci dla bezdomnych zwierzÄ…t w supermarketach).</span></div>
 <div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px;">&nbsp;</div>
 <div class="akapit" style="color: #444444; font-family: Tahoma, Verdana, Arial; font-size: 11px;">
-<p style="margin: 0px 0px 0.5cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">1. Wolontariuszem mo¿e zostaæ ka¿dy kto:</span></span></span></span></p>
+<p style="margin: 0px 0px 0.5cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">1. Wolontariuszem moÅ¼e zostaÄ‡ kaÅ¼dy kto:</span></span></span></span></p>
 <ul style="font-family: Tahoma, Verdana, Arial; font-size: 11px;">
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">kocha zwierzêta</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">kocha zwierzÄ™ta</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">pragnie nieodp³atnie pracowaæ na ich rzecz</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">pragnie nieodpÅ‚atnie pracowaÄ‡ na ich rzecz</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><strong><span style="font-size: 11pt;">ukoñczy³ 18 lat lub ukoñczy³ 16 lat i przed³o¿y pisemn¹ zgodê rodzic&oacute;w lub opiekun&oacute;w</span></strong></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><strong><span style="font-size: 11pt;">ukoÅ„czyÅ‚ 18 lat lub ukoÅ„czyÅ‚ 16 lat i przedÅ‚oÅ¼y pisemnÄ… zgodÄ™ rodzic&oacute;w lub opiekun&oacute;w</span></strong></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">jest og&oacute;lnie zdrowy i nie cierpi na alergiê na sierœæ zwierz¹t</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">jest og&oacute;lnie zdrowy i nie cierpi na alergiÄ™ na sierÅ›Ä‡ zwierzÄ…t</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">z³o¿y wype³niony formularz zg³oszeniowy wraz ze zdjêciem</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">zÅ‚oÅ¼y wypeÅ‚niony formularz zgÅ‚oszeniowy wraz ze zdjÄ™ciem</span></span></span></span></p>
 </li>
 <li>
 <p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">zostanie wpisany do rejestru wolontariuszy KTOZ.</span></span></span></span></p>
 </li>
 </ul>
-<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">2. Wolontariusz wykonuje zlecone czynnoœci w Schronisku dla Bezdomnych Zwierz¹t, na aukcjach, w siedzibie KTOZ lub innym wskazanym miejscu.</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">2. Wolontariusz wykonuje zlecone czynnoÅ›ci w Schronisku dla Bezdomnych ZwierzÄ…t, na aukcjach, w siedzibie KTOZ lub innym wskazanym miejscu.</span></span></span></span></p>
 <p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;">&nbsp;</p>
-<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">3. Wolontariusz przebywaj¹c na terenie Schroniska dla Bezdomnych Zwierz¹t ma obowi¹zek:</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">3. Wolontariusz przebywajÄ…c na terenie Schroniska dla Bezdomnych ZwierzÄ…t ma obowiÄ…zek:</span></span></span></span></p>
 <ul style="font-family: Tahoma, Verdana, Arial; font-size: 11px;">
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">ka¿dorazowego wpisywania godzin rozpoczêcia i zakoñczenia pracy na liœcie obecnoœci</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">kaÅ¼dorazowego wpisywania godzin rozpoczÄ™cia i zakoÅ„czenia pracy na liÅ›cie obecnoÅ›ci</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">potwierdzenia wykonania czynnoœci przez osoby do tego wyznaczone</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">potwierdzenia wykonania czynnoÅ›ci przez osoby do tego wyznaczone</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">bezwzglêdnego noszenia identyfikatora z nazwiskiem i zdjêciem wy³¹cznie w czasie wykonywania obowi¹zk&oacute;w na terenie Schroniska dla Bezdomnych Zwierz¹t jak r&oacute;wnie¿ w czasie przeprowadzanych akcji z udzia³em wolontariuszy organizowanych przez KTOZ</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">bezwzglÄ™dnego noszenia identyfikatora z nazwiskiem i zdjÄ™ciem wyÅ‚Ä…cznie w czasie wykonywania obowiÄ…zk&oacute;w na terenie Schroniska dla Bezdomnych ZwierzÄ…t jak r&oacute;wnieÅ¼ w czasie przeprowadzanych akcji z udziaÅ‚em wolontariuszy organizowanych przez KTOZ</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">przestrzegania przepis&oacute;w BHP i zasad bezpieczeñstwa oraz poleceñ kierownika schroniska i innych os&oacute;b uprawnionych</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">przestrzegania przepis&oacute;w BHP i zasad bezpieczeÅ„stwa oraz poleceÅ„ kierownika schroniska i innych os&oacute;b uprawnionych</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wykonywania czynnoœci zwi¹zanych z opiek¹ nad zwierzêtami oraz utrzymaniem czystoœci na terenie obiektu i zapewnienie zwierzêtom odpowiednich warunk&oacute;w bytowych zlecanych przez kierownika schroniska, lekarza weterynarii lub innego uprawnionego pracownika</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wykonywania czynnoÅ›ci zwiÄ…zanych z opiekÄ… nad zwierzÄ™tami oraz utrzymaniem czystoÅ›ci na terenie obiektu i zapewnienie zwierzÄ™tom odpowiednich warunk&oacute;w bytowych zlecanych przez kierownika schroniska, lekarza weterynarii lub innego uprawnionego pracownika</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wykonywania innych czynnoœci zwi¹zanych z funkcjonowaniem schroniska.</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wykonywania innych czynnoÅ›ci zwiÄ…zanych z funkcjonowaniem schroniska.</span></span></span></span></p>
 </li>
 </ul>
-<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">4. Zlecane wolontariuszom czynnoœci zwi¹zane z opiek¹ nad zwierzêtami mog¹ polegaæ szczeg&oacute;lnoœci na:</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">4. Zlecane wolontariuszom czynnoÅ›ci zwiÄ…zane z opiekÄ… nad zwierzÄ™tami mogÄ… polegaÄ‡ szczeg&oacute;lnoÅ›ci na:</span></span></span></span></p>
 <ul style="font-family: Tahoma, Verdana, Arial; font-size: 11px;">
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wyprowadzaniu na spacery wyznaczonych ps&oacute;w na smyczach i w kagañcach</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">wyprowadzaniu na spacery wyznaczonych ps&oacute;w na smyczach i w kagaÅ„cach</span></span></span></span></p>
 </li>
 <li>
 <p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">czesaniu wyznaczonych ps&oacute;w i kot&oacute;w</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">przytrzymywaniu zwierz¹t podczas zabieg&oacute;w weterynaryjnych (psy podczas tych zabieg&oacute;w bezwzglêdnie musz¹ mieæ za³o¿ony kaganiec) - karmienie szczeni¹t, koci¹t - pomoc w przygotowaniu zwierz¹t do uczestnictwa w aukcjach organizowanych przez KTOZ i wolontariuszy</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">przytrzymywaniu zwierzÄ…t podczas zabieg&oacute;w weterynaryjnych (psy podczas tych zabieg&oacute;w bezwzglÄ™dnie muszÄ… mieÄ‡ zaÅ‚oÅ¼ony kaganiec) - karmienie szczeniÄ…t, kociÄ…t - pomoc w przygotowaniu zwierzÄ…t do uczestnictwa w aukcjach organizowanych przez KTOZ i wolontariuszy</span></span></span></span></p>
 </li>
 </ul>
-<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">5. Zlecane wolontariuszom czynnoœci zwi¹zane z utrzymaniem czystoœci na terenie obiektu i zapewnienia zwierzêtom odpowiednich warunk&oacute;w bytowych mog¹ polegaæ w szczeg&oacute;lnoœci na :</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">5. Zlecane wolontariuszom czynnoÅ›ci zwiÄ…zane z utrzymaniem czystoÅ›ci na terenie obiektu i zapewnienia zwierzÄ™tom odpowiednich warunk&oacute;w bytowych mogÄ… polegaÄ‡ w szczeg&oacute;lnoÅ›ci na :</span></span></span></span></p>
 <ul style="font-family: Tahoma, Verdana, Arial; font-size: 11px;">
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">sprz¹taniu boks&oacute;w i pomieszczeñ dla zwierz¹t</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">sprzÄ…taniu boks&oacute;w i pomieszczeÅ„ dla zwierzÄ…t</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">sprz¹taniu innych pomieszczeñ i korytarzy</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">sprzÄ…taniu innych pomieszczeÅ„ i korytarzy</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">myciu misek zwierz¹t</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">myciu misek zwierzÄ…t</span></span></span></span></p>
 </li>
 </ul>
-<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">6. Wolontariusze nie mog¹ bez zgody kierownika Schroniska dla Bezdomnych Zwierz¹t lub upowa¿nionego pracownika wyprowadzaæ zwierz¹t z boks&oacute;w i wykonywaæ zabieg&oacute;w pielêgnacyjnych.</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">6. Wolontariusze nie mogÄ… bez zgody kierownika Schroniska dla Bezdomnych ZwierzÄ…t lub upowaÅ¼nionego pracownika wyprowadzaÄ‡ zwierzÄ…t z boks&oacute;w i wykonywaÄ‡ zabieg&oacute;w pielÄ™gnacyjnych.</span></span></span></span></p>
 <p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;">&nbsp;</p>
-<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">7. Wolontariusze zobowi¹zani s¹ do udzia³u w akcjach organizowanych przez Zarz¹d KTOZ oraz wykonywania czynnoœci zwi¹zanych z prac¹ KTOZ zlecanych przez Zarz¹d KTOZ lub kierownika Schroniska dla Bezdomnych Zwierz¹t.</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">7. Wolontariusze zobowiÄ…zani sÄ… do udziaÅ‚u w akcjach organizowanych przez ZarzÄ…d KTOZ oraz wykonywania czynnoÅ›ci zwiÄ…zanych z pracÄ… KTOZ zlecanych przez ZarzÄ…d KTOZ lub kierownika Schroniska dla Bezdomnych ZwierzÄ…t.</span></span></span></span></p>
 <p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;">&nbsp;</p>
-<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">8. Wolontariusz mo¿e zostaæ skreœlony z rejestru wolontariuszy KTOZ w przypadku:</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">8. Wolontariusz moÅ¼e zostaÄ‡ skreÅ›lony z rejestru wolontariuszy KTOZ w przypadku:</span></span></span></span></p>
 <ul style="font-family: Tahoma, Verdana, Arial; font-size: 11px;">
 <li>
 <p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">rezygnacji / pisemnej lub ustnej /</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">nie podjêcie ¿adnych czynnoœci na rzecz KTOZ lub Schroniska dla Bezdomnych Zwierz¹t przez okres 3 miesiêcy</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">nie podjÄ™cie Å¼adnych czynnoÅ›ci na rzecz KTOZ lub Schroniska dla Bezdomnych ZwierzÄ…t przez okres 3 miesiÄ™cy</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">otrzymania od kierownika Schroniska lub upowa¿nionego pracownika trzech nagan / wpisanych do listy obecnoœci potwierdzaj¹cych wykonanie zleconych czynnoœci/</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">otrzymania od kierownika Schroniska lub upowaÅ¼nionego pracownika trzech nagan / wpisanych do listy obecnoÅ›ci potwierdzajÄ…cych wykonanie zleconych czynnoÅ›ci/</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">dopuszczenia siê na terenie Schroniska zachowania ra¿¹co sprzecznego z zasadami bezpieczeñstwa lub naruszaj¹cego porz¹dek prawny</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">dopuszczenia siÄ™ na terenie Schroniska zachowania raÅ¼Ä…co sprzecznego z zasadami bezpieczeÅ„stwa lub naruszajÄ…cego porzÄ…dek prawny</span></span></span></span></p>
 </li>
 <li>
-<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">z powodu utraty zaufania Zarz¹du KTOZ</span></span></span></span></p>
+<p style="margin: 0px; padding: 0px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">z powodu utraty zaufania ZarzÄ…du KTOZ</span></span></span></span></p>
 </li>
 </ul>
-<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">9. Bie¿¹ce informacje oraz og³oszenia dotycz¹ce funkcjonowania pracy wolontariatu znajdowaæ siê bêd¹ na tablicy og³oszeñ w Schronisku na ul. Rybnej 3, na stronie internetowej&nbsp;</span></span><span style="font-size: 11pt;"><a style="text-decoration: none; outline-style: none;" href="http://www.ktoz.krakow.pl/" target="_blank" rel="noopener noreferrer"><span style="color: #696969;">www.ktoz.krakow.pl</span></a><span style="color: #696969;">&nbsp;oraz w siedzibie KTOZ przy ul. Floriañskiej 53.</span></span></span></span></p>
+<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px;"><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="color: #696969;"><span style="font-size: 11pt;">9. BieÅ¼Ä…ce informacje oraz ogÅ‚oszenia dotyczÄ…ce funkcjonowania pracy wolontariatu znajdowaÄ‡ siÄ™ bÄ™dÄ… na tablicy ogÅ‚oszeÅ„ w Schronisku na ul. Rybnej 3, na stronie internetowej&nbsp;</span></span><span style="font-size: 11pt;"><a style="text-decoration: none; outline-style: none;" href="http://www.ktoz.krakow.pl/" target="_blank" rel="noopener noreferrer"><span style="color: #696969;">www.ktoz.krakow.pl</span></a><span style="color: #696969;">&nbsp;oraz w siedzibie KTOZ przy ul. FloriaÅ„skiej 53.</span></span></span></span></p>
 <p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: right;">&nbsp;</p>
-<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: right;"><sub><em><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="font-size: 11pt;"><span style="color: #696969;"><span style="font-size: 14.6667px; text-align: right;">(treœæ skopiowana ze strony:&nbsp;http://www.schronisko.krakow.pl/Wolontariat/)</span></span></span></span></span></em></sub></p>
+<p style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: right;"><sub><em><span style="font-size: 8px;"><span style="font-family: tahoma, geneva, sans-serif;"><span style="font-size: 11pt;"><span style="color: #696969;"><span style="font-size: 14.6667px; text-align: right;">(treÅ›Ä‡ skopiowana ze strony:&nbsp;http://www.schronisko.krakow.pl/Wolontariat/)</span></span></span></span></span></em></sub></p>
 <h6 style="margin: 0px 0px 0cm; padding: 0px; font-family: Tahoma, Verdana, Arial; font-size: 11px; text-align: right;">&nbsp;</h6>
 </div>');
 INSERT INTO article (id, title, content) VALUES ('tips', 'Porady', '<h3 style="text-align: center;">Porady</h3>
-<h4>PODJÊCIE DEZYCJI O WZIÊCIU ZWIERZAKA ZE SCHRONISKA</h4>
-<p>Decyzja o wziêciu zwierzaka ze schroniska musi byæ przemyœlana! Takiej decyzji nie wolno podejmowaæ pochopnie, pod wp³ywem chwili, zachwytu nad œlicznym szczeniaczkiem lub kociakiem albo rozkosznie wdziêcz¹cym siê zwierzakiem ze schroniskowego boksu.</p>
-<p>Pies i kot to zwierzêta, kt&oacute;re czuj¹ i nie mo¿na ich traktowaæ jak rzecz! Nale¿y pamiêtaæ o tym, ¿e podobnie jak cz³owiek, zwierze mo¿e byæ radosne lub mo¿e cierpieæ. Pod wp³ywem z³ych doœwiadczeñ ¿yciowych nabiera niepewnoœci i nieufnoœci. Zanim podejmie siê pochopn¹ decyzjê o adoptowaniu psa lub kota, trzeba siê zastanowiæ, byæ mo¿e ktoœ ju¿ wczeœniej tego zwierzaka mia³, albo go wczeœniej wzi¹³ ze schroniska, i z niespodziewanych przyczyn go potem odda³. Zwierz¹ta bardzo Ÿle znosz¹ takie sytuacje, brak pewnoœci, brak swojego miejsca, brak opieki cz³owieka. Dlatego decyzja o adopcji musi byæ bardzo dobrze przemyœlana i skonsultowana z innymi cz³onkami rodziny!</p>
-<p>Opr&oacute;cz ludzkiego sumienia, nad prawami zwierz¹t czuwa ustawa o ochronie praw zwierz¹t z 21 sierpnia 1997, w kt&oacute;rej wyraŸnie jest napisane, ¿e &bdquo;zwierzê, jako istota ¿yj¹ca, zdolna do odczuwania cierpienia, nie jest rzecz¹. Cz³owiek jest mu winien poszanowanie, ochronê i opiekê&rdquo; &ndash; nale¿y o tym pamiêtaæ i szanowaæ zwierzê w ka¿dych okolicznoœciach.</p>
+<h4>PODJÄ˜CIE DEZYCJI O WZIÄ˜CIU ZWIERZAKA ZE SCHRONISKA</h4>
+<p>Decyzja o wziÄ™ciu zwierzaka ze schroniska musi byÄ‡ przemyÅ›lana! Takiej decyzji nie wolno podejmowaÄ‡ pochopnie, pod wpÅ‚ywem chwili, zachwytu nad Å›licznym szczeniaczkiem lub kociakiem albo rozkosznie wdziÄ™czÄ…cym siÄ™ zwierzakiem ze schroniskowego boksu.</p>
+<p>Pies i kot to zwierzÄ™ta, kt&oacute;re czujÄ… i nie moÅ¼na ich traktowaÄ‡ jak rzecz! NaleÅ¼y pamiÄ™taÄ‡ o tym, Å¼e podobnie jak czÅ‚owiek, zwierze moÅ¼e byÄ‡ radosne lub moÅ¼e cierpieÄ‡. Pod wpÅ‚ywem zÅ‚ych doÅ›wiadczeÅ„ Å¼yciowych nabiera niepewnoÅ›ci i nieufnoÅ›ci. Zanim podejmie siÄ™ pochopnÄ… decyzjÄ™ o adoptowaniu psa lub kota, trzeba siÄ™ zastanowiÄ‡, byÄ‡ moÅ¼e ktoÅ› juÅ¼ wczeÅ›niej tego zwierzaka miaÅ‚, albo go wczeÅ›niej wziÄ…Å‚ ze schroniska, i z niespodziewanych przyczyn go potem oddaÅ‚. ZwierzÄ…ta bardzo Åºle znoszÄ… takie sytuacje, brak pewnoÅ›ci, brak swojego miejsca, brak opieki czÅ‚owieka. Dlatego decyzja o adopcji musi byÄ‡ bardzo dobrze przemyÅ›lana i skonsultowana z innymi czÅ‚onkami rodziny!</p>
+<p>Opr&oacute;cz ludzkiego sumienia, nad prawami zwierzÄ…t czuwa ustawa o ochronie praw zwierzÄ…t z 21 sierpnia 1997, w kt&oacute;rej wyraÅºnie jest napisane, Å¼e &bdquo;zwierzÄ™, jako istota Å¼yjÄ…ca, zdolna do odczuwania cierpienia, nie jest rzeczÄ…. CzÅ‚owiek jest mu winien poszanowanie, ochronÄ™ i opiekÄ™&rdquo; &ndash; naleÅ¼y o tym pamiÄ™taÄ‡ i szanowaÄ‡ zwierzÄ™ w kaÅ¼dych okolicznoÅ›ciach.</p>
 <p>&nbsp;</p>
 <h4>WYB&Oacute;R ODPOWIEDNIEGO PSA / KOTA</h4>
-<p>Wybieraj¹c odpowiedniego dla siebie zwierzaka ze schroniska, nale¿y wzi¹æ pod uwagê kilka podstawowych czynnik&oacute;w:</p>
+<p>WybierajÄ…c odpowiedniego dla siebie zwierzaka ze schroniska, naleÅ¼y wziÄ…Ä‡ pod uwagÄ™ kilka podstawowych czynnik&oacute;w:</p>
 <p>Wiek.</p>
-<p>Szczeniak / kociak zachowuje siê zupe³nie inaczej ni¿ podrostek (zwierzê kilkunasto miesiêczne), czy zwierzê doros³e. Wybieraj¹c odpowiedniego psa / kota dla siebie trzeba wzi¹æ pod uwagê zar&oacute;wno to, ile czasu i uwagi mo¿emy poœwiêcaæ mu dziennie, jak te¿ warunki panuj¹ce w domu, i w zale¿noœci od tego dobraæ odpowiedni wiek. Zwierzê m³odê bêdzie zawsze absorbowa³o wiêcej czasu, gdy¿ musi siê nauczyæ wszystkich regu³ panuj¹cych w domu. Trzeba te¿ liczyæ siê z ewentualnymi szkodami, jakie mo¿e zrobiæ (sikanie w domu, gryzienie r&oacute;¿nych przedmiot&oacute;w itp.).</p>
-<p>P³eæ.</p>
-<p>Zachowania samc&oacute;w r&oacute;¿ni¹ siê od zachowañ samic. Zwierzê wziête ze schroniska jest zazwyczaj wysterylizowane, jednak nie zawsze, dlatego nale¿y siê upewniæ przed adopcj¹, czy zwierzak by³ ju¿ poddany zabiegowi. Zabieg kastrowania zwierzak&oacute;w ze schroniska jest obowi¹zkowy! (Ze wzglêdu na unikanie niechcianych miot&oacute;w i mno¿enie kolejnych niechcianych zwierz¹t.)</p>
-<p>Wielkoœæ. (G³&oacute;wnie dotyczy ps&oacute;w.) Bior¹c psa podroœniêtego lub doros³ego widzimy, jakiej jest wielkoœci. Nale¿y dobraæ dla siebie takiego psa, kt&oacute;ry nie bêdzie za du¿y. Trzeba pamiêtaæ, ¿e im wiêkszy pies, tym wiêcej miejsca bêdzie potrzebowa³ i tym wiêcej jedzenia bêdzie jad³. Dlatego branie psa du¿ego musi byæ dobrze przemyœlane i odpowiednio dostosowane do warunk&oacute;w mieszkaniowych i finansowych, jakie mo¿emy mu zaoferowaæ.</p>
-<p>Jeœli decydujemy siê na szczeniaka i nie wiemy, do jakiej wielkoœci mo¿e urosn¹æ, to najlepiej skonsultowaæ to z jakimœ pracownikiem lub weterynarzem, kt&oacute;ry bêdzie wiedzia³ wiêcej o psie.</p>
-<p>Zachowanie. Trzeba spytaæ opiekun&oacute;w i pracownik&oacute;w schroniska, co wiedz¹ o danym zwierzaku. Nie mo¿na podejmowaæ decyzji tylko i wy³¹cznie na podstawie tego, jak zwierzak siê zachowuje w klatce. Pies w obecnoœci innych ps&oacute;w z boksu, lub nieznajomych ludzi, kt&oacute;rzy stoj¹ przed boksem, mo¿e zachowywaæ siê zupe³nie inaczej, ni¿ sam na spacerze, czy z opiekunem, kt&oacute;rego lubi i kt&oacute;remu ufa. Podobnie jest z kotem, inaczej zachowuje siê w klatce z innymi kotami, a inaczej sam.</p>
-<p>Stopniowe zapoznawanie siê. Dobrym pomys³em jest przyjœæ do schroniska kilkakrotnie. Poznaæ psa / kota, spr&oacute;bowaæ wyjœæ z psem na spacer, wpierw pod okiem opiekun&oacute;w ze schroniska, a potem samodzielnie. W ten spos&oacute;b, gdy zdecydujemy siê ostatecznie na wziêcie tego konkretnego zwierzaka do domu, to nie bêdzie dla nas ca³kiem obcy.</p>
-<p>Pytania do pracownik&oacute;w. Przed ostateczn¹ decyzj¹ i wziêciem zwierzaka do domu, nale¿y uzyskaæ mo¿liwie jak najwiêcej informacji od pracownik&oacute;w schroniska. Najcenniejsze informacje to takie, kt&oacute;re dotycz¹ jego zachowania w r&oacute;¿nych sytuacjach, kt&oacute;rych my nie jesteœmy w stanie sami zobaczyæ podczas zapoznawania siê ze zwierzakiem. Takich wiadomoœci mog¹ nam udzieliæ pracownicy obs³ugi schroniska, kt&oacute;ry karmi¹ zwierzêta, sprz¹taj¹ w boksach, wyprowadzaj¹ psy na spacery. Wolontariusze, kt&oacute;rzy pomagaj¹ w schroniskach te¿ mog¹ byæ cennym Ÿr&oacute;d³em informacji. Czasem warto te¿ zapytaæ weterynarza, kt&oacute;ry m&oacute;g³ mieæ do czynienia z psem podczas szczepieñ, ewentualnych zabieg&oacute;w, czy te¿ rutynowych kontroli.</p>
-<p>O co nale¿y spytaæ w pierwszej kolejnoœci?</p>
-<p>- o aktywnoœæ zwierzaka</p>
+<p>Szczeniak / kociak zachowuje siÄ™ zupeÅ‚nie inaczej niÅ¼ podrostek (zwierzÄ™ kilkunasto miesiÄ™czne), czy zwierzÄ™ dorosÅ‚e. WybierajÄ…c odpowiedniego psa / kota dla siebie trzeba wziÄ…Ä‡ pod uwagÄ™ zar&oacute;wno to, ile czasu i uwagi moÅ¼emy poÅ›wiÄ™caÄ‡ mu dziennie, jak teÅ¼ warunki panujÄ…ce w domu, i w zaleÅ¼noÅ›ci od tego dobraÄ‡ odpowiedni wiek. ZwierzÄ™ mÅ‚odÄ™ bÄ™dzie zawsze absorbowaÅ‚o wiÄ™cej czasu, gdyÅ¼ musi siÄ™ nauczyÄ‡ wszystkich reguÅ‚ panujÄ…cych w domu. Trzeba teÅ¼ liczyÄ‡ siÄ™ z ewentualnymi szkodami, jakie moÅ¼e zrobiÄ‡ (sikanie w domu, gryzienie r&oacute;Å¼nych przedmiot&oacute;w itp.).</p>
+<p>PÅ‚eÄ‡.</p>
+<p>Zachowania samc&oacute;w r&oacute;Å¼niÄ… siÄ™ od zachowaÅ„ samic. ZwierzÄ™ wziÄ™te ze schroniska jest zazwyczaj wysterylizowane, jednak nie zawsze, dlatego naleÅ¼y siÄ™ upewniÄ‡ przed adopcjÄ…, czy zwierzak byÅ‚ juÅ¼ poddany zabiegowi. Zabieg kastrowania zwierzak&oacute;w ze schroniska jest obowiÄ…zkowy! (Ze wzglÄ™du na unikanie niechcianych miot&oacute;w i mnoÅ¼enie kolejnych niechcianych zwierzÄ…t.)</p>
+<p>WielkoÅ›Ä‡. (GÅ‚&oacute;wnie dotyczy ps&oacute;w.) BiorÄ…c psa podroÅ›niÄ™tego lub dorosÅ‚ego widzimy, jakiej jest wielkoÅ›ci. NaleÅ¼y dobraÄ‡ dla siebie takiego psa, kt&oacute;ry nie bÄ™dzie za duÅ¼y. Trzeba pamiÄ™taÄ‡, Å¼e im wiÄ™kszy pies, tym wiÄ™cej miejsca bÄ™dzie potrzebowaÅ‚ i tym wiÄ™cej jedzenia bÄ™dzie jadÅ‚. Dlatego branie psa duÅ¼ego musi byÄ‡ dobrze przemyÅ›lane i odpowiednio dostosowane do warunk&oacute;w mieszkaniowych i finansowych, jakie moÅ¼emy mu zaoferowaÄ‡.</p>
+<p>JeÅ›li decydujemy siÄ™ na szczeniaka i nie wiemy, do jakiej wielkoÅ›ci moÅ¼e urosnÄ…Ä‡, to najlepiej skonsultowaÄ‡ to z jakimÅ› pracownikiem lub weterynarzem, kt&oacute;ry bÄ™dzie wiedziaÅ‚ wiÄ™cej o psie.</p>
+<p>Zachowanie. Trzeba spytaÄ‡ opiekun&oacute;w i pracownik&oacute;w schroniska, co wiedzÄ… o danym zwierzaku. Nie moÅ¼na podejmowaÄ‡ decyzji tylko i wyÅ‚Ä…cznie na podstawie tego, jak zwierzak siÄ™ zachowuje w klatce. Pies w obecnoÅ›ci innych ps&oacute;w z boksu, lub nieznajomych ludzi, kt&oacute;rzy stojÄ… przed boksem, moÅ¼e zachowywaÄ‡ siÄ™ zupeÅ‚nie inaczej, niÅ¼ sam na spacerze, czy z opiekunem, kt&oacute;rego lubi i kt&oacute;remu ufa. Podobnie jest z kotem, inaczej zachowuje siÄ™ w klatce z innymi kotami, a inaczej sam.</p>
+<p>Stopniowe zapoznawanie siÄ™. Dobrym pomysÅ‚em jest przyjÅ›Ä‡ do schroniska kilkakrotnie. PoznaÄ‡ psa / kota, spr&oacute;bowaÄ‡ wyjÅ›Ä‡ z psem na spacer, wpierw pod okiem opiekun&oacute;w ze schroniska, a potem samodzielnie. W ten spos&oacute;b, gdy zdecydujemy siÄ™ ostatecznie na wziÄ™cie tego konkretnego zwierzaka do domu, to nie bÄ™dzie dla nas caÅ‚kiem obcy.</p>
+<p>Pytania do pracownik&oacute;w. Przed ostatecznÄ… decyzjÄ… i wziÄ™ciem zwierzaka do domu, naleÅ¼y uzyskaÄ‡ moÅ¼liwie jak najwiÄ™cej informacji od pracownik&oacute;w schroniska. Najcenniejsze informacje to takie, kt&oacute;re dotyczÄ… jego zachowania w r&oacute;Å¼nych sytuacjach, kt&oacute;rych my nie jesteÅ›my w stanie sami zobaczyÄ‡ podczas zapoznawania siÄ™ ze zwierzakiem. Takich wiadomoÅ›ci mogÄ… nam udzieliÄ‡ pracownicy obsÅ‚ugi schroniska, kt&oacute;ry karmiÄ… zwierzÄ™ta, sprzÄ…tajÄ… w boksach, wyprowadzajÄ… psy na spacery. Wolontariusze, kt&oacute;rzy pomagajÄ… w schroniskach teÅ¼ mogÄ… byÄ‡ cennym Åºr&oacute;dÅ‚em informacji. Czasem warto teÅ¼ zapytaÄ‡ weterynarza, kt&oacute;ry m&oacute;gÅ‚ mieÄ‡ do czynienia z psem podczas szczepieÅ„, ewentualnych zabieg&oacute;w, czy teÅ¼ rutynowych kontroli.</p>
+<p>O co naleÅ¼y spytaÄ‡ w pierwszej kolejnoÅ›ci?</p>
+<p>- o aktywnoÅ›Ä‡ zwierzaka</p>
 <p>- o jego relacje z innymi psami / kotami</p>
-<p>- o jego relacje z ludŸmi (i z dzieæmi, jeœli to nas dotyczy)</p>
-<p>- czy bywa lêkliwy, jeœli tak to, w jakich sytuacjach</p>
-<p>- jak zachowuje siê na spacerach (czy ci¹gnie, czy zna jakieœ podstawowe komendy, czy ma tenmdencje do uciekania itp.)</p>
-<p>- jeœli pies wczeœniej mia³ dom, to czy mieszka³ wewn¹trz, czy na zewn¹trz (mieszkanie, dom, ogr&oacute;d, buda)</p>
-<p>- i wszystko inne, co mo¿e nam siê przydaæ i co chcemy wiedzieæ o zwierzaku zanim do nas ostatecznie trafi. Im wiêcej pytañ zadamy, tym wiêcej dowiemy siê o zwierzêciu i bêdziemy mieæ wiêksze szanse, ¿e ten konkretny zwierzak, to jest rzeczywiœcie ten w³aœciwy dla nas i naszej rodziny.</p>
-<p style="text-align: right;">(treœæ skopiowana ze strony:&nbsp;http://www.schronisko.krakow.pl/Porady/Jak_post%C4%99powa%C4%87_ze_zwierz%C4%99ciem_z_azylu/)</p>');
+<p>- o jego relacje z ludÅºmi (i z dzieÄ‡mi, jeÅ›li to nas dotyczy)</p>
+<p>- czy bywa lÄ™kliwy, jeÅ›li tak to, w jakich sytuacjach</p>
+<p>- jak zachowuje siÄ™ na spacerach (czy ciÄ…gnie, czy zna jakieÅ› podstawowe komendy, czy ma tenmdencje do uciekania itp.)</p>
+<p>- jeÅ›li pies wczeÅ›niej miaÅ‚ dom, to czy mieszkaÅ‚ wewnÄ…trz, czy na zewnÄ…trz (mieszkanie, dom, ogr&oacute;d, buda)</p>
+<p>- i wszystko inne, co moÅ¼e nam siÄ™ przydaÄ‡ i co chcemy wiedzieÄ‡ o zwierzaku zanim do nas ostatecznie trafi. Im wiÄ™cej pytaÅ„ zadamy, tym wiÄ™cej dowiemy siÄ™ o zwierzÄ™ciu i bÄ™dziemy mieÄ‡ wiÄ™ksze szanse, Å¼e ten konkretny zwierzak, to jest rzeczywiÅ›cie ten wÅ‚aÅ›ciwy dla nas i naszej rodziny.</p>
+<p style="text-align: right;">(treÅ›Ä‡ skopiowana ze strony:&nbsp;http://www.schronisko.krakow.pl/Porady/Jak_post%C4%99powa%C4%87_ze_zwierz%C4%99ciem_z_azylu/)</p>');
 INSERT INTO article (id, title, content) VALUES ('found', 'Znalezione', '<h3 style="text-align: center;">Znalezione</h3>
-<p>Aktualnie nie posiadamy ¿adnych zwierz¹t&nbsp;bez ustalonego poprzedniego w³aœciciela.</p>');
-INSERT INTO article (id, title, content) VALUES ('cooperation', 'Wspó³praca', '<h3 style="text-align: center;">Wsp&oacute;³praca</h3>
-<p>Szukamy sponsor&oacute;w dla naszego schroniska. W zamian u¿yczymy zwierz¹t do reklamy telewizyjnej lub wstawimy baner reklamowy na nasz serwis.</p>');
+<p>Aktualnie nie posiadamy Å¼adnych zwierzÄ…t&nbsp;bez ustalonego poprzedniego wÅ‚aÅ›ciciela.</p>');
+INSERT INTO article (id, title, content) VALUES ('cooperation', 'WspÃ³Å‚praca', '<h3 style="text-align: center;">Wsp&oacute;Å‚praca</h3>
+<p>Szukamy sponsor&oacute;w dla naszego schroniska. W zamian uÅ¼yczymy zwierzÄ…t do reklamy telewizyjnej lub wstawimy baner reklamowy na nasz serwis.</p>');
 INSERT INTO article (id, title, content) VALUES ('contact', 'Kontakt', '<h3 style="text-align: center;">Kontakt</h3>
 <p style="text-align: justify;"><strong>Adres:</strong></p>
 <p style="text-align: justify;">ul. Schroniskowa 38<br />31-123 Krak&oacute;w</p>
@@ -348,7 +348,7 @@ insert into vet (id, name, surname, address) values (nextval('vet_id_seq'), 'Pat
 insert into vet (id, name, surname, address) values (nextval('vet_id_seq'), 'Henry', 'Arnold', '5218 Anzinger Crossing');
 insert into vet (id, name, surname, address) values (nextval('vet_id_seq'), 'Andrea', 'Fernandez', '40191 Lukken Hill');
 
-insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Stefan', 'Administratorski', '11-111 Administratorowo ul. Adminów 38');
+insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Stefan', 'Administratorski', '11-111 Administratorowo ul. AdminÃ³w 38');
 insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Annie', 'Harper', '64896 Helena Way');
 insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Debra', 'Bradley', '5 Eagan Drive');
 insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Henry', 'Stevens', '15 3rd Place');
@@ -449,7 +449,7 @@ insert into administrator (id, name, surname, address) values (nextval('administ
 insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Antonio', 'Hansen', '7 Chinook Place');
 insert into administrator (id, name, surname, address) values (nextval('administrator_id_seq'), 'Donna', 'Elliott', '55950 Summer Ridge Street');
 
-insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Zbigniew', 'Opiekuñczy', '00-100 Opiekunowo ul. Opiekunów 62');
+insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Zbigniew', 'OpiekuÅ„czy', '00-100 Opiekunowo ul. OpiekunÃ³w 62');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Samuel', 'Ray', '618 Orin Terrace');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Catherine', 'Ryan', '47 Clove Pass');
 insert into animal_keeper (id, name, surname, address) values (nextval('animal_keeper_id_seq'), 'Christopher', 'Greene', '127 Blue Bill Park Terrace');
@@ -2453,18 +2453,18 @@ INSERT INTO animal(registration_number,name,age,sex,species,link_to_image,room_n
 INSERT INTO animal(registration_number,name,age,sex,species,link_to_image,room_number,adoption_possible,acceptance_date,adoption_date) VALUES (nextval('animal_id_seq'),'Marilyn',13,'Samica','Kot',NULL,33,0,'2015-12-19 20:33:16',NULL);
 INSERT INTO animal(registration_number,name,age,sex,species,link_to_image,room_number,adoption_possible,acceptance_date,adoption_date) VALUES (nextval('animal_id_seq'),'Kathryn',24,'Samica','Pies',NULL,15,0,'2016-01-02 21:45:31','2016-05-12 18:05:49');
 
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-04 12:12:29', 'Oczekuj¹cy', 88, 858);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-22 14:43:03', 'Oczekuj¹cy', 74, 768);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-04 12:12:29', 'OczekujÄ…cy', 88, 858);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-22 14:43:03', 'OczekujÄ…cy', 74, 768);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-25 17:03:17', 'Zaakceptowany', 20, 436);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-06 09:29:37', 'Odrzucony', 58, 257);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-09 09:15:56', 'Oczekuj¹cy', 33, 548);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-09 09:15:56', 'OczekujÄ…cy', 33, 548);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-24 16:17:43', 'Odrzucony', 29, 418);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-18 09:52:29', 'Oczekuj¹cy', 3, 933);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-18 09:52:29', 'OczekujÄ…cy', 3, 933);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-18 04:27:49', 'Zaakceptowany', 19, 300);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-27 14:20:16', 'Odrzucony', 30, 794);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-12 01:24:29', 'Oczekuj¹cy', 55, 822);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-12 01:24:29', 'OczekujÄ…cy', 55, 822);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-03 01:47:21', 'Zaakceptowany', 53, 721);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-27 10:04:28', 'Oczekuj¹cy', 22, 913);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-27 10:04:28', 'OczekujÄ…cy', 22, 913);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-15 18:02:34', 'Odrzucony', 47, 896);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-02 17:52:29', 'Zaakceptowany', 13, 162);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-18 18:54:16', 'Odrzucony', 14, 893);
@@ -2473,60 +2473,60 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-07 09:12:17', 'Zaakceptowany', 61, 153);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-01 03:54:36', 'Odrzucony', 82, 663);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-04 03:02:32', 'Odrzucony', 79, 927);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-23 14:29:27', 'Oczekuj¹cy', 3, 844);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-23 14:29:27', 'OczekujÄ…cy', 3, 844);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-30 23:32:24', 'Zaakceptowany', 30, 784);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-26 19:02:46', 'Zaakceptowany', 30, 132);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-16 11:26:42', 'Oczekuj¹cy', 63, 736);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-16 12:03:32', 'Oczekuj¹cy', 63, 269);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-04 17:53:17', 'Oczekuj¹cy', 31, 957);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-16 11:26:42', 'OczekujÄ…cy', 63, 736);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-16 12:03:32', 'OczekujÄ…cy', 63, 269);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-04 17:53:17', 'OczekujÄ…cy', 31, 957);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-08 03:44:08', 'Zaakceptowany', 64, 974);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-12 15:59:19', 'Odrzucony', 9, 171);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-19 14:51:24', 'Oczekuj¹cy', 75, 658);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-19 14:51:24', 'OczekujÄ…cy', 75, 658);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-04 04:32:08', 'Zaakceptowany', 100, 35);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 19:34:18', 'Zaakceptowany', 92, 44);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-11 11:46:34', 'Oczekuj¹cy', 75, 190);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-11 11:46:34', 'OczekujÄ…cy', 75, 190);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-08 08:05:07', 'Zaakceptowany', 16, 272);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-09 23:03:18', 'Zaakceptowany', 41, 382);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-14 08:33:50', 'Odrzucony', 68, 840);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-04 07:54:00', 'Odrzucony', 5, 230);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-24 09:45:58', 'Oczekuj¹cy', 45, 109);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-24 09:45:58', 'OczekujÄ…cy', 45, 109);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-21 18:57:15', 'Odrzucony', 14, 341);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-09 12:01:14', 'Oczekuj¹cy', 82, 106);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-09 12:01:14', 'OczekujÄ…cy', 82, 106);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-21 23:31:37', 'Zaakceptowany', 32, 327);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 17:13:10', 'Oczekuj¹cy', 52, 104);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 17:13:10', 'OczekujÄ…cy', 52, 104);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-23 08:36:16', 'Odrzucony', 79, 445);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 07:40:52', 'Oczekuj¹cy', 80, 110);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 07:40:52', 'OczekujÄ…cy', 80, 110);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-02 04:33:34', 'Zaakceptowany', 72, 948);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-15 21:52:33', 'Oczekuj¹cy', 96, 784);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-15 21:52:33', 'OczekujÄ…cy', 96, 784);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-17 15:24:40', 'Odrzucony', 37, 829);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-30 00:07:35', 'Oczekuj¹cy', 50, 656);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-21 22:28:17', 'Oczekuj¹cy', 61, 362);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-30 00:07:35', 'OczekujÄ…cy', 50, 656);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-21 22:28:17', 'OczekujÄ…cy', 61, 362);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-26 00:59:42', 'Odrzucony', 13, 88);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-27 17:00:47', 'Odrzucony', 46, 913);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-05 08:13:12', 'Odrzucony', 26, 515);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-22 15:11:55', 'Odrzucony', 19, 836);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 18:01:03', 'Oczekuj¹cy', 82, 626);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 18:01:03', 'OczekujÄ…cy', 82, 626);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-07 19:12:02', 'Zaakceptowany', 17, 458);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 17:08:55', 'Odrzucony', 22, 15);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2017-01-04 05:12:50', 'Oczekuj¹cy', 90, 299);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2017-01-04 05:12:50', 'OczekujÄ…cy', 90, 299);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-20 00:50:35', 'Odrzucony', 80, 987);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-09 11:53:03', 'Odrzucony', 4, 379);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-24 17:58:18', 'Zaakceptowany', 39, 592);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-13 09:24:36', 'Oczekuj¹cy', 33, 110);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-28 01:52:31', 'Oczekuj¹cy', 46, 336);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-26 10:12:36', 'Oczekuj¹cy', 47, 166);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 22:56:52', 'Oczekuj¹cy', 25, 636);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-13 09:24:36', 'OczekujÄ…cy', 33, 110);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-28 01:52:31', 'OczekujÄ…cy', 46, 336);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-26 10:12:36', 'OczekujÄ…cy', 47, 166);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 22:56:52', 'OczekujÄ…cy', 25, 636);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-14 02:44:51', 'Odrzucony', 75, 137);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-10 06:45:27', 'Oczekuj¹cy', 10, 484);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-10 06:45:27', 'OczekujÄ…cy', 10, 484);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-22 01:20:16', 'Zaakceptowany', 20, 240);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-02 19:36:40', 'Oczekuj¹cy', 94, 295);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-02 19:36:40', 'OczekujÄ…cy', 94, 295);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-11 14:41:02', 'Odrzucony', 32, 945);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-08 10:38:20', 'Zaakceptowany', 4, 952);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-05 19:57:16', 'Oczekuj¹cy', 86, 603);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-10 22:07:27', 'Oczekuj¹cy', 32, 74);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-05 19:57:16', 'OczekujÄ…cy', 86, 603);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-10 22:07:27', 'OczekujÄ…cy', 32, 74);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2017-01-03 05:27:02', 'Zaakceptowany', 7, 469);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2017-01-04 21:30:08', 'Odrzucony', 99, 48);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-05 23:27:26', 'Oczekuj¹cy', 89, 497);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-05 23:27:26', 'OczekujÄ…cy', 89, 497);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-22 05:31:20', 'Odrzucony', 57, 555);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-29 16:44:29', 'Odrzucony', 65, 32);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-27 04:11:04', 'Odrzucony', 54, 387);
@@ -2534,68 +2534,68 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-13 19:30:46', 'Odrzucony', 54, 701);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-23 07:34:39', 'Zaakceptowany', 66, 558);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-21 16:03:32', 'Zaakceptowany', 42, 445);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-02 13:35:23', 'Oczekuj¹cy', 89, 790);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-10 13:49:20', 'Oczekuj¹cy', 56, 44);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-28 01:29:22', 'Oczekuj¹cy', 68, 327);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-14 15:15:09', 'Oczekuj¹cy', 77, 992);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-02 13:35:23', 'OczekujÄ…cy', 89, 790);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-10 13:49:20', 'OczekujÄ…cy', 56, 44);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-28 01:29:22', 'OczekujÄ…cy', 68, 327);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-14 15:15:09', 'OczekujÄ…cy', 77, 992);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-14 22:36:44', 'Odrzucony', 54, 530);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-13 15:39:45', 'Zaakceptowany', 38, 141);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-05 07:18:42', 'Oczekuj¹cy', 31, 65);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-05 07:18:42', 'OczekujÄ…cy', 31, 65);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-06 17:48:29', 'Zaakceptowany', 31, 77);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-05 21:08:40', 'Oczekuj¹cy', 77, 534);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-16 01:07:16', 'Oczekuj¹cy', 76, 323);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-05 21:08:40', 'OczekujÄ…cy', 77, 534);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-16 01:07:16', 'OczekujÄ…cy', 76, 323);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-06 00:13:35', 'Zaakceptowany', 6, 995);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-23 06:50:57', 'Oczekuj¹cy', 32, 781);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-23 06:50:57', 'OczekujÄ…cy', 32, 781);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-12 10:15:18', 'Zaakceptowany', 80, 114);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-08 03:19:05', 'Odrzucony', 76, 631);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-08 17:33:58', 'Odrzucony', 42, 431);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 09:30:55', 'Odrzucony', 21, 311);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-08 15:40:07', 'Zaakceptowany', 76, 75);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-10 10:35:28', 'Zaakceptowany', 41, 350);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-06 07:13:44', 'Oczekuj¹cy', 65, 959);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-06 07:13:44', 'OczekujÄ…cy', 65, 959);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-17 21:04:42', 'Odrzucony', 50, 112);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-09 14:41:36', 'Zaakceptowany', 7, 414);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-22 12:31:08', 'Oczekuj¹cy', 52, 726);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-22 12:31:08', 'OczekujÄ…cy', 52, 726);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-14 19:23:21', 'Zaakceptowany', 35, 121);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-10 22:34:37', 'Oczekuj¹cy', 99, 398);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-10 22:34:37', 'OczekujÄ…cy', 99, 398);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 18:11:59', 'Odrzucony', 37, 825);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-23 21:32:40', 'Oczekuj¹cy', 39, 256);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-23 21:32:40', 'OczekujÄ…cy', 39, 256);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-11 10:13:04', 'Zaakceptowany', 82, 717);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-16 18:13:28', 'Oczekuj¹cy', 30, 867);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-21 23:51:54', 'Oczekuj¹cy', 76, 671);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-23 00:25:36', 'Oczekuj¹cy', 1, 122);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-17 18:44:29', 'Oczekuj¹cy', 92, 168);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-16 18:13:28', 'OczekujÄ…cy', 30, 867);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-21 23:51:54', 'OczekujÄ…cy', 76, 671);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-23 00:25:36', 'OczekujÄ…cy', 1, 122);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-17 18:44:29', 'OczekujÄ…cy', 92, 168);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-11 16:26:17', 'Zaakceptowany', 54, 269);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-11 15:02:14', 'Oczekuj¹cy', 57, 452);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-24 04:22:15', 'Oczekuj¹cy', 53, 258);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-11 15:02:14', 'OczekujÄ…cy', 57, 452);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-24 04:22:15', 'OczekujÄ…cy', 53, 258);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-28 20:50:39', 'Odrzucony', 12, 700);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-07 01:36:02', 'Odrzucony', 66, 946);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-14 04:19:30', 'Oczekuj¹cy', 81, 758);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-14 04:19:30', 'OczekujÄ…cy', 81, 758);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-20 04:02:52', 'Zaakceptowany', 58, 495);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 05:44:53', 'Zaakceptowany', 63, 31);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-22 10:56:10', 'Oczekuj¹cy', 72, 886);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-22 10:56:10', 'OczekujÄ…cy', 72, 886);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-07 21:41:06', 'Odrzucony', 66, 595);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-21 21:21:56', 'Zaakceptowany', 39, 494);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-01 03:58:55', 'Zaakceptowany', 67, 950);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-02 06:49:02', 'Oczekuj¹cy', 54, 321);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-07 06:59:00', 'Oczekuj¹cy', 82, 551);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-13 19:54:08', 'Oczekuj¹cy', 40, 874);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-05 12:25:14', 'Oczekuj¹cy', 51, 898);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-25 20:39:45', 'Oczekuj¹cy', 3, 759);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-07 02:44:57', 'Oczekuj¹cy', 35, 198);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-02 06:49:02', 'OczekujÄ…cy', 54, 321);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-07 06:59:00', 'OczekujÄ…cy', 82, 551);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-13 19:54:08', 'OczekujÄ…cy', 40, 874);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-05 12:25:14', 'OczekujÄ…cy', 51, 898);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-25 20:39:45', 'OczekujÄ…cy', 3, 759);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-07 02:44:57', 'OczekujÄ…cy', 35, 198);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-26 19:48:13', 'Zaakceptowany', 24, 582);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-11 12:07:15', 'Zaakceptowany', 39, 76);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 14:40:11', 'Odrzucony', 65, 188);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-02 12:02:03', 'Oczekuj¹cy', 61, 554);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-22 04:36:55', 'Oczekuj¹cy', 63, 902);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-02 12:02:03', 'OczekujÄ…cy', 61, 554);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-22 04:36:55', 'OczekujÄ…cy', 63, 902);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-11 02:18:20', 'Zaakceptowany', 39, 926);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-11 16:06:58', 'Oczekuj¹cy', 60, 368);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-11 16:06:58', 'OczekujÄ…cy', 60, 368);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-12 17:48:06', 'Odrzucony', 86, 308);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-13 07:04:17', 'Zaakceptowany', 37, 824);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-14 15:00:35', 'Odrzucony', 17, 162);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-26 12:37:08', 'Oczekuj¹cy', 93, 270);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-21 02:21:56', 'Oczekuj¹cy', 39, 294);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-08 19:14:31', 'Oczekuj¹cy', 96, 561);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-26 12:37:08', 'OczekujÄ…cy', 93, 270);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-21 02:21:56', 'OczekujÄ…cy', 39, 294);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-08 19:14:31', 'OczekujÄ…cy', 96, 561);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-14 15:18:36', 'Zaakceptowany', 67, 966);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-11 11:59:12', 'Zaakceptowany', 22, 266);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-29 09:57:57', 'Odrzucony', 90, 932);
@@ -2603,17 +2603,17 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-14 18:53:45', 'Odrzucony', 54, 434);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-11 12:35:09', 'Odrzucony', 12, 586);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-14 07:27:52', 'Odrzucony', 5, 787);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-17 20:58:20', 'Oczekuj¹cy', 80, 418);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-17 20:58:20', 'OczekujÄ…cy', 80, 418);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-16 10:14:00', 'Odrzucony', 18, 964);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-26 14:06:28', 'Zaakceptowany', 82, 182);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-03 00:34:02', 'Oczekuj¹cy', 93, 170);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-03 00:34:02', 'OczekujÄ…cy', 93, 170);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-23 12:14:30', 'Odrzucony', 49, 712);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-18 19:19:38', 'Odrzucony', 84, 950);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 17:15:28', 'Odrzucony', 77, 172);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-26 11:12:22', 'Zaakceptowany', 6, 5);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-06 07:15:42', 'Odrzucony', 78, 709);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 10:19:04', 'Oczekuj¹cy', 80, 463);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-23 14:02:47', 'Oczekuj¹cy', 100, 33);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 10:19:04', 'OczekujÄ…cy', 80, 463);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-23 14:02:47', 'OczekujÄ…cy', 100, 33);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-16 00:01:59', 'Zaakceptowany', 74, 571);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-28 02:05:56', 'Odrzucony', 40, 296);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-24 17:43:09', 'Odrzucony', 26, 339);
@@ -2621,62 +2621,62 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-03 07:36:31', 'Zaakceptowany', 65, 401);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-16 10:24:35', 'Zaakceptowany', 1, 757);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-01 07:35:03', 'Odrzucony', 73, 571);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-01 04:00:09', 'Oczekuj¹cy', 95, 276);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-01 04:00:09', 'OczekujÄ…cy', 95, 276);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-23 14:29:28', 'Zaakceptowany', 88, 924);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-21 19:01:32', 'Oczekuj¹cy', 30, 960);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-21 19:01:32', 'OczekujÄ…cy', 30, 960);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-13 07:21:15', 'Zaakceptowany', 57, 797);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-26 06:33:31', 'Oczekuj¹cy', 25, 589);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 15:02:11', 'Oczekuj¹cy', 94, 957);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-26 06:33:31', 'OczekujÄ…cy', 25, 589);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 15:02:11', 'OczekujÄ…cy', 94, 957);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-31 17:09:44', 'Odrzucony', 41, 955);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-27 23:24:38', 'Oczekuj¹cy', 23, 972);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-07 07:04:35', 'Oczekuj¹cy', 38, 29);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-27 23:24:38', 'OczekujÄ…cy', 23, 972);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-07 07:04:35', 'OczekujÄ…cy', 38, 29);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-01 15:02:37', 'Zaakceptowany', 97, 710);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-12 03:59:09', 'Zaakceptowany', 82, 701);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-29 23:37:14', 'Zaakceptowany', 86, 58);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-08 19:09:02', 'Oczekuj¹cy', 69, 523);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-08 19:09:02', 'OczekujÄ…cy', 69, 523);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-29 05:27:45', 'Odrzucony', 4, 217);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-19 02:13:33', 'Oczekuj¹cy', 19, 751);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-19 02:13:33', 'OczekujÄ…cy', 19, 751);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-06 12:52:29', 'Odrzucony', 89, 77);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-21 20:41:05', 'Oczekuj¹cy', 35, 296);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-21 20:41:05', 'OczekujÄ…cy', 35, 296);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-24 06:11:07', 'Odrzucony', 83, 646);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 23:07:42', 'Oczekuj¹cy', 61, 442);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-19 04:08:37', 'Oczekuj¹cy', 26, 74);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 23:07:42', 'OczekujÄ…cy', 61, 442);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-19 04:08:37', 'OczekujÄ…cy', 26, 74);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 13:21:54', 'Zaakceptowany', 34, 833);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-18 09:20:06', 'Odrzucony', 19, 371);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-30 11:23:55', 'Oczekuj¹cy', 57, 11);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-30 11:23:55', 'OczekujÄ…cy', 57, 11);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-02 00:05:51', 'Zaakceptowany', 95, 584);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 23:05:09', 'Oczekuj¹cy', 87, 94);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 23:05:09', 'OczekujÄ…cy', 87, 94);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-12 11:28:50', 'Odrzucony', 86, 947);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-01 18:17:11', 'Zaakceptowany', 1, 538);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-28 05:13:29', 'Oczekuj¹cy', 79, 883);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-28 05:13:29', 'OczekujÄ…cy', 79, 883);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-07 09:22:30', 'Odrzucony', 42, 727);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-14 13:40:12', 'Oczekuj¹cy', 7, 259);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-14 13:40:12', 'OczekujÄ…cy', 7, 259);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-18 07:16:37', 'Odrzucony', 5, 762);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-23 13:51:35', 'Zaakceptowany', 46, 327);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-28 11:09:33', 'Odrzucony', 92, 93);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-22 15:44:12', 'Oczekuj¹cy', 77, 1);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 22:10:59', 'Oczekuj¹cy', 93, 431);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-15 02:06:33', 'Oczekuj¹cy', 70, 51);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-01 19:25:48', 'Oczekuj¹cy', 12, 798);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-24 20:08:16', 'Oczekuj¹cy', 50, 364);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-22 15:44:12', 'OczekujÄ…cy', 77, 1);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 22:10:59', 'OczekujÄ…cy', 93, 431);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-15 02:06:33', 'OczekujÄ…cy', 70, 51);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-01 19:25:48', 'OczekujÄ…cy', 12, 798);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-24 20:08:16', 'OczekujÄ…cy', 50, 364);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-11 05:11:23', 'Zaakceptowany', 84, 382);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-18 05:57:30', 'Zaakceptowany', 12, 580);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-29 05:52:50', 'Odrzucony', 1, 750);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-06 20:12:03', 'Zaakceptowany', 52, 794);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-19 04:03:25', 'Zaakceptowany', 14, 835);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-07 02:59:29', 'Oczekuj¹cy', 8, 302);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-08 14:19:37', 'Oczekuj¹cy', 30, 58);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 20:04:20', 'Oczekuj¹cy', 8, 618);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-07 02:59:29', 'OczekujÄ…cy', 8, 302);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-08 14:19:37', 'OczekujÄ…cy', 30, 58);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 20:04:20', 'OczekujÄ…cy', 8, 618);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-19 13:56:06', 'Odrzucony', 42, 949);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-03 15:38:01', 'Odrzucony', 57, 39);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-16 01:29:45', 'Odrzucony', 38, 779);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-07 07:39:35', 'Zaakceptowany', 62, 31);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-11 16:44:19', 'Oczekuj¹cy', 74, 447);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-11 16:44:19', 'OczekujÄ…cy', 74, 447);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-04 23:05:25', 'Zaakceptowany', 31, 613);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-14 02:11:40', 'Zaakceptowany', 14, 129);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-28 13:16:20', 'Zaakceptowany', 85, 703);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-06 23:17:55', 'Zaakceptowany', 26, 241);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-09 19:46:28', 'Oczekuj¹cy', 1, 28);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-09 19:46:28', 'OczekujÄ…cy', 1, 28);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-10 07:40:43', 'Zaakceptowany', 23, 842);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-05 19:31:20', 'Zaakceptowany', 21, 450);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-02 17:03:08', 'Odrzucony', 79, 77);
@@ -2684,25 +2684,25 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-24 07:36:53', 'Zaakceptowany', 28, 301);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 18:28:05', 'Zaakceptowany', 51, 50);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-31 02:36:26', 'Odrzucony', 89, 422);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-05 02:11:44', 'Oczekuj¹cy', 32, 75);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-05 02:11:44', 'OczekujÄ…cy', 32, 75);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-20 04:11:01', 'Zaakceptowany', 44, 841);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-09 18:22:17', 'Odrzucony', 38, 118);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-15 12:52:18', 'Zaakceptowany', 6, 366);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-05 14:13:47', 'Oczekuj¹cy', 20, 956);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-05 14:13:47', 'OczekujÄ…cy', 20, 956);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-24 18:33:15', 'Zaakceptowany', 70, 78);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-21 19:38:16', 'Zaakceptowany', 62, 898);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-01 21:20:11', 'Oczekuj¹cy', 50, 241);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-01 21:20:11', 'OczekujÄ…cy', 50, 241);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-10 20:04:26', 'Odrzucony', 90, 573);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-03 06:32:51', 'Odrzucony', 26, 599);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-05 10:32:14', 'Oczekuj¹cy', 22, 463);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-05 10:32:14', 'OczekujÄ…cy', 22, 463);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-24 20:43:45', 'Zaakceptowany', 17, 577);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-08 12:52:59', 'Odrzucony', 74, 200);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-27 05:56:12', 'Odrzucony', 95, 934);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-13 16:44:12', 'Odrzucony', 62, 626);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-19 04:50:51', 'Zaakceptowany', 53, 636);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-19 10:42:06', 'Oczekuj¹cy', 80, 594);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-24 01:05:12', 'Oczekuj¹cy', 25, 902);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-21 17:26:36', 'Oczekuj¹cy', 46, 261);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-19 10:42:06', 'OczekujÄ…cy', 80, 594);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-24 01:05:12', 'OczekujÄ…cy', 25, 902);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-21 17:26:36', 'OczekujÄ…cy', 46, 261);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-29 16:25:26', 'Zaakceptowany', 9, 140);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 18:12:22', 'Odrzucony', 87, 742);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-03 09:11:52', 'Zaakceptowany', 32, 55);
@@ -2719,192 +2719,192 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-22 09:19:53', 'Zaakceptowany', 50, 136);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-13 23:18:29', 'Odrzucony', 90, 122);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-21 04:07:55', 'Zaakceptowany', 26, 330);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-19 10:16:34', 'Oczekuj¹cy', 78, 427);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-19 10:16:34', 'OczekujÄ…cy', 78, 427);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-26 04:28:52', 'Zaakceptowany', 5, 670);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-28 19:03:24', 'Odrzucony', 2, 662);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-14 08:22:47', 'Odrzucony', 95, 639);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-28 17:12:20', 'Oczekuj¹cy', 91, 269);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-04 11:37:59', 'Oczekuj¹cy', 91, 144);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-28 17:12:20', 'OczekujÄ…cy', 91, 269);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-04 11:37:59', 'OczekujÄ…cy', 91, 144);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-09 20:43:00', 'Odrzucony', 69, 293);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-13 14:40:27', 'Zaakceptowany', 75, 99);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-10 19:46:53', 'Oczekuj¹cy', 88, 842);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-10 19:46:53', 'OczekujÄ…cy', 88, 842);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-06 19:50:32', 'Zaakceptowany', 38, 563);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-03 20:55:37', 'Zaakceptowany', 28, 946);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-18 16:07:57', 'Oczekuj¹cy', 10, 238);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-18 16:07:57', 'OczekujÄ…cy', 10, 238);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-07 02:24:53', 'Zaakceptowany', 47, 650);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-03 18:07:33', 'Oczekuj¹cy', 36, 96);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-03 18:07:33', 'OczekujÄ…cy', 36, 96);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-08 22:06:17', 'Odrzucony', 5, 909);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-07 21:09:58', 'Zaakceptowany', 82, 66);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-15 23:34:53', 'Oczekuj¹cy', 2, 6);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-02 16:56:39', 'Oczekuj¹cy', 36, 358);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-15 23:34:53', 'OczekujÄ…cy', 2, 6);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-02 16:56:39', 'OczekujÄ…cy', 36, 358);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-15 16:06:11', 'Odrzucony', 4, 693);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-05 05:56:10', 'Zaakceptowany', 61, 706);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-06 17:45:00', 'Oczekuj¹cy', 15, 871);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-06 22:23:22', 'Oczekuj¹cy', 85, 508);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-06 17:45:00', 'OczekujÄ…cy', 15, 871);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-06 22:23:22', 'OczekujÄ…cy', 85, 508);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-04 09:14:51', 'Zaakceptowany', 2, 73);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-02 19:58:01', 'Odrzucony', 77, 564);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-25 11:50:39', 'Oczekuj¹cy', 50, 911);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-25 11:50:39', 'OczekujÄ…cy', 50, 911);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-23 09:14:21', 'Odrzucony', 48, 764);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-01 14:55:32', 'Odrzucony', 47, 617);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-04 07:12:11', 'Zaakceptowany', 40, 895);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-13 18:18:13', 'Zaakceptowany', 29, 847);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 05:22:41', 'Oczekuj¹cy', 40, 564);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 05:22:41', 'OczekujÄ…cy', 40, 564);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-25 18:24:29', 'Zaakceptowany', 60, 671);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-24 04:08:03', 'Oczekuj¹cy', 91, 858);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-13 10:37:59', 'Oczekuj¹cy', 59, 143);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-24 04:08:03', 'OczekujÄ…cy', 91, 858);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-13 10:37:59', 'OczekujÄ…cy', 59, 143);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-21 18:50:31', 'Zaakceptowany', 65, 936);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-07 02:48:30', 'Zaakceptowany', 73, 171);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-12 00:56:13', 'Oczekuj¹cy', 4, 973);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-02 08:01:30', 'Oczekuj¹cy', 73, 778);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-12 00:56:13', 'OczekujÄ…cy', 4, 973);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-02 08:01:30', 'OczekujÄ…cy', 73, 778);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-25 16:51:30', 'Odrzucony', 48, 930);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-03 15:38:02', 'Zaakceptowany', 65, 523);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-10 19:28:52', 'Oczekuj¹cy', 10, 126);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-10 19:28:52', 'OczekujÄ…cy', 10, 126);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-27 06:57:31', 'Zaakceptowany', 91, 303);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-28 19:51:18', 'Odrzucony', 79, 112);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-05 15:12:24', 'Zaakceptowany', 11, 348);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-26 12:13:34', 'Odrzucony', 84, 656);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-28 05:13:57', 'Zaakceptowany', 2, 710);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-09 10:08:08', 'Zaakceptowany', 31, 397);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-26 17:43:05', 'Oczekuj¹cy', 65, 815);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-24 09:50:14', 'Oczekuj¹cy', 45, 71);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-19 03:24:43', 'Oczekuj¹cy', 90, 928);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-26 17:43:05', 'OczekujÄ…cy', 65, 815);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-24 09:50:14', 'OczekujÄ…cy', 45, 71);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-19 03:24:43', 'OczekujÄ…cy', 90, 928);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-11 13:31:31', 'Odrzucony', 100, 480);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-13 16:01:20', 'Oczekuj¹cy', 41, 712);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-13 16:01:20', 'OczekujÄ…cy', 41, 712);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-17 22:05:11', 'Zaakceptowany', 25, 432);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-24 07:48:58', 'Zaakceptowany', 66, 276);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-04 18:35:54', 'Oczekuj¹cy', 51, 139);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-01 18:16:39', 'Oczekuj¹cy', 17, 432);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-25 15:19:21', 'Oczekuj¹cy', 8, 790);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-04 18:35:54', 'OczekujÄ…cy', 51, 139);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-01 18:16:39', 'OczekujÄ…cy', 17, 432);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-25 15:19:21', 'OczekujÄ…cy', 8, 790);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-14 09:22:33', 'Odrzucony', 84, 750);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-16 07:09:50', 'Odrzucony', 22, 50);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-10 03:59:53', 'Zaakceptowany', 57, 996);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-08 07:48:26', 'Oczekuj¹cy', 32, 237);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-23 06:29:32', 'Oczekuj¹cy', 81, 160);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-08 07:48:26', 'OczekujÄ…cy', 32, 237);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-23 06:29:32', 'OczekujÄ…cy', 81, 160);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-21 19:45:43', 'Odrzucony', 94, 43);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-15 13:51:39', 'Oczekuj¹cy', 72, 439);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-15 13:51:39', 'OczekujÄ…cy', 72, 439);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-24 13:39:49', 'Odrzucony', 98, 88);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-12 15:32:34', 'Zaakceptowany', 75, 27);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-05 22:18:00', 'Odrzucony', 93, 252);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-03 11:11:53', 'Zaakceptowany', 41, 733);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-09 09:43:12', 'Odrzucony', 18, 411);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-28 20:05:43', 'Oczekuj¹cy', 46, 937);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 16:07:17', 'Oczekuj¹cy', 53, 355);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-13 03:28:37', 'Oczekuj¹cy', 89, 950);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-28 20:05:43', 'OczekujÄ…cy', 46, 937);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 16:07:17', 'OczekujÄ…cy', 53, 355);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-13 03:28:37', 'OczekujÄ…cy', 89, 950);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-12 15:07:01', 'Zaakceptowany', 45, 333);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-06 17:01:54', 'Oczekuj¹cy', 16, 246);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-06 17:01:54', 'OczekujÄ…cy', 16, 246);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-06 20:33:23', 'Zaakceptowany', 65, 492);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-04 18:46:41', 'Zaakceptowany', 5, 936);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-17 23:21:22', 'Odrzucony', 73, 170);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 09:22:29', 'Odrzucony', 85, 741);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-13 12:48:16', 'Zaakceptowany', 15, 900);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-09 11:30:56', 'Zaakceptowany', 42, 511);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-22 20:15:09', 'Oczekuj¹cy', 71, 570);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-22 20:15:09', 'OczekujÄ…cy', 71, 570);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-03 21:33:01', 'Zaakceptowany', 44, 385);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-23 08:26:36', 'Oczekuj¹cy', 87, 607);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-23 08:26:36', 'OczekujÄ…cy', 87, 607);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-19 21:40:38', 'Zaakceptowany', 10, 508);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-29 15:01:43', 'Zaakceptowany', 99, 823);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-14 20:29:42', 'Zaakceptowany', 33, 306);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-15 08:54:41', 'Oczekuj¹cy', 64, 350);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-15 08:54:41', 'OczekujÄ…cy', 64, 350);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-16 01:46:53', 'Zaakceptowany', 36, 235);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-27 00:51:52', 'Zaakceptowany', 45, 382);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-27 00:57:18', 'Zaakceptowany', 92, 613);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-01 12:42:35', 'Oczekuj¹cy', 66, 993);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-01 12:42:35', 'OczekujÄ…cy', 66, 993);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-02 06:02:30', 'Odrzucony', 94, 345);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 22:06:30', 'Oczekuj¹cy', 26, 369);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-07 22:06:30', 'OczekujÄ…cy', 26, 369);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-03 00:57:18', 'Zaakceptowany', 14, 498);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-25 19:10:30', 'Oczekuj¹cy', 62, 539);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-25 19:10:30', 'OczekujÄ…cy', 62, 539);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-07 03:56:01', 'Zaakceptowany', 86, 723);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-10 09:15:23', 'Oczekuj¹cy', 81, 997);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-10 09:15:23', 'OczekujÄ…cy', 81, 997);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-24 05:05:57', 'Zaakceptowany', 52, 389);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-27 08:49:27', 'Oczekuj¹cy', 1, 100);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 21:56:20', 'Oczekuj¹cy', 55, 550);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-27 08:49:27', 'OczekujÄ…cy', 1, 100);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-05 21:56:20', 'OczekujÄ…cy', 55, 550);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-15 10:14:27', 'Odrzucony', 23, 377);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 22:05:29', 'Oczekuj¹cy', 18, 179);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 22:05:29', 'OczekujÄ…cy', 18, 179);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-10 01:32:18', 'Odrzucony', 71, 974);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-30 02:56:43', 'Oczekuj¹cy', 80, 125);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-30 02:56:43', 'OczekujÄ…cy', 80, 125);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-13 00:40:25', 'Zaakceptowany', 11, 157);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-16 19:59:37', 'Oczekuj¹cy', 92, 286);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-16 19:59:37', 'OczekujÄ…cy', 92, 286);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-15 23:55:15', 'Zaakceptowany', 4, 420);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-22 18:25:03', 'Oczekuj¹cy', 87, 455);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-22 18:25:03', 'OczekujÄ…cy', 87, 455);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-07 00:22:38', 'Odrzucony', 8, 436);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-16 10:51:06', 'Oczekuj¹cy', 10, 952);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-18 01:33:33', 'Oczekuj¹cy', 25, 892);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-16 10:51:06', 'OczekujÄ…cy', 10, 952);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-18 01:33:33', 'OczekujÄ…cy', 25, 892);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-15 19:26:53', 'Zaakceptowany', 88, 637);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-05 21:59:34', 'Zaakceptowany', 73, 753);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-24 10:01:23', 'Odrzucony', 10, 483);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 05:48:10', 'Oczekuj¹cy', 41, 33);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 19:50:10', 'Oczekuj¹cy', 81, 531);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 05:48:10', 'OczekujÄ…cy', 41, 33);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 19:50:10', 'OczekujÄ…cy', 81, 531);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-18 11:40:45', 'Zaakceptowany', 73, 704);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-28 01:33:45', 'Odrzucony', 82, 457);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-14 00:40:06', 'Odrzucony', 65, 350);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-06 21:14:18', 'Odrzucony', 97, 222);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-09 06:56:28', 'Odrzucony', 42, 155);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-18 05:01:34', 'Zaakceptowany', 61, 756);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-17 16:25:43', 'Oczekuj¹cy', 42, 980);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-17 16:25:43', 'OczekujÄ…cy', 42, 980);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-15 03:52:12', 'Zaakceptowany', 81, 956);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-04 07:22:22', 'Odrzucony', 46, 954);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-27 19:16:46', 'Zaakceptowany', 72, 856);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-07 23:18:19', 'Zaakceptowany', 32, 43);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-07 00:28:59', 'Odrzucony', 55, 334);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-18 12:51:58', 'Oczekuj¹cy', 37, 198);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-18 12:51:58', 'OczekujÄ…cy', 37, 198);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-27 12:29:42', 'Odrzucony', 92, 360);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-04 01:01:44', 'Zaakceptowany', 47, 287);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-03 09:29:04', 'Oczekuj¹cy', 63, 154);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-02 05:36:58', 'Oczekuj¹cy', 43, 258);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-03 09:29:04', 'OczekujÄ…cy', 63, 154);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-02 05:36:58', 'OczekujÄ…cy', 43, 258);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-22 10:03:07', 'Odrzucony', 23, 456);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-26 22:39:29', 'Oczekuj¹cy', 66, 143);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-26 22:39:29', 'OczekujÄ…cy', 66, 143);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-15 17:20:45', 'Odrzucony', 47, 157);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-20 18:58:44', 'Oczekuj¹cy', 48, 180);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-20 18:58:44', 'OczekujÄ…cy', 48, 180);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-08 17:45:02', 'Odrzucony', 69, 25);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-21 20:01:11', 'Odrzucony', 83, 583);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-02 16:38:58', 'Zaakceptowany', 88, 396);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 21:21:13', 'Oczekuj¹cy', 50, 448);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-28 07:00:23', 'Oczekuj¹cy', 86, 493);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-31 21:21:13', 'OczekujÄ…cy', 50, 448);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-28 07:00:23', 'OczekujÄ…cy', 86, 493);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 02:42:04', 'Zaakceptowany', 81, 213);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-19 01:40:27', 'Odrzucony', 6, 619);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-30 18:48:55', 'Odrzucony', 8, 662);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-04 12:02:44', 'Zaakceptowany', 8, 50);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-03 10:24:28', 'Zaakceptowany', 32, 317);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-06 14:07:06', 'Odrzucony', 85, 879);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-29 16:44:35', 'Oczekuj¹cy', 80, 705);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-17 15:02:51', 'Oczekuj¹cy', 23, 479);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-13 14:23:35', 'Oczekuj¹cy', 84, 192);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-29 16:44:35', 'OczekujÄ…cy', 80, 705);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-17 15:02:51', 'OczekujÄ…cy', 23, 479);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-13 14:23:35', 'OczekujÄ…cy', 84, 192);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-30 19:51:32', 'Zaakceptowany', 81, 123);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-10 07:01:45', 'Zaakceptowany', 10, 825);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-12 16:10:24', 'Odrzucony', 4, 553);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-02 19:31:39', 'Oczekuj¹cy', 31, 84);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-28 15:56:46', 'Oczekuj¹cy', 61, 530);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-02 19:31:39', 'OczekujÄ…cy', 31, 84);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-28 15:56:46', 'OczekujÄ…cy', 61, 530);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-23 14:34:08', 'Zaakceptowany', 96, 916);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2017-01-04 01:58:35', 'Zaakceptowany', 69, 915);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-13 08:00:40', 'Odrzucony', 4, 172);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-16 08:23:53', 'Zaakceptowany', 81, 93);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-09 12:51:35', 'Odrzucony', 55, 118);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-18 22:19:25', 'Oczekuj¹cy', 15, 810);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-18 22:19:25', 'OczekujÄ…cy', 15, 810);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-29 14:21:43', 'Zaakceptowany', 81, 166);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-19 03:27:23', 'Zaakceptowany', 43, 21);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-27 04:24:16', 'Zaakceptowany', 47, 527);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-03 06:15:00', 'Odrzucony', 43, 820);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-30 17:12:41', 'Oczekuj¹cy', 36, 884);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-06 06:51:34', 'Oczekuj¹cy', 30, 670);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-12 05:44:46', 'Oczekuj¹cy', 61, 905);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-30 17:12:41', 'OczekujÄ…cy', 36, 884);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-06 06:51:34', 'OczekujÄ…cy', 30, 670);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-12 05:44:46', 'OczekujÄ…cy', 61, 905);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-03 14:27:45', 'Odrzucony', 29, 608);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-11 06:49:26', 'Zaakceptowany', 4, 52);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-29 18:14:36', 'Oczekuj¹cy', 20, 832);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-13 19:26:34', 'Oczekuj¹cy', 96, 80);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-29 18:14:36', 'OczekujÄ…cy', 20, 832);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-13 19:26:34', 'OczekujÄ…cy', 96, 80);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-19 14:47:13', 'Odrzucony', 88, 627);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-21 12:21:51', 'Oczekuj¹cy', 33, 103);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-14 06:31:02', 'Oczekuj¹cy', 16, 856);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-21 12:21:51', 'OczekujÄ…cy', 33, 103);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-14 06:31:02', 'OczekujÄ…cy', 16, 856);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-18 18:19:15', 'Odrzucony', 49, 376);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-17 20:14:51', 'Odrzucony', 29, 526);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-26 23:18:47', 'Odrzucony', 21, 568);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-12 03:26:28', 'Zaakceptowany', 70, 47);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-25 01:04:19', 'Odrzucony', 27, 895);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-08 20:58:06', 'Odrzucony', 55, 913);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-28 09:57:49', 'Oczekuj¹cy', 43, 817);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-28 09:57:49', 'OczekujÄ…cy', 43, 817);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-27 11:34:06', 'Odrzucony', 43, 962);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-20 22:20:21', 'Odrzucony', 86, 294);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-04 11:22:51', 'Oczekuj¹cy', 92, 609);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 10:03:36', 'Oczekuj¹cy', 76, 197);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-04 11:22:51', 'OczekujÄ…cy', 92, 609);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 10:03:36', 'OczekujÄ…cy', 76, 197);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-22 06:36:40', 'Zaakceptowany', 56, 433);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-22 16:11:35', 'Zaakceptowany', 33, 542);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-18 16:50:58', 'Odrzucony', 40, 480);
@@ -2912,21 +2912,21 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-09 18:53:23', 'Odrzucony', 74, 250);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-12 13:36:25', 'Zaakceptowany', 55, 148);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-18 04:18:42', 'Zaakceptowany', 35, 720);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-28 13:14:30', 'Oczekuj¹cy', 37, 719);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-28 13:14:30', 'OczekujÄ…cy', 37, 719);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-21 11:29:58', 'Zaakceptowany', 83, 953);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-17 06:55:43', 'Zaakceptowany', 73, 317);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-22 23:52:49', 'Zaakceptowany', 24, 184);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-06 02:48:15', 'Odrzucony', 65, 345);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-19 11:29:04', 'Zaakceptowany', 83, 733);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-21 21:28:46', 'Oczekuj¹cy', 30, 43);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-21 21:28:46', 'OczekujÄ…cy', 30, 43);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-07-21 07:11:13', 'Odrzucony', 4, 156);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-11-20 19:17:15', 'Odrzucony', 58, 215);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-20 12:04:58', 'Zaakceptowany', 11, 843);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-04 01:36:13', 'Oczekuj¹cy', 90, 189);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-02-04 01:36:13', 'OczekujÄ…cy', 90, 189);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-03-27 10:09:40', 'Odrzucony', 21, 801);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-13 01:29:06', 'Oczekuj¹cy', 23, 135);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-13 01:29:06', 'OczekujÄ…cy', 23, 135);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-08-30 17:57:14', 'Odrzucony', 63, 233);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-14 10:11:38', 'Oczekuj¹cy', 54, 844);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-06-14 10:11:38', 'OczekujÄ…cy', 54, 844);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-05 09:24:01', 'Odrzucony', 54, 221);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-30 00:12:54', 'Zaakceptowany', 56, 743);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-11-22 05:00:05', 'Zaakceptowany', 5, 820);
@@ -2934,7 +2934,7 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-25 06:05:45', 'Odrzucony', 60, 720);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-29 23:42:13', 'Zaakceptowany', 69, 196);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-15 14:16:31', 'Odrzucony', 12, 501);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-01 03:17:37', 'Oczekuj¹cy', 22, 332);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-01 03:17:37', 'OczekujÄ…cy', 22, 332);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-06 06:01:23', 'Odrzucony', 69, 33);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-12-24 06:48:21', 'Odrzucony', 13, 245);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-01-25 19:14:15', 'Odrzucony', 10, 795);
@@ -2947,10 +2947,10 @@ insert into application (id, dispatch_date, status, client_id, animal_id) values
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-16 06:15:26', 'Zaakceptowany', 32, 819);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-13 23:52:53', 'Odrzucony', 67, 492);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-04-20 07:02:40', 'Zaakceptowany', 29, 183);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-01 06:18:53', 'Oczekuj¹cy', 80, 371);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-01 06:18:53', 'OczekujÄ…cy', 80, 371);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-26 14:52:24', 'Odrzucony', 95, 562);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-05-21 08:48:50', 'Zaakceptowany', 74, 885);
-insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 20:01:59', 'Oczekuj¹cy', 49, 570);
+insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-10-08 20:01:59', 'OczekujÄ…cy', 49, 570);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2016-09-30 04:32:34', 'Zaakceptowany', 49, 101);
 insert into application (id, dispatch_date, status, client_id, animal_id) values (nextval('application_id_seq'), '2015-12-27 02:06:09', 'Zaakceptowany', 76, 944);
 

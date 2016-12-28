@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body th:fragment="content">
-<div th:if="${#lists.isEmpty(animals)}">
+<div th:if="${animals.getContent().isEmpty()}">
     <div>Brak zwierząt w bazie.</div>
 </div>
-<div th:if="${not #lists.isEmpty(animals)}">
+<div th:if="${not animals.getContent().isEmpty()}">
     <table class="table table-sm">
         <thead>
         <tr>
@@ -18,8 +18,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="animal: ${animals}">
-            <td><img th:src="${animal.linkToImage}"/></td>
+        <tr th:each="animal: ${animals.getContent()}">
+            <td><img style="width: 150px" th:src="${animal.linkToImage}"/></td>
             <td th:text="${animal.name}"></td>
             <td th:text="${animal.sex}"></td>
             <td th:text="${animal.age}"></td>
@@ -39,6 +39,7 @@
         </tr>
         </tbody>
     </table>
+    <div th:include="pagination :: pagination(animals)">></div>
 </div>
 </body>
 </html>

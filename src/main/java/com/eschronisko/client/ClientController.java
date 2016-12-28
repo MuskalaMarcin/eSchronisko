@@ -1,9 +1,7 @@
 package com.eschronisko.client;
 
 import com.eschronisko.common.CommonService;
-import com.eschronisko.database.dto.AnimalDTO;
 import com.eschronisko.database.dto.ApplicationDTO;
-import com.eschronisko.database.dto.ClientDTO;
 import com.eschronisko.database.dto.DonationDTO;
 import com.eschronisko.database.service.AnimalManager;
 import com.eschronisko.database.service.ApplicationManager;
@@ -17,10 +15,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Timestamp;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Marek on 13.12.2016.
@@ -39,15 +36,11 @@ public class ClientController {
     private CommonService commonService;
 
     @RequestMapping(method = RequestMethod.GET, value = "animalsList")
-    public String getAnimalsList(Model model) {
+    public String getAnimalsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "client/animalsList");
         model.addAttribute("title", "Lista zwierząt");
-        List<AnimalDTO> animalDTOs = animalManager.getAllEntites().stream()
-                .filter(animalDTO -> animalDTO.getAdoptionPossible() == 1)
-                .filter(animalDTO -> animalDTO.getAdoptionDate() == null)
-                .collect(Collectors.toList());
-        model.addAttribute("animals", animalDTOs);
+        model.addAttribute("animals", animalManager.getAnimalsToAdoption(page));
         return "mainTemplate";
     }
 
@@ -87,15 +80,11 @@ public class ClientController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "applicationsList")
-    public String getApplicationsList(Model model) {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        ClientDTO clientDTO = commonService.getLoggedUser(auth).getClient();
-        List<ApplicationDTO> applicationDTOList = applicationManager.getAllEntites().stream().filter(applicationDTO ->
-                applicationDTO.getClient().equals(clientDTO)).collect(Collectors.toList());
+    public String getApplicationsList(@RequestParam(required = false, defaultValue = "1", value = "page") Integer page, Model model) {
         commonService.getTemplateFragments(model);
         model.addAttribute("content", "client/applicationsList");
         model.addAttribute("title", "Wysłane wnioski");
-        model.addAttribute("applications", applicationDTOList);
+        model.addAttribute("applications", applicationManager.getClientsApplications(page));
         return "mainTemplate";
     }
 
